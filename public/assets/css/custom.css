@@ -1,0 +1,180 @@
+:root {
+    --navy-blue: #18121e;
+    --gunmetal: #233237;
+    --rusty-red: #984b43;
+    --ornate: #ab9353;
+    --header-font: 'Merriweather', serif;
+    --text-font: 'Inconsolata', monospace;
+    --animation-duration: 1s;
+}
+
+.logo img {
+    width: 1em;
+    height: auto;
+}
+
+#header .story {
+    -webkit-animation-duration: var(--animation-duration);
+    -moz-animation-duration: var(--animation-duration);
+    -ms-animation-duration: var(--animation-duration);
+    -o-animation-duration: var(--animation-duration);
+    animation-duration: var(--animation-duration);
+    text-align: left;
+    padding: 0 10px;
+}
+
+#header .actions {
+    line-height: 1em;
+    font-family: var(--text-font);
+}
+
+#header .actions .action {
+    color: white;
+    background: transparent;
+    border: 1px solid white;
+    display: block;
+    margin: 10px auto;
+}
+
+#header .actions .action:hover {
+    color: #000;
+    background: #eee;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+#header {
+    font-size: 0.4em;
+}
+
+#drawer-right {
+    background: var(--navy-blue)
+}
+
+a {
+    color: var(--rusty-red)
+}
+
+#header .top.solid {
+    background: var(--gunmetal);
+}
+
+#header .bottom {
+    bottom: 5%;
+}
+
+#drawer-right a {
+    font-family: var(--text-font);
+}
+
+#drawer-right a strong {
+    color: #ab9353;
+    font-weight: normal;
+}
+
+#drawer-right h2 {
+    font-family: var(--header-font);
+    font-size: 2em;
+}
+
+#concepto {
+    font-family: var(--text-font);
+    font-size: 1.3em;
+}
+
+#concepto h1 {
+    font-family: var(--header-font)
+}
+
+#concepto a {
+    color: white;
+    text-decoration: underline;
+}
+
+#concepto .btn {
+    text-decoration: none;
+    background: var(--ornate);
+}
+
+#caracteristicas, #capitulos, #equipo {
+    font-family: var(--text-font);
+}
+
+#caracteristicas h1, #caracteristicas h2, #capitulos h1, #capitulos h2, #equipo h1, #equipo h2 {
+    font-family: var(--header-font);
+}
+
+#caracteristicas, #caracteristicas h1, #caracteristicas h2 {
+    color: white;
+}
+
+#caracteristicas .descripcion {
+    font-size: 1.4em;
+    font-family: var(--text-font);
+}
+
+#capitulos, #equipo, #capitulos h1, #capitulos h2, #equipo h1, #equipo h2 {
+    color: var(--navy-blue);
+}
+
+#capitulos h2 {
+    margin-top: 5px;
+}
+
+.bloque-parrafo {
+    color: var(--navy-blue);
+    padding: 0;
+}
+
+.bloque-parrafo h2 {
+    font-family: var(--header-font);
+}
+
+.bloque-parrafo p {
+    font-family: var(--text-font);
+}
+
+#header.header-wrapper {
+    background: url(../images/house-forest.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-transition: background 2.0s ease-in-out;
+    transition: background 2.0s ease-in-out;
+}
+
+#header.header-wrapper.scene-llamar-puerta {
+    background: url(../images/door.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-transition: background 2.0s ease-in-out;
+    transition: background 2.0s ease-in-out;
+}
+
+#header.header-wrapper.scene-tirar-puerta {
+    background: url(../images/house-forest.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-transition: background 2.0s ease-in-out;
+    transition: background 2.0s ease-in-out;
+}
+
+#header.header-wrapper.scene-mirar-atras {
+    background: url(../images/forest.jpg) no-repeat center center;
+    background-size: cover;
+    -webkit-transition: background 2.0s ease-in-out;
+    transition: background 2.0s ease-in-out;
+}
+
+@media (min-width: 600px) {
+    #header {
+        font-size: 1.2em;
+    }
+    
+    #header .story {
+        text-align: center;
+        padding: 0;
+    }
+
+    #header .actions .action {
+        display: inline-block;
+        margin: 10px 10px;
+        font-size: 1.5em;
+    }
+}
