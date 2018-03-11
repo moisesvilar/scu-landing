@@ -19,8 +19,12 @@
     -ms-animation-duration: var(--animation-duration);
     -o-animation-duration: var(--animation-duration);
     animation-duration: var(--animation-duration);
-    text-align: left;
-    padding: 0 10px;
+    width: 100%;
+    padding: 10px 20px 10px 20px;
+}
+
+.slogan {
+    text-align: center;
 }
 
 #header .actions {
@@ -56,7 +60,8 @@ a {
 }
 
 #header .top.solid {
-    background: var(--gunmetal);
+    background: transparent;
+    position: absolute;
 }
 
 #header .bottom {
@@ -162,19 +167,63 @@ a {
     transition: background 2.0s ease-in-out;
 }
 
-@media (min-width: 600px) {
-    #header {
-        font-size: 1.2em;
+.content-block {
+    padding: 20px 0;
+}
+
+@media (min-width: 598px) and (max-width: 599px) {    
+    .slogan {
+        margin-top: 40px;
+        padding: 0 10px;
     }
-    
-    #header .story {
-        text-align: center;
-        padding: 0;
+
+    #header .actions .action {
+        display: inline-block;
+        font-size: 2.4em;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 641px) {
+    .slogan {
+        margin-top: 50px;
+        padding: 0 10px;
     }
 
     #header .actions .action {
         display: inline-block;
         margin: 10px 10px;
-        font-size: 1.5em;
+        font-size: 1.9em;
+    }
+}
+
+@media (min-width: 642px) and (max-width: 668px) {
+    #header .actions .action {
+        display: inline-block;
+        font-size: 2.0em;
+    }
+}
+
+@media (min-width: 732px) {
+    #header .actions .action {
+        display: inline-block;
+        font-size: 2.28em;
+    }
+}
+
+@media (min-width: 733px) {
+    #header {
+        font-size: 0.5em;
+    }
+    
+    .slogan {
+        text-align: center;
+    }
+
+    .actions {
+        text-align: center;
+    }
+
+    #header .actions .action {
+        margin: 10px 10px;
     }
 }
