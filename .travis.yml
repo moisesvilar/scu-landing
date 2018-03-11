@@ -1,9 +1,6 @@
-language: node_js
-node_js:
-  - "7"
-script:
-  - echo "Deploy!!"
-install:
-  - npm install -g firebase-tools
-after_success:
-  - firebase deploy -project bardo-b9003 -token $FIREBASE_TOKEN.
+before_deploy: "echo 'ready?'"
+deploy:
+  provider: firebase
+  token:
+    secure: "NBRREX7VXmkjQIzeTHLP6rD/yva1SyMLhgnd+W3dgasCs546vtBXT+IBh9Jb+fSRFsiOKh/4LNvWHX9Gevf0Ji/YwGftsW6I5Ph7rTV18Vho2QsU40l2kBwSpQ0b+XDjtsx3plTFoJ9SPdzyyVuSmRvEemw0k9yGjgG+RVjVm+rzPz8xIYeucUZUfdy11pliuRprvmVOr7tIRElWZBkjMMYuV4WffKKcUs3uR9h1ZHiAMiEARGMyKHXCyUOyIpvXmRvMgwjTgbGmC42iqWRdNWF++4SXA+AjaA7q7cBsVBDppskGg4/NT8EinkZQSQ+noFQlWbRCv4jyNAZoSwXfbUmdZppRzdy3qUCegQDLMZ8rJkd1wOocHRZz3MYW5kEx+qaSB8sW+V5rivhJKzatM2Fno+LFZE3g+p7leEjCeSdxabojlYm5J+7R90rlRedLlLPI9ael7/+obAjQ2Ilmjt2lODe7W7sdjy6S9JhL+6NQwoXyrkSIaA5hano+/bztvVB1iypZ9Gzwj1eyno3rV6QyVWCUrXqm/uaVAU6Kv/HYU0buKeyuMS9gEnxjO+zy5r2HDdDkcQbx5AVBGmmz4nMwrOqwXZs/0KUSssQfxlFBzr7XpVTNZvSkFxq2BPfffyMg5MdKOgDYPI74B3g0XKR14Q1kiHMdU9z1ptB3N4M="
+  project: "bardo-b9003"
