@@ -139,6 +139,11 @@ a {
     font-family: var(--text-font);
 }
 
+.slogan p {
+    width: 100%;
+    max-width: 100%;
+}
+
 #header.header-wrapper {
     -webkit-transition: background 1.0s ease-in-out;
     transition: background 1.0s ease-in-out;
