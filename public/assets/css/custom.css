@@ -162,6 +162,7 @@ a {
     #header .actions .action {
         display: inline-block;
         font-size: 2.4em;
+        word-wrap: break-word;
     }
 }
 
