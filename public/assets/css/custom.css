@@ -140,31 +140,8 @@ a {
 }
 
 #header.header-wrapper {
-    background: url(../images/house-forest.jpg) no-repeat center center;
-    background-size: cover;
-    -webkit-transition: background 2.0s ease-in-out;
-    transition: background 2.0s ease-in-out;
-}
-
-#header.header-wrapper.scene-llamar-puerta {
-    background: url(../images/door.jpg) no-repeat center center;
-    background-size: cover;
-    -webkit-transition: background 2.0s ease-in-out;
-    transition: background 2.0s ease-in-out;
-}
-
-#header.header-wrapper.scene-tirar-puerta {
-    background: url(../images/house-forest.jpg) no-repeat center center;
-    background-size: cover;
-    -webkit-transition: background 2.0s ease-in-out;
-    transition: background 2.0s ease-in-out;
-}
-
-#header.header-wrapper.scene-mirar-atras {
-    background: url(../images/forest.jpg) no-repeat center center;
-    background-size: cover;
-    -webkit-transition: background 2.0s ease-in-out;
-    transition: background 2.0s ease-in-out;
+    -webkit-transition: background 1.0s ease-in-out;
+    transition: background 1.0s ease-in-out;
 }
 
 .content-block {
