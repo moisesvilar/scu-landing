@@ -8,6 +8,11 @@
     --animation-duration: 1s;
 }
 
+#header .animated {
+    -webkit-animation-duration: 5s;
+    animation-duration: 5s;
+}
+
 .logo img {
     width: 1em;
     height: auto;
