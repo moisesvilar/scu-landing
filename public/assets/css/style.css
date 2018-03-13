@@ -167,7 +167,6 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #header .slogan{
-	font-size: 3em;
 	margin-bottom: 15px;
 	line-height: 1em;
 	font-family: 'Inconsolata';
@@ -428,10 +427,6 @@ h1, h2, h3, h4, h5, h6{
 
 
 @media (max-width: 767px){
-	#header .slogan {
-		font-size: 2.8em; 
-	} 
-
 	#header .secondary-slogan {
 		font-size: 1.2em;
 	}

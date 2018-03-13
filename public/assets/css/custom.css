@@ -45,7 +45,7 @@
     word-wrap: break-word; /* Internet Explorer 5.5+ */
 }
 
-#header .actions .action:hover {
+#header .actions .action:active {
     color: #000;
     background: #eee;
     border: 1px solid black;
@@ -158,50 +158,131 @@ a {
     padding: 20px 0;
 }
 
+@media (min-width: 300px) and (max-width: 597px) {    
+    .slogan {
+        margin-top: 60px;
+        padding: 0 10px;
+        font-size: 2.2em;
+    }
+
+    #header .actions .action {
+        display: block;
+        font-size: 2.0em;
+    }
+}
+
 @media (min-width: 598px) and (max-width: 599px) {    
     .slogan {
         margin-top: 40px;
         padding: 0 10px;
+        font-size: 2.0em;
     }
 
     #header .actions .action {
         display: inline-block;
-        font-size: 2.4em;
+        font-size: 1.9em;
+    }
+
+    #header .bottom {
+        bottom: 2%;
     }
 }
 
-@media (min-width: 600px) and (max-width: 641px) {
+@media (min-width: 600px) and (max-width: 668px) {
     .slogan {
         margin-top: 50px;
         padding: 0 10px;
+        font-size: 2.0em;
     }
 
     #header .actions .action {
         display: inline-block;
         margin: 10px 10px;
-        font-size: 1.9em;
+        font-size: 1.8em;
+    }
+
+    #header .bottom {
+        bottom: 1%;
     }
 }
 
-@media (min-width: 642px) and (max-width: 668px) {
+@media (min-width: 668px) and (max-width: 731px) {
+    .slogan {
+        margin-top: 50px;
+        padding: 0 10px;
+        font-size: 2.0em;
+    }
+
     #header .actions .action {
         display: inline-block;
         font-size: 2.0em;
     }
+
+    #header .bottom {
+        bottom: 1%;
+    }
 }
 
-@media (min-width: 732px) {
+@media (min-width: 732px) and (max-width: 899px) {
+    .slogan {
+        margin-top: 50px;
+        padding: 0 10px;
+        font-size: 2.0em;
+    }
+    
     #header .actions .action {
         display: inline-block;
         font-size: 2.28em;
     }
 }
 
-@media (min-width: 733px) {
-    #header {
-        font-size: 0.5em;
+@media(min-width: 900px) {
+    #header .actions .action:hover {
+        color: #000;
+        background: #eee;
+        border: 1px solid black;
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1199px) {
+    .slogan {
+        padding: 0 10px;
+        font-size: 4.0em;
     }
     
+    #header .actions .action {
+        display: inline-block;
+        font-size: 2.5em;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1799px) {
+    .slogan {
+        padding: 0 10px;
+        font-size: 5.0em;
+    }
+    
+    #header .actions .action {
+        display: inline-block;
+        font-size: 5.0em;
+    }
+}
+
+
+@media (min-width: 1800px) {
+    .slogan {
+        padding: 0 10px;
+        font-size: 8.0em;
+    }
+    
+    #header .actions .action {
+        display: inline-block;
+        font-size: 3.5em;
+    }
+}
+
+@media (min-width: 733px) {    
     .slogan {
         text-align: center;
     }
