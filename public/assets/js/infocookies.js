@@ -1,6 +1,6 @@
 $(document).ready(function() {
     var $mailAnchors = $('a.email');
-    $mailAnchors.on('hover', function() {
+    $mailAnchors.on('click', function() {
         var $mailAnchor = $(this);
         var user = $mailAnchor.data('user');
         var domain = $mailAnchor.data('domain');
