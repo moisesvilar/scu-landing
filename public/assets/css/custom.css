@@ -180,6 +180,11 @@ a {
     padding: 20px 0;
 }
 
+#footer {
+    font-size: 0.6em;
+    font-style: oblique;
+}
+
 @media (min-width: 300px) and (max-width: 731px) {    
     .slogan {
         margin-top: 20px;
