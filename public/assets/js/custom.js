@@ -110,7 +110,7 @@ $(document).ready(function() {
 
 function setMailAnchors() {
     var $mailAnchors = $('a.email');
-    $mailAnchors.click(function() {
+    $mailAnchors.on('hover', function() {
         var $mailAnchor = $(this);
         var user = $mailAnchor.data('user');
         var domain = $mailAnchor.data('domain');
