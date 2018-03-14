@@ -102,9 +102,37 @@ function preloadImages() {
 }
 
 $(document).ready(function() {
+    setMailAnchors();
+    setCookies();
     var book = chooseRandomBook();
     setActionsHandler(book);
 });
+
+function setMailAnchors() {
+    var $mailAnchors = $('a.email');
+    $mailAnchors.click(function() {
+        var $mailAnchor = $(this);
+        var user = $mailAnchor.data('user');
+        var domain = $mailAnchor.data('domain');
+        var emailAddress = `${user}@${domain}`;
+        $mailAnchor.attr('href', `mailto:${emailAddress}`);
+    });
+}
+
+function setCookies() {
+    var $cookies = $('.cookies');
+    var currentCookieValue = cookie.get('cookies');
+    if (currentCookieValue === 'true') {
+        $cookies.hide();
+    }
+    else {
+        $cookies.find('.cclose').click(function(e) {
+            e.preventDefault();
+            cookie.set('cookies', 'true', { expires: 365 });
+            $(this).closest('.cookies').hide();
+        });
+    }
+}
 
 function chooseRandomBook() {
     var index = Math.floor(Math.random() * books.length);
