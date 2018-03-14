@@ -6,6 +6,7 @@
     --header-font: 'Merriweather', serif;
     --text-font: 'Inconsolata', monospace;
     --animation-duration: 1s;
+    --brightness: 40%;
 }
 
 #header .animated {
@@ -26,6 +27,14 @@
     animation-duration: var(--animation-duration);
     width: 100%;
     padding: 10px 20px 10px 20px;
+}
+
+.story:before {
+    -webkit-filter: brightness(var(--brightness));
+    -moz-filter: brightness(var(--brightness));
+    -o-filter: brightness(var(--brightness));
+    -ms-filter: brightness(var(--brightness));
+    filter: brightness(var(--brightness));
 }
 
 .slogan {

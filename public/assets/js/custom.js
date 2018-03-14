@@ -195,7 +195,7 @@ function getFullPathToImage(img) {
 
 function changeImage(img) {
     var $header = $('#header');
-    var backgroundValue = `linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("${getFullPathToImage(img)}") no-repeat center center`;
+    var backgroundValue = `url("${getFullPathToImage(img)}") no-repeat center center`;
     $header.css('background', backgroundValue);
     $header.css('background-size', 'cover');
 }
