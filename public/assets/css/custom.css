@@ -194,6 +194,27 @@ a {
     font-style: oblique;
 }
 
+#call-to-action {
+    border: 1px solid white;
+    padding: 5px;
+}
+
+#call-to-action p {
+    font-size: 3em;
+    color: white;
+    font-family: 'Inconsolata';
+}
+
+#call-to-action a.btn {
+    background-color: var(--ornate);
+    color: white;
+    white-space: pre-wrap; /* css-3 */    
+    white-space: -moz-pre-wrap; /* Mozilla, since 1999 */
+    white-space: -pre-wrap; /* Opera 4-6 */    
+    white-space: -o-pre-wrap; /* Opera 7 */    
+    word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
 @media (max-width: 731px) {
     #header .cookies {
         font-size: 1.2em;

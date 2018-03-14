@@ -49,11 +49,63 @@
                 <p>Das dos pasos atrás y coges impulso. Con ímpetu, estrellas tu hombro contra la puerta... Una vez... Dos veces...</p>
                 <p>En el tercer impacto la madera cruje violentamente y los goznes ceden. Trastabillas y a punto estás de perder el equilibrio.</p>
                 <p>Notas el aire frío, húmedo y pegajoso que proviene del interior de la casa... y algo que parecen ser pasos...</p>
-            img: 'door.jpg'
+            img: 'corridor.jpg'
             actions:
                 -
                     text: 'Mmm... ¿hola?'
-                    href: ''
+                    href: 'saludar'
                 -
                     text: 'Mantienes silencio para oir mejor esos pasos'
-                    href: ''
+                    href: 'callar'
+        saludar:
+            text: >
+                <p>Justo cuando terminas de hablar, los pasos se detienen... aunque el silencio no dura demasiado</p>
+                <p>Un rugido ensordecedor retruena en el oscuro pasillo. Nunca habías oído nada igual. Tu corazón se ha helado y tu cuerpo no te responde.</p>
+                <p>Unos estruendosos pasos suenan cada vez más cerca. Pum. Pum. ¡PUM! Pero no consigues ver nada...</p>
+            img: 'corridor.jpg'
+            actions:
+                -
+                    text: '¡Corres por tu vida!'
+                    href: 'correr'
+                -
+                    text: '¡Sacas tu pistola y disparas a la oscuridad!'
+                    href: 'disparar-oscuridad'
+        callar:
+            text: >
+                <p>
+                De repente, entre la oscuridad, puedes ver como se forma ante ti una extraña silueta.
+                Es una mujer joven, de pelo largo y muy negro. Viste un camisón grisáceo.
+                </p>
+                <p>Un escalofrío recorre tu espalda cuando te das cuenta que la joven no tiene piernas. Simplemente está ahí,
+                flotando en medio del pasillo, avanzando hacia ti muy poco a poco...</p>
+            img: 'corridor-ghost.jpg'
+            actions:
+                -
+                    text: '¡Corres por tu vida!'
+                    href: 'correr'
+                -
+                    text: '¡Sacas tu pistola y disparas a la extraña muchacha!'
+                    href: 'disparar'
+                -
+                    text: 'Perdón por molestar... me he perdido...'
+                    href: 'perdon'
+        disparar:
+            text: >
+                <p>Temblando como una veleta en plena tormenta, consigues sacar tu vieja Beretta de 9 mm.</p>
+                <p>Comienzas a disparar a la fantasmagórica silueta que está plantada a pocos pasos cerca de ti.</p>
+                <p>Una vez... Dos veces... Tres veces...</p>
+                <p>Blam... Blam... ¡BLAM!</p>
+                <p>¡Pero las balas atraviesan a la joven y se pierden en la oscuridad!</p>
+            img: 'corridor-ghost.jpg'
+            actions:
+                -
+                    text: 'No puede ser...'
+                    href: 'cara'
+        cara:
+            text: >
+                <p>Simplemente parpadeas... Y eso es tu perdición. Porque el fantasma, en un instante, ha recorrido la corta distancia que os separaba.</p>
+                <p>Ahora puedes ver su rostro en toda su plenitud. Y comprendes, en lo más profundo de tu alma, que
+                ese es el rostro de la muerte. Jamás debiste entrar en esta casa...</p>
+                <p style="text-align: center"><strong>FIN</strong></p>
+            img: 'corridor-face.jpg'
+            end: true

@@ -68,6 +68,7 @@ IndexController.prototype.initStory = function(book) {
 
 IndexController.prototype.getActionsFromScene = function(scene) {
     var actionsHtml = '';
+    scene.actions = scene.actions || [];
     scene.actions.forEach(function(action) {
         var actionHtml = IndexController.ACTION_TEMPLATE.replace('{href}', action.href).replace('{text}', action.text);
         actionsHtml += actionHtml;
@@ -82,6 +83,7 @@ IndexController.prototype.changeStory = function(book, scene, actionsHtml) {
     var $actions = $header.find('.actions');
     $slogan.html(scene.text);
     $actions.html(actionsHtml);
+    this.showCallToActionIfEndingScene(scene);
     this.changeImage(scene.img);
 }
 
@@ -111,4 +113,10 @@ IndexController.prototype.performClickOnAction = function(e, _this, scenes, book
     $actionsAnchors.click(function(e) {
         self.performClickOnAction(e, this, scenes, book);
     });
+}
+
+IndexController.prototype.showCallToActionIfEndingScene = function(scene) {
+    if (scene.end === true) {
+        $('#call-to-action').removeClass('hidden');
+    }
 }
