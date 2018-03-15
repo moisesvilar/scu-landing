@@ -1,1 +1,1 @@
-docker run -d --name little-bardo -v %cd%\public\:/usr/share/nginx/html -p 80:80 nginx:alpine
+docker run -d --name little-bardo -v /c/Users/Mois/littlebardo/scu-landing/public/:/usr/share/nginx/html -p 80:80 nginx:alpine
