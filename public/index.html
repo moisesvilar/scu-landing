@@ -5,384 +5,495 @@
 <!--[if (gt IE 9)|!(IE)]><!-->
 <html class="noIE" lang="es">
 <!--<![endif]-->
-	<head>
-		<title>SCU | Little Bardo</title>
 
-		<!-- meta -->
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-		<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=yes"/>
-		
-		<!-- google fonts -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:regular,italic,bold,bolditalic"/>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:regular,italic,bold,bolditalic"/>
-		
-		<!-- css -->
-		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
-		<link rel="stylesheet" href="assets/css/font-awesome.min.css">
-		<link rel="stylesheet" href="assets/css/animate.css" media="screen"/>
-		<link rel="stylesheet" href="assets/css/style.css" media="screen"/>
-		<link rel="stylesheet" href="assets/css/custom.css" media="screen"/>
+<head>
+	<title>SCU | Little Bardo</title>
 
-		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-		<!--[if lt IE 9]>
+	<!-- meta -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale = 1.0, maximum-scale=1.0, user-scalable=yes" />
+
+	<!-- google fonts -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather:regular,italic,bold,bolditalic" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata:regular,italic,bold,bolditalic" />
+
+	<!-- css -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/css/animate.css" media="screen" />
+	<link rel="stylesheet" href="assets/css/style.css" media="screen" />
+	<link rel="stylesheet" href="assets/css/custom.css" media="screen" />
+
+	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+	<!--[if lt IE 9]>
 			<script src="assets/js/html5shiv.js"></script>
 			<script src="assets/js/respond.js"></script>
 		<![endif]-->
 
-		<!--[if IE 8]>
+	<!--[if IE 8]>
 	    	<script src="assets/js/selectivizr.js"></script>
 		<![endif]-->
-		
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116134922-1"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-			gtag('config', 'UA-116134922-1');
-		</script>
-		<!-- Google Tag Manager -->
-		<script>
-			(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-			new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-			})(window,document,'script','dataLayer','GTM-TQQG76F');
-		</script>
-		<!-- End Google Tag Manager -->
-		<!-- Global site tag (gtag.js) - AdWords: 1002297824 -->
-		<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1002297824"></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag(){dataLayer.push(arguments);}
-			gtag('js', new Date());
 
-			gtag('config', 'AW-1002297824');
-		</script>
-		<script>
-			gtag('event', 'page_view', {
-				'send_to': 'AW-1002297824',
-				'user_id': 'replace with value'
-			});
-		</script>
-	</head>
-	
-	<body>
-		<!-- Google Tag Manager (noscript) -->
-		<noscript>
-			<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQQG76F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-		</noscript>
-		<!-- End Google Tag Manager (noscript) -->
-		<div id="drawer-right">
-			<div class="cross text-right">
-				<a class="toggleDrawer" href="#"><i class="fa fa-times-circle fa-2x"></i></a>
-			</div>
-			<h2>¿Qué quieres saber?</h2>
-			<nav>
-				<ul class="nav nav-pills nav-stacked">
-					<li>
-						<a href="#concepto"><i class="fa fa-lightbulb-o"></i> Concepto</a>
-					</li>
-					<li>
-						<a href="#capitulos"><i class="fa fa-book"></i> Capítulos</a>
-					</li>
-					<li>
-						<a href="#historia"><i class="fa fa-globe"></i> Historia</a>
-					</li>
-					<li>
-						<a href="#personajes"><i class="fa fa-users"></i> Personajes</a>
-					</li>
-					<li>
-						<a href="#equipo"><i class="fa fa-coffee"></i> Equipo</a>
-					</li>
-					<li>
-						<a href="#verkami"> <strong><i class="fa fa-heart"></i> Campaña Verkami</strong></a>
-					</li>
-				</ul>
-			</nav>
-			<div class="social">
-				<h2>¿Dónde puedes encontrarnos?</h2>
-				<ul>
-					<li><a href=""><i class="fa fa-twitter-square fa-3x"></i></a></li>
-					<li><a href=""><i class="fa fa-facebook-square fa-3x"></i></a></li>
-					<li><a href="mailto:fakeemail@lickmyballs.com" class="email" data-user="info" data-domain="littlebardo.com"><i class="fa fa-envelope-square fa-3x"></i></a></li>
-				</ul>
-			</div>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116134922-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() {
+			dataLayer.push(arguments);
+		}
+		gtag('js', new Date());
+		gtag('config', 'UA-116134922-1');
+	</script>
+	<!-- Google Tag Manager -->
+	<script>
+		(function (w, d, s, l, i) {
+			w[l] = w[l] || []; w[l].push({
+				'gtm.start':
+					new Date().getTime(), event: 'gtm.js'
+			}); var f = d.getElementsByTagName(s)[0],
+				j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+					'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+		})(window, document, 'script', 'dataLayer', 'GTM-TQQG76F');
+	</script>
+	<!-- End Google Tag Manager -->
+	<!-- Global site tag (gtag.js) - AdWords: 1002297824 -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1002297824"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+		gtag('config', 'AW-1002297824');
+	</script>
+	<script>
+		gtag('event', 'page_view', {
+			'send_to': 'AW-1002297824',
+			'user_id': 'replace with value'
+		});
+	</script>
+</head>
+
+<body>
+	<!-- Google Tag Manager (noscript) -->
+	<noscript>
+		<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQQG76F" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+	</noscript>
+	<!-- End Google Tag Manager (noscript) -->
+	<div id="drawer-right">
+		<div class="cross text-right">
+			<a class="toggleDrawer" href="#">
+				<i class="fa fa-times-circle fa-2x"></i>
+			</a>
 		</div>
+		<h2>¿Qué quieres saber?</h2>
+		<nav>
+			<ul class="nav nav-pills nav-stacked">
+				<li>
+					<a href="#concepto">
+						<i class="fa fa-lightbulb-o"></i> Concepto</a>
+				</li>
+				<li>
+					<a href="#capitulos">
+						<i class="fa fa-book"></i> Capítulos</a>
+				</li>
+				<li>
+					<a href="#historia">
+						<i class="fa fa-globe"></i> Historia</a>
+				</li>
+				<li>
+					<a href="#personajes">
+						<i class="fa fa-users"></i> Personajes</a>
+				</li>
+				<li>
+					<a href="#equipo">
+						<i class="fa fa-coffee"></i> Equipo</a>
+				</li>
+				<li>
+					<a href="#verkami">
+						<strong>
+							<i class="fa fa-heart"></i> Campaña Verkami</strong>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="social">
+			<h2>¿Dónde puedes encontrarnos?</h2>
+			<ul>
+				<li>
+					<a href="">
+						<i class="fa fa-twitter-square fa-3x"></i>
+					</a>
+				</li>
+				<li>
+					<a href="">
+						<i class="fa fa-facebook-square fa-3x"></i>
+					</a>
+				</li>
+				<li>
+					<a href="mailto:fakeemail@lickmyballs.com" class="email" data-user="info" data-domain="littlebardo.com">
+						<i class="fa fa-envelope-square fa-3x"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
 
-		<div id="wrapper">
-			<div id="header" class="content-block header-wrapper">
-				<div class="header-wrapper-inner">
-					<section class="top clearfix">
-						<div class="pull-left">
-							<h1>
-								<a class="logo" href="index.html">
-									<img src="assets/images/logo.png">
-								</a>
-							</h1>
-						</div>
-						<div class="cookies">
-							Sí. Esta web usa cookies. Como todas. <a href="cookies.html" target="_blank" class="info">+ info</a> <a href="#cookies" class="cclose"><i class="fa fa-times"></i></a>
-						</div>
-						<div class="pull-right">
-							<a class="toggleDrawer" href="#"><i class="fa fa-bars fa-5x"></i></a>
-						</div>
-					</section>
-					<section class="story animated">
-						<div class="slogan"></div>
-						<div class="actions"></div>
-						<div id="call-to-action" class="hidden">
-							<p>¿Te ha gustado la experiencia?</p>
-							<a href="#verkami" class="btn btn-lg">¡Ayúdanos a hacerla realidad!</a>
-						</div>
-					</section>
-					<section class="bottom">
-						<a id="scrollToContent" class="animated infinite flash" href="#concepto">
-							<img src="assets/images/arrow_down.png">
-						</a>
-					</section>
-				</div>
-			</div>
-
-			<div class="content-block parallax" id="concepto">
-				<div class="container text-center">
-					<h1>Queremos contar una historia en la que el protagonista seas tú.</h1>
-					<p>
-						¿Recuerdas los libros de <a href="#" target="_blank">"Elige tu propia aventura"</a>?
-						Añádeles terror, misterio, suspense y llévalos a tu móvil.
-					</p>
-					<p>
-						Eso es SCU.
-					</p>
-					<a href="#verkami" class="btn btn-lg">Ayúdanos a hacerlo realidad</a>
-				</div>
-			</div>
-			
-			<div class="content-block parallax" id="caracteristicas">
-				<div class="container text-center">
-					<section class="block-body">
-						<div class="row descripcion">
-							<div class="col-md-12">
-								<h1>Características</h1>
-								<p>¿Cómo queremos hacerlo?</p>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-4">
-								<div class="service">
-									<h2>Interacción</h2>
-									<p>
-										Queremos que interactúes con la historia. Queremos que tomes decisiones. 
-										Algunas serán fáciles: blanco o negro. Pero otras, no tanto. Decisiones en las que,
-										escogas el camino que escogas, tendrá sus pros y sus contras.
-									</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="service">
-									<h2>Suspense</h2>
-									<p>
-										Queremos que te enganches con la historia. Que no puedas esperar qué va a pasar en la 
-										siguiente pantalla. Queremos que empatices con los personajes. Que te importan si ríen, si lloran, si sufren... si mueren.
-									</p>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="service">
-									<h2>Terror</h2>
-									<p>
-										Queremos que sientas un escalofrío por la espalda mientras leas la historia. A veces será un terror explícito,
-										duro y cruel. Otras veces, será un terror sutil. Ese fino velo, ese "clic" en tu cabeza que sucede cuando ves, lees o 
-										escuchas algo que no debería estar ahí, que no debería existir. 
-									</p>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-
-			<div class="content-block" id="capitulos">
-				<div class="container">
-					<header class="block-heading cleafix">
-						<h1>Capítulos</h1>
-						<p>Una breve reseña del contenido de nuestra historia.</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-sm-4 blog-post">
-								<img src="assets/images/abandon-house.jpg">
-								<h2>Prólogo</h2>
-								<p>
-									Las pesadillas se confunden con la realidad. Un mundo en el que los terrores 
-									de los sueños acechan en la oscuridad.
-								</p>
-							</div>
-							<div class="col-sm-4 blog-post">
-								<img src="assets/images/downtow.jpg">
-								<h2>Callejones Oscuros</h2>
-								<p>
-									Siguiendo la pista de Melissa Lane, acabas junto al resto del equipo del SCU 
-									en los peligrosos callejones plagados de graffitis del <em>Downtown</em> 
-									de Midway. Tratarás de seguir el rastro de la joven durante la noche 
-									en la que desapareció.
-								</p>
-							</div>
-							<div class="col-sm-4 blog-post">
-								<img src="assets/images/law-school.jpg">
-								<h2>La vieja facultad</h2>
-								<p>
-									La universidad de Midway es tu siguiente parada. Enorme, lúgubre y desierta. 
-									Y cerrada. Tendrás que ingeniartelas para encontrar la siguiente pieza del 
-									puzzle, mientras las cosas se complican para tus compañeros.
-								</p>
-							</div>
-							<div class="col-sm-6 blog-post">
-								<img src="assets/images/basement.jpg">
-								<h2>Un grito en la oscuridad</h2>
-								<p>
-									En Glendive Road los acontecimientos dan un giro siniestro. 
-									Cuánto más cerca piensas que estás de la verdad, más lejos te descubres.
-									Las apuestas han subido y en la oscuridad vislumbras una perversa realidad 
-									que no alcanzas a comprender, pero tendrás que enfrentarte a ella 
-									si quieres alcanzar tu meta.
-								</p>
-							</div>
-							<div class="col-sm-6 blog-post">
-								<img src="assets/images/vaho.jpg">
-								<h2>Vaho</h2>
-								<p>
-									El punto final de tu aventura, en el que el que podrás encontrar las respuestas 
-									a tantas preguntas, y donde tendrás que jugarte todo para poder salvar a 
-									Melissa… o fracasar en el intento.
-								</p>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-
-			<div class="content-block bloque-parrafo" id="historia">
-				<div class="container">
-					<section class="block-body">
-						<div class="row">
-							<div class="col-md-12">
-								<h2>Historia</h2>
-								<p>
-									El SCU (<em>Special Command Unit</em>) es un grupo especial privado de operaciones 
-									fundado en secreto en la década de los 50 por Erik Tannembaum y su amigo Dreslin Baker,
-									tras la máscara de la Tannembaum, una agencia de noticias que sirve de tapadera y fuente
-									oculta de financiación.
-								</p>
-								<p>
-									Sus años de gloria han quedado atrás. El SCU ayudó a políticos, banqueros y poderosos hombres de 
-									negocios a lidiar con fuerzas y situaciones que no comprendían. Pero una serie de desgracias ocurridas 
-									en la última década, entre las que se cuentan la muerte de los hijos de Dreslin, dirigentes del SCU 
-									hasta la fecha, han llevado al grupo al borde de la desaparición.
-								</p>
-								<p>
-									Hasta ahora.
-								</p>
-								<p>
-									Una antigua veterana del SCU, Margaret Newhouser, y su joven pupila Abigail Baker, 
-									nieta del fundador del SCU, han conseguido convencer a la directiva de la Tannenbaum de iniciar de 
-									nuevo sus actividades en la lúgubre ciudad de Midway, nido de corrupción... y de algo más.
-								</p>
-								<p>
-									Tras reclutar a un pequeño grupo que debe servir de germen para el renacer del SCU, se enfrentan a su 
-									primer gran caso: la desaparición de Melissa Lane en muy extrañas circunstancias.
-									¿Podrán los miembros actuales del nuevo SCU desentrañar el misterio? ¿Convencerán a sus superiores 
-									de que el SCU es más necesario que nunca o lo condenarán definitivamente?
-									<strong>¿Conseguirán encontrar viva a Melissa Lane?</strong>
-								</p>
-								<p>
-									La respuesta a todas estas preguntas dependerá enteramente de ti.
-								</p>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-
-			<div class="content-block bloque-parrafo" id="personajes">
-				<div class="container">
-					<section class="block-body">
-						<div class="row">
-							<div class="col-md-12">
-								<h2>Personajes</h2>
-								<p>
-									Quisque quis accumsan justo. Cras accumsan tempus commodo. Sed eleifend ante eget congue iaculis. Sed a libero ante. Nulla accumsan ligula ac pellentesque euismod. Maecenas porta hendrerit sagittis. Fusce faucibus, elit vel imperdiet pharetra, sapien sapien laoreet ante, et pharetra dui mi semper quam. Phasellus varius tristique ligula, a eleifend ipsum porta in. Proin dolor ante, finibus nec bibendum at, aliquam sed lectus. Proin elementum fringilla nisl, quis auctor elit. Sed nec cursus massa. Donec sem libero, faucibus vel orci in, lacinia cursus eros. Duis suscipit lobortis convallis. Cras nisi ligula, tristique vel ex auctor, sodales convallis leo. Vivamus lorem nisi, sagittis luctus iaculis id, egestas ut mi. Nunc a eleifend mi.
-								</p>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-
-			<div class="content-block" id="equipo">
-				<div class="container">
-					<header class="block-heading cleafix">
-						<h1>Equipo</h1>
-						<p>Los que, humildemente, intentamos llevar esto adelante.</p>
-					</header>
-					<section class="block-body">
-						<div class="row">
-							<div class="col-md-4">
-								<div class="testimonial">
-									<img src="assets/images/testimonial_31-190x190.jpg">
-									<p>
-										Quisque ornare nisi aliquam nulla rutrum lobortis. Integer tristique auctor eros, ac tempor justo pretium quis.
-									</p>
-									<strong>John Doe</strong><br/>
-									<span>Head of Ideas, Technext</span>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="testimonial">
-									<img src="assets/images/testimonial_11-190x190.jpg">
-									<p>
-										Cras et quam ut sapien malesuada efficitur non id erat. Integer nec iaculis leo. Suspendisse condimentum orci quis neque pulvinar, non congue urna pharetra. 	
-									</p>
-									<strong>Jane Doe</strong><br/>
-									<span>CEO, Apple Inc</span>
-								</div>
-							</div>
-							<div class="col-md-4">
-								<div class="testimonial">
-									<img src="assets/images/testimonial_22-190x190.jpg">
-									<p>
-										Nulla vitae nibh in nulla congue lobortis. Duis at enim aliquet, lacinia urna id, porta metus. Vivamus ut tristique nisl. 
-									</p>
-									<strong>Albert Doe</strong><br/>
-									<span>Team Lead, Design Studio</span>
-								</div>
-							</div>
-						</div>
-					</section>
-				</div>
-			</div>
-
-			<div class="content-block" id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 text-center">SCU, una novela interactiva de Littlebardo (2018)</div>
-						<div class="col-xs-12 text-center">Próximamente en Play Store y App Store</div>
+	<div id="wrapper">
+		<div id="header" class="content-block header-wrapper">
+			<div class="header-wrapper-inner">
+				<section class="top clearfix">
+					<div class="pull-left">
+						<h1>
+							<a class="logo" href="index.html">
+								<img src="assets/images/logo.png">
+							</a>
+						</h1>
 					</div>
+					<div class="cookies">
+						Sí. Esta web usa cookies. Como todas.
+						<a href="cookies.html" target="_blank" class="info">+ info</a>
+						<a href="#cookies" class="cclose">
+							<i class="fa fa-times"></i>
+						</a>
+					</div>
+					<div class="pull-right">
+						<a class="toggleDrawer" href="#">
+							<i class="fa fa-bars fa-5x"></i>
+						</a>
+					</div>
+				</section>
+				<section class="story animated">
+					<div class="slogan"></div>
+					<div class="actions"></div>
+					<div id="call-to-action" class="hidden">
+						<p>¿Te ha gustado la experiencia?</p>
+						<a href="#verkami" class="btn btn-lg">¡Ayúdanos a hacerla realidad!</a>
+					</div>
+				</section>
+				<section class="bottom">
+					<a id="scrollToContent" class="animated infinite flash" href="#concepto">
+						<img src="assets/images/arrow_down.png">
+					</a>
+				</section>
+			</div>
+		</div>
+
+		<div class="content-block parallax" id="concepto">
+			<div class="container text-center">
+				<h1>Queremos contar una historia en la que el protagonista seas tú.</h1>
+				<p>
+					¿Recuerdas los libros de
+					<a href="#" target="_blank">"Elige tu propia aventura"</a>? Añádeles terror, misterio, suspense y llévalos a tu móvil.
+				</p>
+				<p>
+					Eso es SCU.
+				</p>
+				<a href="#verkami" class="btn btn-lg">Ayúdanos a hacerlo realidad</a>
+			</div>
+		</div>
+
+		<div class="content-block parallax" id="caracteristicas">
+			<div class="container text-center">
+				<section class="block-body">
+					<div class="row descripcion">
+						<div class="col-md-12">
+							<h1>Características</h1>
+							<p>¿Cómo queremos hacerlo?</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="service">
+								<h2>Interacción</h2>
+								<p>
+									Queremos que interactúes con la historia. Queremos que tomes decisiones. Algunas serán fáciles: blanco o negro. Pero otras,
+									no tanto. Decisiones en las que, escogas el camino que escogas, tendrá sus pros y sus contras.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service">
+								<h2>Suspense</h2>
+								<p>
+									Queremos que te enganches con la historia. Que no puedas esperar qué va a pasar en la siguiente pantalla. Queremos que empatices
+									con los personajes. Que te importan si ríen, si lloran, si sufren... si mueren.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="service">
+								<h2>Terror</h2>
+								<p>
+									Queremos que sientas un escalofrío por la espalda mientras leas la historia. A veces será un terror explícito, duro y cruel.
+									Otras veces, será un terror sutil. Ese fino velo, ese "clic" en tu cabeza que sucede cuando ves, lees o escuchas
+									algo que no debería estar ahí, que no debería existir.
+								</p>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="content-block" id="capitulos">
+			<div class="container">
+				<header class="block-heading cleafix">
+					<h1>Capítulos</h1>
+					<h2>Una breve reseña del contenido de nuestra historia.</h2>
+				</header>
+				<section class="block-body">
+					<div class="row">
+						<div class="col-sm-4 blog-post">
+							<img src="assets/images/abandon-house.jpg">
+							<h2>Prólogo</h2>
+							<p>
+								Las pesadillas se confunden con la realidad. Un mundo en el que los terrores de los sueños acechan en la oscuridad.
+							</p>
+						</div>
+						<div class="col-sm-4 blog-post">
+							<img src="assets/images/downtow.jpg">
+							<h2>Callejones Oscuros</h2>
+							<p>
+								Siguiendo la pista de Melissa Lane, acabas junto al resto del equipo del SCU en los peligrosos callejones plagados de graffitis
+								del
+								<em>Downtown</em>
+								de Midway. Tratarás de seguir el rastro de la joven durante la noche en la que desapareció.
+							</p>
+						</div>
+						<div class="col-sm-4 blog-post">
+							<img src="assets/images/law-school.jpg">
+							<h2>La vieja facultad</h2>
+							<p>
+								La universidad de Midway es tu siguiente parada. Enorme, lúgubre y desierta. Y cerrada. Tendrás que ingeniartelas para encontrar
+								la siguiente pieza del puzzle, mientras las cosas se complican para tus compañeros.
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-6 blog-post">
+							<img src="assets/images/basement.jpg">
+							<h2>Un grito en la oscuridad</h2>
+							<p>
+								En Glendive Road los acontecimientos dan un giro siniestro. Cuánto más cerca piensas que estás de la verdad, más lejos te
+								descubres. Las apuestas han subido y en la oscuridad vislumbras una perversa realidad que no alcanzas a comprender,
+								pero tendrás que enfrentarte a ella si quieres alcanzar tu meta.
+							</p>
+						</div>
+						<div class="col-sm-6 blog-post">
+							<img src="assets/images/vaho.jpg">
+							<h2>Vaho</h2>
+							<p>
+								El punto final de tu aventura, en el que el que podrás encontrar las respuestas a tantas preguntas, y donde tendrás que jugarte
+								todo para poder salvar a Melissa… o fracasar en el intento.
+							</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="content-block bloque-parrafo" id="historia">
+			<div class="container">
+				<header class="block-heading cleafix">
+					<h1>Historia</h1>
+				</header>
+				<section class="block-body">
+					<div class="row">
+						<div class="col-md-12">
+							<p>
+								El SCU (
+								<em>Special Command Unit</em>) es un grupo especial privado de operaciones fundado en secreto en la década de los 50
+								por Ehrlic Tannembaum y su amigo Desmond Baker, tras la máscara de la Tannembaum, una agencia de noticias que sirve
+								de tapadera y fuente oculta de financiación.
+							</p>
+							<p>
+								Sus años de gloria han quedado atrás. El SCU ayudó a políticos, banqueros y poderosos hombres de negocios a lidiar con fuerzas
+								y situaciones que no comprendían. Pero una serie de desgracias ocurridas en la última década, entre las que se cuentan
+								la muerte de los hijos de Dreslin, dirigentes del SCU hasta la fecha, han llevado al grupo al borde de la desaparición.
+							</p>
+							<p>
+								Hasta ahora.
+							</p>
+							<p>
+								Una antigua veterana del SCU, Margaret Newhouser, y su joven pupila Abigail Baker, nieta del fundador del SCU, han conseguido
+								convencer a la directiva de la Tannenbaum de iniciar de nuevo sus actividades en la lúgubre ciudad de Midway, nido
+								de corrupción... y de algo más.
+							</p>
+							<p>
+								Tras reclutar a un pequeño grupo que debe servir de germen para el renacer del SCU, se enfrentan a su primer gran caso: la
+								desaparición de Melissa Lane en muy extrañas circunstancias. ¿Podrán los miembros actuales del nuevo SCU desentrañar
+								el misterio? ¿Convencerán a sus superiores de que el SCU es más necesario que nunca o lo condenarán definitivamente?
+								<strong>¿Conseguirán encontrar viva a Melissa Lane?</strong>
+							</p>
+							<p>
+								La respuesta a todas estas preguntas dependerá enteramente de ti.
+							</p>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="content-block bloque-parrafo" id="personajes">
+			<div class="container">
+				<header class="block-heading">
+					<h1>Personajes</h1>
+					<h2>Quién es quién dentro del SCU.</h2>
+				</header>
+				<section class="block-body">
+					<div class="row">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-sm-4 blog-post">
+									<!-- <img src="assets/images/picture.jpg"> -->
+									<h3>Tom Bennet</h3>
+									<p>
+										Vivamus a nunc ullamcorper, vehicula mi non, euismod lacus. Donec dui mi, pretium sed finibus tincidunt, accumsan id arcu.
+										Quisque pharetra arcu in lobortis luctus. Aliquam maximus ex vel lacus ultricies, maximus aliquet lacus dictum.
+										Proin lobortis ultricies risus, nec ultrices nibh. Sed vel est nibh. Curabitur id quam tortor. Suspendisse vitae
+										sem egestas ligula faucibus tristique vitae non quam. Curabitur viverra, ipsum venenatis consequat viverra, dui
+										nunc commodo nisi, facilisis tincidunt est augue eu metus. Nam a metus efficitur, placerat erat in, viverra metus.
+										Sed congue, erat vel blandit maximus, dui erat interdum lorem, eu molestie nulla purus porttitor lorem.
+									</p>
+								</div>
+								<div class="col-sm-4 blog-post">
+									<!-- <img src="assets/images/picture.jpg"> -->
+									<h3>Miroslava Borovin</h3>
+									<p>
+										Donec malesuada hendrerit leo, facilisis consequat eros. In hac habitasse platea dictumst. Proin dignissim fermentum ex et
+										vehicula. Pellentesque mauris sem, accumsan ullamcorper dapibus in, luctus sit amet purus. Vivamus ut feugiat tellus,
+										non tempus arcu. Cras facilisis nibh ut felis mollis tristique. Aenean ac leo eget elit molestie hendrerit et sit
+										amet nunc. Donec quis elit ac ex euismod semper. Fusce at magna et est scelerisque aliquam. Phasellus varius cursus
+										enim non ornare. Integer iaculis leo id risus euismod, eget faucibus ligula ultricies. Cras cursus ante turpis,
+										in ultrices neque mollis a.
+									</p>
+								</div>
+								<div class="col-sm-4 blog-post">
+									<!-- <img src="assets/images/picture.jpg"> -->
+									<h3>John Harvey</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt, sapien at ultrices pharetra, ligula dolor dictum
+										ante, in accumsan elit magna vel tellus. Nulla sagittis leo quis leo malesuada, at suscipit quam consectetur. Nunc
+										vitae nulla semper, dapibus mi id, ultricies libero. Suspendisse placerat felis et leo sagittis vestibulum. Sed
+										luctus elit id placerat porttitor. Praesent bibendum sagittis mi, ac bibendum erat tempus ac. Proin vel dictum
+										dolor. Mauris a nibh risus. Nunc at sollicitudin ex. In ac mollis tortor. Aenean sit amet ipsum tempus, consequat
+										neque dignissim, posuere justo. In vitae dui quis felis laoreet laoreet.
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="col-sm-4 blog-post">
+									<!-- <img src="assets/images/picture.jpg"> -->
+									<h3>Damian Stanford</h3>
+									<p>
+										Vivamus a nunc ullamcorper, vehicula mi non, euismod lacus. Donec dui mi, pretium sed finibus tincidunt, accumsan id arcu.
+										Quisque pharetra arcu in lobortis luctus. Aliquam maximus ex vel lacus ultricies, maximus aliquet lacus dictum.
+										Proin lobortis ultricies risus, nec ultrices nibh. Sed vel est nibh. Curabitur id quam tortor. Suspendisse vitae
+										sem egestas ligula faucibus tristique vitae non quam. Curabitur viverra, ipsum venenatis consequat viverra, dui
+										nunc commodo nisi, facilisis tincidunt est augue eu metus. Nam a metus efficitur, placerat erat in, viverra metus.
+										Sed congue, erat vel blandit maximus, dui erat interdum lorem, eu molestie nulla purus porttitor lorem.
+									</p>
+								</div>
+								<div class="col-sm-4 blog-post">
+									<!-- <img src="assets/images/picture.jpg"> -->
+									<h3>Margaret Newhouser</h3>
+									<p>
+										Donec malesuada hendrerit leo, facilisis consequat eros. In hac habitasse platea dictumst. Proin dignissim fermentum ex et
+										vehicula. Pellentesque mauris sem, accumsan ullamcorper dapibus in, luctus sit amet purus. Vivamus ut feugiat tellus,
+										non tempus arcu. Cras facilisis nibh ut felis mollis tristique. Aenean ac leo eget elit molestie hendrerit et sit
+										amet nunc. Donec quis elit ac ex euismod semper. Fusce at magna et est scelerisque aliquam. Phasellus varius cursus
+										enim non ornare. Integer iaculis leo id risus euismod, eget faucibus ligula ultricies. Cras cursus ante turpis,
+										in ultrices neque mollis a.
+									</p>
+								</div>
+								<div class="col-sm-4 blog-post">
+									<!-- <img src="assets/images/picture.jpg"> -->
+									<h3>Abigail Baker</h3>
+									<p>
+										Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin tincidunt, sapien at ultrices pharetra, ligula dolor dictum
+										ante, in accumsan elit magna vel tellus. Nulla sagittis leo quis leo malesuada, at suscipit quam consectetur. Nunc
+										vitae nulla semper, dapibus mi id, ultricies libero. Suspendisse placerat felis et leo sagittis vestibulum. Sed
+										luctus elit id placerat porttitor. Praesent bibendum sagittis mi, ac bibendum erat tempus ac. Proin vel dictum
+										dolor. Mauris a nibh risus. Nunc at sollicitudin ex. In ac mollis tortor. Aenean sit amet ipsum tempus, consequat
+										neque dignissim, posuere justo. In vitae dui quis felis laoreet laoreet.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="content-block" id="equipo">
+			<div class="container">
+				<header class="block-heading cleafix">
+					<h1>Equipo</h1>
+					<h2>Los que humildemente intentamos llevar esto adelante.</h2>
+				</header>
+				<section class="block-body">
+					<div class="row">
+						<div class="col-md-4">
+							<div class="testimonial">
+								<img src="assets/images/testimonial_31-190x190.jpg">
+								<p>
+									Quisque ornare nisi aliquam nulla rutrum lobortis. Integer tristique auctor eros, ac tempor justo pretium quis.
+								</p>
+								<strong>John Doe</strong>
+								<br/>
+								<span>Head of Ideas, Technext</span>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="testimonial">
+								<img src="assets/images/testimonial_11-190x190.jpg">
+								<p>
+									Cras et quam ut sapien malesuada efficitur non id erat. Integer nec iaculis leo. Suspendisse condimentum orci quis neque
+									pulvinar, non congue urna pharetra.
+								</p>
+								<strong>Jane Doe</strong>
+								<br/>
+								<span>CEO, Apple Inc</span>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="testimonial">
+								<img src="assets/images/testimonial_22-190x190.jpg">
+								<p>
+									Nulla vitae nibh in nulla congue lobortis. Duis at enim aliquet, lacinia urna id, porta metus. Vivamus ut tristique nisl.
+								</p>
+								<strong>Albert Doe</strong>
+								<br/>
+								<span>Team Lead, Design Studio</span>
+							</div>
+						</div>
+					</div>
+				</section>
+			</div>
+		</div>
+
+		<div class="content-block" id="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12 text-center">SCU, una novela interactiva de Littlebardo (2018)</div>
+					<div class="col-xs-12 text-center">Próximamente en Play Store y App Store</div>
 				</div>
 			</div>
 		</div>
-		<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
-		<script src="assets/js/vendor/jquery-migrate-1.2.1.min.js"></script>
-		<script src="assets/js/vendor/bootstrap.min.js"></script>
-		<script src="assets/js/vendor/jquery.actual.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
-		<script src="assets/js/vendor/cookies.js"></script>
-		<script src="assets/js/vendor/script.js"></script>
-		<script src="assets/js/vendor/yaml.js"></script>
-		<script src="assets/js/book.js"></script>
-		<script src="assets/js/index.js"></script>
-	</body>
+	</div>
+	<script src="https://code.jquery.com/jquery-1.12.4.js" integrity="sha256-Qw82+bXyGq6MydymqBxNPYTaUXXq7c8v3CwiYwLLNXU=" crossorigin="anonymous"></script>
+	<script src="assets/js/vendor/jquery-migrate-1.2.1.min.js"></script>
+	<script src="assets/js/vendor/bootstrap.min.js"></script>
+	<script src="assets/js/vendor/jquery.actual.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.js"></script>
+	<script src="assets/js/vendor/cookies.js"></script>
+	<script src="assets/js/vendor/script.js"></script>
+	<script src="assets/js/vendor/yaml.js"></script>
+	<script src="assets/js/book.js"></script>
+	<script src="assets/js/index.js"></script>
+</body>
+
 </html>

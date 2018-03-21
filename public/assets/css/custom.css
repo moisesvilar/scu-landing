@@ -1,5 +1,6 @@
 :root {
     --navy-blue: #18121e;
+    --navy-blue-light: #18121e90;
     --gunmetal: #233237;
     --rusty-red: #984b43;
     --ornate: #ab9353;
@@ -141,8 +142,9 @@ a {
     font-family: var(--text-font);
 }
 
-#caracteristicas h1, #caracteristicas h2, #capitulos h1, #capitulos h2, #equipo h1, #equipo h2 {
+.block-heading h1, .block-heading h2, .block-heading h3, .blog-post h2 {
     font-family: var(--header-font);
+    color: var(--navy-blue);
 }
 
 #caracteristicas, #caracteristicas h1, #caracteristicas h2 {
@@ -152,10 +154,6 @@ a {
 #caracteristicas .descripcion {
     font-size: 1.4em;
     font-family: var(--text-font);
-}
-
-#capitulos, #equipo, #capitulos h1, #capitulos h2, #equipo h1, #equipo h2 {
-    color: var(--navy-blue);
 }
 
 #capitulos h2 {
@@ -213,6 +211,22 @@ a {
     white-space: -pre-wrap; /* Opera 4-6 */    
     white-space: -o-pre-wrap; /* Opera 7 */    
     word-wrap: break-word; /* Internet Explorer 5.5+ */
+}
+
+.block-heading h1 {
+    text-align: center;
+}
+
+.block-heading h2, .block-body h2 {
+    font-size: 24px;
+    color: var(--navy-blue-light);
+    text-align: center;
+}
+
+.block-body h1 {
+    font-size: 42px;
+    color: var(--navy-blue);
+    text-align: center;
 }
 
 @media (max-width: 731px) {
