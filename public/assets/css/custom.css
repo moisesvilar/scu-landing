@@ -142,6 +142,10 @@ a {
     font-family: var(--text-font);
 }
 
+.block-heading {
+    margin-top: 20px;
+}
+
 .block-heading h1, .block-heading h2, .block-heading h3, .blog-post h2 {
     font-family: var(--header-font);
     color: var(--navy-blue);
@@ -157,7 +161,7 @@ a {
 }
 
 #capitulos h2 {
-    margin-top: 5px;
+    margin-top: 25px;
 }
 
 .bloque-parrafo {
