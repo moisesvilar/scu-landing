@@ -294,6 +294,11 @@ a {
         display: inline-block;
         font-size: 5.0em;
     }
+
+    #header .bottom {
+        position: absolute;
+        bottom: 5%;
+    }
 }
 
 
