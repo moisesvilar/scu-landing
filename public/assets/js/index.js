@@ -6,9 +6,11 @@ function IndexController() {
     this.setMailAnchors();
     this.setCookies();
     this.bookService = new BookService();
+    this.databaseService = new DatabaseService();
     this.book = this.bookService.getRandomBook();
     this.preloadImages(this.book);
     this.initStory(this.book);
+    this.setContactForm();
 }
 
 IndexController.ACTION_TEMPLATE = `<a href='{href}' class='btn action'>{text}</a>`;
@@ -22,7 +24,7 @@ IndexController.prototype.preloadImages = function(book) {
             img.src = this.getFullPathToImage(scene.img);
         }
     }
-}
+};
 
 IndexController.prototype.setMailAnchors = function() {
     var $mailAnchors = $('a.email');
@@ -33,7 +35,7 @@ IndexController.prototype.setMailAnchors = function() {
         var emailAddress = `${user}@${domain}`;
         $mailAnchor.attr('href', `mailto:${emailAddress}`);
     });
-}
+};
 
 IndexController.prototype.setCookies = function() {
     var $cookies = $('.cookies');
@@ -48,7 +50,7 @@ IndexController.prototype.setCookies = function() {
             $(this).closest('.cookies').hide();
         });
     }
-}
+};
 
 IndexController.prototype.initStory = function(book) {
     var scenes = book.scenes;
@@ -64,7 +66,7 @@ IndexController.prototype.initStory = function(book) {
     $actionsAnchors.click(function(e) {
         self.performClickOnAction(e, this, scenes, book);
     });
-}
+};
 
 IndexController.prototype.getActionsFromScene = function(scene) {
     var actionsHtml = '';
@@ -74,7 +76,7 @@ IndexController.prototype.getActionsFromScene = function(scene) {
         actionsHtml += actionHtml;
     });
     return actionsHtml;
-}
+};
 
 IndexController.prototype.changeStory = function(book, scene, actionsHtml) {
     var $header = $('#header');
@@ -85,18 +87,18 @@ IndexController.prototype.changeStory = function(book, scene, actionsHtml) {
     $actions.html(actionsHtml);
     this.showCallToActionIfEndingScene(scene);
     this.changeImage(scene.img);
-}
+};
 
 IndexController.prototype.changeImage = function(img) {
     var $header = $('#header');
     var backgroundValue = `url("${this.getFullPathToImage(img)}") no-repeat center center`;
     $header.css('background', backgroundValue);
     $header.css('background-size', 'cover');
-}
+};
 
 IndexController.prototype.getFullPathToImage = function(img) {
     return `assets/images/${img}`;
-}
+};
 
 IndexController.prototype.performClickOnAction = function(e, _this, scenes, book) {
     e.preventDefault();
@@ -113,10 +115,23 @@ IndexController.prototype.performClickOnAction = function(e, _this, scenes, book
     $actionsAnchors.click(function(e) {
         self.performClickOnAction(e, this, scenes, book);
     });
-}
+};
 
 IndexController.prototype.showCallToActionIfEndingScene = function(scene) {
     if (scene.end === true) {
         $('#call-to-action').removeClass('hidden');
     }
-}
+};
+
+IndexController.prototype.setContactForm = function () {
+    const self = this;
+    $('.email-form').submit(function(e) {
+        e.preventDefault();
+        var $form = $(this);
+        const email = $form.find('#email_address').val();
+        self.databaseService.writeEmail(email).then(function() {
+            console.log('Success!');
+        });
+        return false;
+    });
+};
