@@ -233,6 +233,10 @@ a {
     text-align: center;
 }
 
+#equipo .testimonial > img {
+    max-height: 200px;
+}
+
 @media (max-width: 731px) {
     #header .cookies {
         font-size: 1.2em;
