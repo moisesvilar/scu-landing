@@ -192,7 +192,7 @@ a {
 }
 
 #footer {
-    font-size: 0.6em;
+    font-size: 1em;
     font-style: oblique;
 }
 
@@ -235,6 +235,11 @@ a {
 
 #equipo .testimonial > img {
     max-height: 200px;
+}
+
+#contact a {
+    color: white;
+    text-decoration: underline;
 }
 
 @media (max-width: 731px) {
