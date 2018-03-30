@@ -14,6 +14,7 @@ function IndexController() {
 }
 
 IndexController.ACTION_TEMPLATE = `<a href='{href}' class='btn action'>{text}</a>`;
+IndexController.SUBMIT_TEXT_IN_SENDING_STATE = 'Un segundo...';
 
 IndexController.prototype.preloadImages = function(book) {
     var scenes = book.scenes;
@@ -127,11 +128,32 @@ IndexController.prototype.setContactForm = function () {
     const self = this;
     $('.email-form').submit(function(e) {
         e.preventDefault();
-        var $form = $(this);
-        const email = $form.find('#email_address').val();
-        self.databaseService.writeEmail(email).then(function() {
-            console.log('Success!');
-        });
+        self.putFormInSendingState(this);
+        self.sendEmail(this);
         return false;
+    });
+};
+
+IndexController.prototype.putFormInSendingState = function(form) {
+    const $form = $(form);
+    const $submit = $form.find('input[type=submit]');
+    $submit.prop('disabled', true);
+    $submit.val(IndexController.SUBMIT_TEXT_IN_SENDING_STATE);
+};
+
+IndexController.prototype.putFormInSentState = function(form) {
+    const $form = $(form);
+    const $notSending = $form.closest('#not-sending');
+    const $sent = $form.closest('#contact').find('#sent');
+    $notSending.fadeOut();
+    $sent.fadeIn();
+};
+
+IndexController.prototype.sendEmail = function(form) {
+    const $form = $(form);
+    const email = $form.find('#email_address').val();
+    const self = this;
+    this.databaseService.writeEmail(email).then(function() {
+        self.putFormInSentState(form);      
     });
 };

@@ -237,9 +237,25 @@ a {
     max-height: 200px;
 }
 
-#contact a {
+#contact h1 {
+    font-family: var(--header-font);
+}
+
+#contact p {
+    font-family: var(--text-font);
+}
+
+#contact #not-sending {
+    font-family: var(--text-font);
+}
+
+#contact #not-sending a {
     color: white;
     text-decoration: underline;
+}
+
+#contact #sent {
+    display: none;
 }
 
 @media (max-width: 731px) {
