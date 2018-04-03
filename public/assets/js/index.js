@@ -169,5 +169,12 @@ IndexController.prototype.sendGaEvent = function(category, event, value) {
 };
 
 IndexController.prototype.setGaEvents = function() {
+    this.setGaEventInScrollButton();
+};
 
+IndexController.prototype.setGaEventInScrollButton = function() {
+    var self = this;
+    $('#scrollToContent').click(function() {
+        self.sendGaEvent('navigation', 'click', 'scrollToContent');
+    });
 };
