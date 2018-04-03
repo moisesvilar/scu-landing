@@ -171,6 +171,7 @@ IndexController.prototype.sendGaEvent = function(category, event, value) {
 IndexController.prototype.setGaEvents = function() {
     this.setGaEventInScrollButton();
     this.setGaEventInToggleSideMenu();
+    this.setGaEventsInSideMenuLinks();
 };
 
 IndexController.prototype.setGaEventInScrollButton = function() {
@@ -187,5 +188,13 @@ IndexController.prototype.setGaEventInToggleSideMenu = function() {
     });
     $('#closeSideMenu').click(function() {
         self.sendGaEvent('navigation', 'click', 'close side menu');
+    });
+};
+
+IndexController.prototype.setGaEventsInSideMenuLinks = function() {
+    var self = this;
+    $('#drawer-right').find('li > a').click(function() {
+        var $link = $(this);
+        self.sendGaEvent('navigation', 'click', `side menu link: ${$link.attr('href')}`);
     });
 };
