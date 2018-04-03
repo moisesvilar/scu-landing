@@ -220,43 +220,51 @@ IndexController.prototype.setGaEventsInCloseCookies = function() {
 };
 
 IndexController.prototype.setGaEventsWhenUserAreScrolling = function() {
-    var targetConcepto = $("#concepto").offset().top;
-    var targetCaracteristicas = $("#caracteristicas").offset().top;
-    var targetCapitulos = $('#capitulos').offset().top;
-    var targetHistoria = $('#historia').offset().top;
-    var targetPersonajes = $('#personajes').offset().top;
-    var targetEquipo = $('#equipo').offset().top;
-    var targetContacto = $('#contact').offset().top;
-    var timeout = null;
+    var self = this;
+    var timeout = {};
     $(window).scroll(function () {
-        if (!timeout) {
-            timeout = setTimeout(function () {
-                clearTimeout(timeout);
-                timeout = null;
-                const windowTop = $(window).scrollTop();
-                const windowBottom = windowTop + $(window).height();
-                if (targetConcepto >= windowTop && targetConcepto <= windowBottom) {
-                    console.log('in concepto!');
-                }
-                if (targetCaracteristicas >= windowTop && targetCaracteristicas <= windowBottom) {
-                    console.log('in caracteristicas!');
-                }
-                if (targetCapitulos >= windowTop && targetCapitulos <= windowBottom) {
-                    console.log('in capitulos!');
-                }
-                if (targetHistoria >= windowTop && targetHistoria <= windowBottom) {
-                    console.log('in historia!');
-                }
-                if (targetPersonajes >= windowTop && targetPersonajes <= windowBottom) {
-                    console.log('in personajes!');
-                }
-                if (targetEquipo >= windowTop && targetEquipo <= windowBottom) {
-                    console.log('in equipo!');
-                }
-                if (targetContacto >= windowTop && targetContacto <= windowBottom) {
-                    console.log('in contacto!');
-                }
-            }, 250);
-        }
+        self.launchTimeout(timeout);
     });
+};
+
+IndexController.prototype.launchTimeout = function(timeout) {
+    if (!timeout.value) {
+        var self = this;
+        timeout.value = setTimeout(function () {
+            self.checkScroll(timeout);
+        }, 250);
+    }
+};
+
+IndexController.prototype.checkScroll = function (timeout) {
+    this.clearTimeout(timeout);
+    const windowEdges = this.getWindowEdges();
+    this.checkElement('#concepto', windowEdges);
+    this.checkElement('#caracteristicas', windowEdges);
+    this.checkElement('#capitulos', windowEdges);
+    this.checkElement('#historia', windowEdges);
+    this.checkElement('#personajes', windowEdges);
+    this.checkElement('#equipo', windowEdges);
+    this.checkElement('#contact', windowEdges);
+};
+
+IndexController.prototype.clearTimeout = function(timeout) {
+    clearTimeout(timeout.value);
+    timeout.value = null;
+};
+
+IndexController.prototype.getWindowEdges = function() {
+    const windowTop = $(window).scrollTop();
+    const windowBottom = windowTop + $(window).height();
+    return {
+        top: windowTop,
+        bottom: windowBottom
+    }
+};
+
+IndexController.prototype.checkElement = function(selector, windowEdges) {
+    var target = $(selector).offset().top;
+    if (target >= windowEdges.top && target <= windowEdges.bottom) {
+        this.sendGaEvent('navigation', 'scroll', selector);
+    }
 };
