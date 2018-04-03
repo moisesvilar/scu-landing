@@ -174,6 +174,7 @@ IndexController.prototype.setGaEvents = function() {
     this.setGaEventsInSideMenuLinks();
     this.setGaEventsInCallToActions();
     this.setGaEventsInCloseCookies();
+    this.setGaEventsWhenUserAreScrolling();
 };
 
 IndexController.prototype.setGaEventInScrollButton = function() {
@@ -215,5 +216,47 @@ IndexController.prototype.setGaEventsInCloseCookies = function() {
     var self = this;
     $('.cookies').find('a.cclose').click(function() {
         self.sendGaEvent('cookies', 'click', 'close');
+    });
+};
+
+IndexController.prototype.setGaEventsWhenUserAreScrolling = function() {
+    var targetConcepto = $("#concepto").offset().top;
+    var targetCaracteristicas = $("#caracteristicas").offset().top;
+    var targetCapitulos = $('#capitulos').offset().top;
+    var targetHistoria = $('#historia').offset().top;
+    var targetPersonajes = $('#personajes').offset().top;
+    var targetEquipo = $('#equipo').offset().top;
+    var targetContacto = $('#contact').offset().top;
+    var timeout = null;
+    $(window).scroll(function () {
+        if (!timeout) {
+            timeout = setTimeout(function () {
+                clearTimeout(timeout);
+                timeout = null;
+                const windowTop = $(window).scrollTop();
+                const windowBottom = windowTop + $(window).height();
+                if (targetConcepto >= windowTop && targetConcepto <= windowBottom) {
+                    console.log('in concepto!');
+                }
+                if (targetCaracteristicas >= windowTop && targetCaracteristicas <= windowBottom) {
+                    console.log('in caracteristicas!');
+                }
+                if (targetCapitulos >= windowTop && targetCapitulos <= windowBottom) {
+                    console.log('in capitulos!');
+                }
+                if (targetHistoria >= windowTop && targetHistoria <= windowBottom) {
+                    console.log('in historia!');
+                }
+                if (targetPersonajes >= windowTop && targetPersonajes <= windowBottom) {
+                    console.log('in personajes!');
+                }
+                if (targetEquipo >= windowTop && targetEquipo <= windowBottom) {
+                    console.log('in equipo!');
+                }
+                if (targetContacto >= windowTop && targetContacto <= windowBottom) {
+                    console.log('in contacto!');
+                }
+            }, 250);
+        }
     });
 };
