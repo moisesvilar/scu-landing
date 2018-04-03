@@ -172,6 +172,7 @@ IndexController.prototype.setGaEvents = function() {
     this.setGaEventInScrollButton();
     this.setGaEventInToggleSideMenu();
     this.setGaEventsInSideMenuLinks();
+    this.setGaEventsInCallToActions();
 };
 
 IndexController.prototype.setGaEventInScrollButton = function() {
@@ -196,5 +197,15 @@ IndexController.prototype.setGaEventsInSideMenuLinks = function() {
     $('#drawer-right').find('li > a').click(function() {
         var $link = $(this);
         self.sendGaEvent('navigation', 'click', `side menu link: ${$link.attr('href')}`);
+    });
+};
+
+IndexController.prototype.setGaEventsInCallToActions = function() {
+    var self = this;
+    $('#call-to-action').find('a').click(function() {
+        self.sendGaEvent('navigation', 'click', 'call to action at the end of the story');
+    });
+    $('#concepto').find('a').click(function() {
+        self.sendGaEvent('navigation', 'click', 'call to action at concept section');
     });
 };
