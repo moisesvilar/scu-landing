@@ -173,6 +173,7 @@ IndexController.prototype.setGaEvents = function() {
     this.setGaEventInToggleSideMenu();
     this.setGaEventsInSideMenuLinks();
     this.setGaEventsInCallToActions();
+    this.setGaEventsInCloseCookies();
 };
 
 IndexController.prototype.setGaEventInScrollButton = function() {
@@ -207,5 +208,12 @@ IndexController.prototype.setGaEventsInCallToActions = function() {
     });
     $('#concepto').find('a').click(function() {
         self.sendGaEvent('navigation', 'click', 'call to action at concept section');
+    });
+};
+
+IndexController.prototype.setGaEventsInCloseCookies = function() {
+    var self = this;
+    $('.cookies').find('a.cclose').click(function() {
+        self.sendGaEvent('cookies', 'click', 'close');
     });
 };
