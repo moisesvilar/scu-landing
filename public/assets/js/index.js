@@ -11,9 +11,10 @@ function IndexController() {
     this.preloadImages(this.book);
     this.initStory(this.book);
     this.setContactForm();
+    this.setGaEvents();
 }
 
-IndexController.ACTION_TEMPLATE = `<a href='{href}' class='btn action'>{text}</a>`;
+IndexController.ACTION_TEMPLATE = `<a href='{href}' id='{id}' class='btn action'>{text}</a>`;
 IndexController.SUBMIT_TEXT_IN_SENDING_STATE = 'Un segundo...';
 
 IndexController.prototype.preloadImages = function(book) {
@@ -56,11 +57,12 @@ IndexController.prototype.setCookies = function() {
 IndexController.prototype.initStory = function(book) {
     var scenes = book.scenes;
     var $header = $('#header');
-    var scene = book.scenes['start'];
+    var sceneId = 'start';
+    var scene = book.scenes[sceneId];
     if (!scene) {
         return;
     }
-    var actionsHtml = this.getActionsFromScene(scene);
+    var actionsHtml = this.getActionsFromScene(scene, sceneId);
     this.changeStory(book, scene, actionsHtml);
     var $actionsAnchors = $header.find('.actions').find('a');
     var self = this;
@@ -69,11 +71,12 @@ IndexController.prototype.initStory = function(book) {
     });
 };
 
-IndexController.prototype.getActionsFromScene = function(scene) {
+IndexController.prototype.getActionsFromScene = function(scene, sceneId) {
     var actionsHtml = '';
     scene.actions = scene.actions || [];
-    scene.actions.forEach(function(action) {
-        var actionHtml = IndexController.ACTION_TEMPLATE.replace('{href}', action.href).replace('{text}', action.text);
+    scene.actions.forEach(function(action, index) {
+        var id = `${sceneId}-${action.text}-${index}`;
+        var actionHtml = IndexController.ACTION_TEMPLATE.replace('{href}', action.href).replace('{id}', id).replace('{text}', action.text);
         actionsHtml += actionHtml;
     });
     return actionsHtml;
@@ -105,11 +108,13 @@ IndexController.prototype.performClickOnAction = function(e, _this, scenes, book
     e.preventDefault();
     var $action = $(_this);
     var href = $action.attr('href');
+    var id = $action.attr('id');
+    this.sendGaEvent('story', 'choices', id);
     var scene = scenes[href];
     if (!scene) {
         return;
     }
-    var actionsHtml = this.getActionsFromScene(scene);
+    var actionsHtml = this.getActionsFromScene(scene, href);
     this.changeStory(book, scene, actionsHtml);
     var $actionsAnchors = $('#header').find('.actions').find('a');
     var self = this;
@@ -156,4 +161,13 @@ IndexController.prototype.sendEmail = function(form) {
     this.databaseService.writeEmail(email).then(function() {
         self.putFormInSentState(form);      
     });
+};
+
+IndexController.prototype.sendGaEvent = function(category, event, value) {
+    console.log(`send event ${category} ${event} ${value}`);
+    ga('send', 'event', category, event, value);
+};
+
+IndexController.prototype.setGaEvents = function() {
+
 };
