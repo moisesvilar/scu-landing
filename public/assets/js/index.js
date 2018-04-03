@@ -164,9 +164,11 @@ IndexController.prototype.sendEmail = function(form) {
 };
 
 IndexController.prototype.sendGaEvent = function(category, event, value) {
-    var parameters = {};
-    parameters[event] = value;
-    gtag('event', category, parameters)
+    gtag('event', event, {
+        event_category: category,
+        event_label: event,
+        event_action: value
+    });
 };
 
 IndexController.prototype.setGaEvents = function() {
