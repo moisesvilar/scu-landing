@@ -170,11 +170,22 @@ IndexController.prototype.sendGaEvent = function(category, event, value) {
 
 IndexController.prototype.setGaEvents = function() {
     this.setGaEventInScrollButton();
+    this.setGaEventInToggleSideMenu();
 };
 
 IndexController.prototype.setGaEventInScrollButton = function() {
     var self = this;
     $('#scrollToContent').click(function() {
-        self.sendGaEvent('navigation', 'click', 'scrollToContent');
+        self.sendGaEvent('navigation', 'click', 'scroll to content');
+    });
+};
+
+IndexController.prototype.setGaEventInToggleSideMenu = function() {
+    var self = this;
+    $('#openSideMenu').click(function() {
+        self.sendGaEvent('navigation', 'click', 'open side menu');
+    });
+    $('#closeSideMenu').click(function() {
+        self.sendGaEvent('navigation', 'click', 'close side menu');
     });
 };
