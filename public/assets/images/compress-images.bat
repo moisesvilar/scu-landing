@@ -1,0 +1,1 @@
+FOR /R %%a IN (*.jpg) DO magick convert "%%~a" -sampling-factor 4:2:0 -strip -quality 85 -interlace JPEG -colorspace sRGB "%%~a"
