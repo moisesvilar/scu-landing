@@ -6,12 +6,25 @@
       "**/.*",
       "**/node_modules/**"
     ],
-    "headers": [{
+    "headers": [
+      {
         "source": "**",
-        "headers": [{
+        "headers": [
+          {
             "key": "Cache-Control",
             "value": "max-age=31536000"
-        }]
-    }]
+          }
+        ]
+      },
+      {
+        "source": "**/database.js",
+        "headers": [
+          {
+            "key": "Content-Encoding",
+            "value": "gzip"
+          }
+        ]
+      }
+    ]
   }
 }
