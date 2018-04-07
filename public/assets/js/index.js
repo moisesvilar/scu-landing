@@ -89,7 +89,7 @@ IndexController.prototype.changeStory = function(book, scene, actionsHtml) {
     var $actions = $header.find('.actions');
     $slogan.html(scene.text);
     $actions.html(actionsHtml);
-    this.showCallToActionIfEndingScene(scene);
+    this.showCallToActionIfEndingScene(scene, book.id);
     this.changeImage(scene.img);
 };
 
@@ -123,8 +123,9 @@ IndexController.prototype.performClickOnAction = function(e, _this, scenes, book
     });
 };
 
-IndexController.prototype.showCallToActionIfEndingScene = function(scene) {
+IndexController.prototype.showCallToActionIfEndingScene = function(scene, bookId) {
     if (scene.end === true) {
+        this.sendGaEvent('story', 'end', bookId);
         $('#call-to-action').removeClass('hidden');
     }
 };
@@ -163,11 +164,11 @@ IndexController.prototype.sendEmail = function(form) {
     });
 };
 
-IndexController.prototype.sendGaEvent = function(category, event, value) {
-    gtag('event', event, {
+IndexController.prototype.sendGaEvent = function(category, label, action) {
+    gtag('event', label, {
         event_category: category,
-        event_label: event,
-        event_action: value
+        event_label: label,
+        event_action: action
     });
 };
 
