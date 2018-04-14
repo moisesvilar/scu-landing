@@ -2,11 +2,26 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Littlebardo Chronicles</title>
-    <link>https://littlebardo.com/blog/index.xml</link>
+    <link>/blog/index.xml</link>
     <description>Recent content on Littlebardo Chronicles</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es-ES</language>
-    <atom:link href="https://littlebardo.com/blog/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 14 Apr 2018 19:38:16 +0200</lastBuildDate>
+    <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>postsmy first post</title>
+      <link>/blog/postsmy-first-post/</link>
+      <pubDate>Sat, 14 Apr 2018 19:38:16 +0200</pubDate>
+      
+      <guid>/blog/postsmy-first-post/</guid>
+      <description>
+
+&lt;h1 id=&#34;like-a-prayer&#34;&gt;Like a prayer&lt;/h1&gt;
+
+&lt;p&gt;Hello everyone! I&amp;rsquo;m here and I&amp;rsquo;m awesome!&lt;/p&gt;
+</description>
+    </item>
     
   </channel>
 </rss>

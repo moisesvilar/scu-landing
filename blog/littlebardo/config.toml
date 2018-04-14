@@ -1,6 +1,6 @@
 languageCode = "es-ES"
 title = "Littlebardo Chronicles"
-baseurl = "https://littlebardo.com/blog/"
+baseurl = "blog"
 theme = "hucore"
 publishDir = "../../public/blog"
 [params]

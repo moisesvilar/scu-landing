@@ -1,7 +1,7 @@
 +++
 date = "2018-04-14T19:38:16+02:00"
 title = "postsmy first post"
-draft = true
+draft = false
 +++
 
 # Like a prayer
