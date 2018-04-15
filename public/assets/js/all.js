@@ -916,6 +916,7 @@ $(document).ready(function() {
 });
 
 function IndexController() {
+    this.setBlogAnchor();
     this.setMailAnchors();
     this.setCookies();
     this.bookService = new BookService();
@@ -929,6 +930,15 @@ function IndexController() {
 
 IndexController.ACTION_TEMPLATE = `<a href='{href}' id='{id}' class='btn action'>{text}</a>`;
 IndexController.SUBMIT_TEXT_IN_SENDING_STATE = 'Un segundo...';
+
+IndexController.prototype.setBlogAnchor = function() {
+    var $blogAnchor = $('a.blog');
+    $blogAnchor.click(function(e) {
+        e.preventDefault();
+        var href = $(this).attr('href');
+        window.location = href;
+    });
+}
 
 IndexController.prototype.preloadImages = function(book) {
     var scenes = book.scenes;
