@@ -916,6 +916,7 @@ $(document).ready(function() {
 });
 
 function IndexController() {
+    this.showModal();
     this.setBlogAnchor();
     this.setMailAnchors();
     this.setCookies();
@@ -930,6 +931,10 @@ function IndexController() {
 
 IndexController.ACTION_TEMPLATE = `<a href='{href}' id='{id}' class='btn action'>{text}</a>`;
 IndexController.SUBMIT_TEXT_IN_SENDING_STATE = 'Un segundo...';
+
+IndexController.prototype.showModal = function() {
+    $('#init-modal').modal('show');
+};
 
 IndexController.prototype.setBlogAnchor = function() {
     var $blogAnchor = $('a.blog');
