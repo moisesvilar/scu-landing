@@ -1,7 +1,7 @@
 languageCode = "es-ES"
 title = "Littlebardo Chronicles"
-baseurl = "blog"
-theme = "hucore"
+baseurl = "/blog/"
+theme = "detox"
 publishDir = "../../public/blog"
 [params]
     Author = "Littlebardo"

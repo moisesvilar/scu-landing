@@ -1,0 +1,3 @@
+[submodule "blog/littlebardo/themes/detox"]
+	path = blog/littlebardo/themes/detox
+	url = https://github.com/allnightgrocery/hugo-theme-blueberry-detox.git
