@@ -4,108 +4,269 @@
     scenes:
         start:
             text: >
-                <p>La puerta de la casa se encuentra ante ti. Está cerrada.</p>
-                <p>Escuchas los sonidos de la noche a tu espalda. Apoyas tu rostro en la ventana. Está helada.</p>
-                <p>No puedes distinguir nada a través del velo opaco de la oscuridad.</p>
-                <p>Tienes un mal presentimiento...</p>
-            img: 'house-forest.jpg'
+                <p>El sudor cae por tu frente. Lleváis tres horas en la habitación del doctor Richard Moore, que parece fuera de sí. El Padre Sánchez se aferra a su crucifijo salmodiando incesante pasajes de la biblia, mientras tú y Johny tratáis de retener el cuerpo menudo del anciano, cuando todo en la habitación empieza a moverse y objetos salen despedidos.</p>
+            img: 'room.jpg'
             actions:
                 -
-                    text: 'Llamas a la puerta'
-                    href: 'llamar-puerta'
+                    text: 'Tratas de ponerte a cubierto'
+                    href: 'A'
                 -
-                    text: 'Tiras la puerta abajo'
-                    href: 'tirar-puerta'
-                -
-                    text: 'Echas un vistazo a tu espalda'
-                    href: 'mirar-atras'
-        llamar-puerta:
+                    text: 'Permaneces impasible sujetando al doctor'
+                    href: 'B'
+        A:
             text: >
-                <p>Golpeas con fuerza la madera vieja del portalón. Cruje bajo tus nudillos y el eco retumba en todo el bosque...</p>
-                <p>Pasan algunos minutos, pero parece que nadie responde...</p>
-            img: 'door.jpg'
+                <p>Te refugias como puedes de la lluvia de trastos, evitando lo peor. El doctor Moore se levanta sobre la cama, como accionado por un resorte, con los ojos en blanco, y agarra con fuerza a Johny, que grita aterrado, mientras el anciano murmura palabras inteligibles.</p>
+            img: 'room.jpg'
             actions:
                 -
-                    text: 'Tiras la puerta abajo'
-                    href: 'tirar-puerta'
+                    text: 'Das un paso atrás, precavido'
+                    href: 'A1'
                 -
-                    text: 'Echas un vistazo a tu espalda'
-                    href: 'mirar-atras'
-        mirar-atras:
+                    text: 'Intentas retener a Moore nuevamente'
+                    href: 'A2'
+                -
+                    text: 'Rocías a Moore con agua bendita'
+                    href: 'A3'
+        A1:
             text: >
-                <p>El bosque está en una calma tensa. La niebla avanza como un manto onírico entre los árboles. El viento susurra entre las ramas.</p>
-                <p>Un par de ojos brillantes te observan, seguramente de alguna alimaña. Parpadeas y ya no están allí.</p>
-                <p>Vuelves a concentrarte en la puerta, mientras te preguntas con preocupación si conoces alguna alimaña que se mueva tan rápido.</p>
-            img: 'forest.jpg'
+                <p>La habitación tiembla, como si de un terremoto se tratase. De debajo de las alfombras y los muebles, emergen retorciéndose gusanos blanquecinos. Sánchez se acerca al doctor con el crucifijo en la mano, vociferando, pero él lo manda volando de un manotazo, y, agarrando al padre por el cuello lo eleva con facilidad, mientras rompe en carcajadas.</p>
+            img: 'room.jpg'
             actions:
                 -
-                    text: 'Llamas a la puerta'
-                    href: 'llamar-puerta'
+                    text: 'Recoges el crucifijo y tratas que Moore suelte al padre'
+                    href: 'A11'
                 -
-                    text: 'Tiras la puerta abajo'
-                    href: 'tirar-puerta'
-        tirar-puerta:
+                    text: 'Sacas tu pistola y disparas'
+                    href: 'A12'
+        A11:
             text: >
-                <p>Das dos pasos atrás y coges impulso. Con ímpetu, estrellas tu hombro contra la puerta... Una vez... Dos veces...</p>
-                <p>En el tercer impacto la madera cruje violentamente y los goznes ceden. Trastabillas y a punto estás de perder el equilibrio.</p>
-                <p>Notas el aire frío, húmedo y pegajoso que proviene del interior de la casa... y algo que parecen ser pasos...</p>
-            img: 'corridor.jpg'
+                <p>Corres a por el crucifijo y, portándolo ante ti te acercas al doctor, cuando con un horrible chasquido el cuello del padre Sánchez se parte y cae al suelo, inerte. Moore, con la cara totalmente desfigurada se gira hacia ti. Sacas tu pistola y disparas, una y otra vez, hasta que el anciano cae. Sozollando te desmoronas en el suelo. Sin que puedas hacer nada, Johny, que ha aparecido a tu lado, te golpea con una lámpara en la cabeza. Mientras tu vista se nubla ves sus ojos. Negros, como el alquitrán.</p>
+                <p>En tu interior sabes que no es Johny. Es alguien, algo, que usa su cuerpo. Algo que no es de este mundo.</p>
+                <p>Algo que ahora, está suelto.</p>
+                
+            img: 'face.jpg'
+            end: true
+            
+        A12:
+            text: >
+                <p>Desenfundas tu pistola, y disparas a bocajarro al doctor, en la cabeza. Sus sesos se esparcen por la pared, y ensordecido y gritando, Sánchez cae al suelo. Sozollando te desmoronas en el suelo. Sin que puedas hacer nada, Johny, que ha aparecido a tu lado, te golpea con una lámpara en la cabeza. Tu vista se nubla, pero alcanzas a entrever como el Padre Sánchez se lanza contra él.</p>
+                <p>Sus ojos son negros como el alquitrán.</p>
+                <p>En tu interior sabes que no es Johny. Es alguien, algo, que usa su cuerpo. Algo que no es de este mundo.</p>
+                <p>Cuando despiertas Sánchez está contigo en el hospital. Por alguna razón en el hospital huele fuerte a césped recién cortado. El doctor, un hombre bueno que salvó la vida de tantos ha muerto. Y Johny, un chaval con toda la vida por delante.</p>
+                <p>Con una lágrima cayendo por tu mejilla te dices que al menos habéis detenido a esa cosa.</p>
+            img: 'room.jpg'
+            end: true
+        A2:
+            text: >
+                <p>Te lanzas sobre el doctor al igual que el padre Sánchez, y juntos forcejeais para que suelte a Johny, que se revuelve para liberarse del frágil anciano, que ahora, de pié sobre la mesa, parece tener la fuerza de un oso. De un manotazo te manda volando contra la pared, y, agarrando al padre por el cuello lo eleva con facilidad, mientras rompe en carcajadas.</p>
+            img: 'room.jpg'
             actions:
                 -
-                    text: 'Mmm... ¿hola?'
-                    href: 'saludar'
+                    text: 'Sacas tu pistola y disparas'
+                    href: 'A21'
                 -
-                    text: 'Mantienes silencio para oir mejor esos pasos'
-                    href: 'callar'
-        saludar:
+                    text: 'Rocías a Moore con agua bendita'
+                    href: 'A22'
+        A21:
             text: >
-                <p>Justo cuando terminas de hablar, los pasos se detienen... aunque el silencio no dura demasiado</p>
-                <p>Un rugido ensordecedor retruena en el oscuro pasillo. Nunca habías oído nada igual. Tu corazón se ha helado y tu cuerpo no te responde.</p>
-                <p>Unos estruendosos pasos suenan cada vez más cerca. Pum. Pum. ¡PUM! Pero no consigues ver nada...</p>
-            img: 'corridor.jpg'
+                <p>Desenfundas tu pistola, y disparas a bocajarro al doctor, en la cabeza. Sus sesos se esparcen por la pared, y ensordecido y gritando, Sánchez cae al suelo. Sozollando te desmoronas. </p>
+                <p>El padre Sánchez tose y se acerca a ti, y te pone una mano en el hombro, con gesto serio.</p>
+                <p>El doctor, un hombre bueno que salvó la vida de tantos ha muerto. Una lágrima cae por tu mejilla. Pero sabes que has detenido algo mucho peor.</p>
+            img: 'room.jpg'
+            end: true
+        A22:
+            text: >
+                <p>Sacas el frasquito de agua que el padre Sánchez había bendito antes, y destapándolo rocías su contenido a Moore, que grita con una voz extraña y gutural mientras se gira hacia ti. Mientras te mira, con unos ojos negros como el alquitrán y una retorcida sonrisa aprieta el cuello de Sánchez que se parte con un horrible chasquido y cae al suelo, inerte.</p>
+                <p>Y ahora, es cosa que fuera el doctor, avanza hacia ti.</p>
+
+            img: 'room.jpg'
             actions:
                 -
-                    text: '¡Corres por tu vida!'
-                    href: 'correr'
+                    text: 'Sacas tu pistola y disparas'
+                    href: 'A221'
                 -
-                    text: '¡Sacas tu pistola y disparas a la oscuridad!'
-                    href: 'disparar-oscuridad'
-        callar:
+                    text: 'Corres a buscar ayuda'
+                    href: 'A222'
+        A221:
             text: >
-                <p>
-                De repente, entre la oscuridad, puedes ver como se forma ante ti una extraña silueta.
-                Es una mujer joven, de pelo largo y muy negro. Viste un camisón grisáceo.
-                </p>
-                <p>Un escalofrío recorre tu espalda cuando te das cuenta que la joven no tiene piernas. Simplemente está ahí,
-                flotando en medio del pasillo, avanzando hacia ti muy poco a poco...</p>
-            img: 'corridor-ghost.jpg'
+                <p>Desenfundas tu pistola, y disparas a bocajarro al doctor, pero con una velocidad imposible se abalanza sobre ti, y te agarra por el cuello, elevándote. Su delicada mano parece una tenaza de acero, y te cuesta respirar, cuando Johny, súbitamente golpea a Moore por detrás en la cabeza un un jarrón que se hace añicos..</p>
+            img: 'room.jpg'
             actions:
                 -
-                    text: '¡Corres por tu vida!'
-                    href: 'correr'
+                    text: 'Disparas, a matar, aún a riesgo de darle a Johny'
+                    href: 'A2211'
                 -
-                    text: '¡Sacas tu pistola y disparas a la extraña muchacha!'
-                    href: 'disparar'
-                -
-                    text: 'Perdón por molestar... me he perdido...'
-                    href: 'perdon'
-        disparar:
+                    text: 'Disparas a las piernas, tratando de detenerlo'
+                    href: 'A2212'
+        A2211:
             text: >
-                <p>Temblando como una veleta en plena tormenta, consigues sacar tu vieja Beretta de 9 mm.</p>
-                <p>Comienzas a disparar a la fantasmagórica silueta que está plantada a pocos pasos cerca de ti.</p>
-                <p>Una vez... Dos veces... Tres veces...</p>
-                <p>Blam... Blam... ¡BLAM!</p>
-                <p>¡Pero las balas atraviesan a la joven y se pierden en la oscuridad!</p>
-            img: 'corridor-ghost.jpg'
+                <p>Disparas una y otra vez, ensordecido por los disparos y los gritos. Esa cosa cae, y con otro balazo en la sien esparces sus sesos por la pared.</p>
+                <p>Johny, herido, grita y se aleja reptando por el suelo.</p>
+                <p>[...]</p>
+                <p>El doctor, un hombre bueno que salvó la vida de tantos ha muerto, al igual que el padre Sánchez. A Johny se lo lleva la ambulancia.</p>
+                <p>Con las lágrimas cayendo por tus mejillas te dices que al menos habéis conseguido detener a esa...cosa.</p>
+            img: 'room.jpg'
+            end: true
+        A2212:
+            text: >
+                <p>Disparas en las piernas a esa cosa que antes fuera el doctor, que se derrumba, pero lleva a Johny consigo, y le muerde salvajemente en el cuello. Johny grita, un grito espeluznante cargado de dolor y miedo, y la sangre lo salpica todo, mientras esa cosa se aferra al chaval con carne en su boca.</p>
+                <p>Disparas una y otra vez, ensordecido por los disparos y los gritos. Finalmente Moore cae, y con otro balazo en la sien esparces sus sesos por la pared.</p>
+                <p>[...]</p>
+                <p>Desolado, las lágrimas caen por tus mejillas. Todos están muertos. Finalmente conseguiste detener a esa...cosa, pero el precio ha sido demasiado alto.</p>
+            img: 'room.jpg'
+            end: true
+        A222:
+            text: >
+                <p>Sales disparado hacia la puerta, que cierras de un portazo, y bajas a tropezones las escaleras. Detrás de ti oyes los gritos de Johny. Llamas a la policía y te armas con lo que puedes encontrar.</p>
+                <p>Cuando acompañado por los agentes entráis en la habitación, Johny yace en medio de un charco de sangre. El padre Sánchez sigue en misma esquina. No hay ni rastro del doctor.</p>
+                <p>Un escalofrío recorre tu espalda. Esa cosa, está suelta.</p>
+            img: 'room.jpg'
+            end: true
+        A3:
+            text: >
+                <p>Sacas el frasquito de agua que el padre Sánchez había bendito antes, y destapándolo rocías su contenido a Moore, que grita con una voz extraña y gutural, y suelta a Johny, que cae tosiendo al suelo. El padre, se acerca al doctor con el crucifijo en la mano, vociferando.</p>
+                <p>Le comanda al demonio a que vuelva a los infiernos. El anciano, se retuerce por un segundo y parpadea y mira a los lados, confundido.</p>
+            img: 'room.jpg'
             actions:
                 -
-                    text: 'No puede ser...'
-                    href: 'cara'
-        cara:
+                    text: 'Intentas razonar con él'
+                    href: 'A31'
+                -
+                    text: 'Prosigues con el exorcismo'
+                    href: 'B12'
+        A31:
             text: >
-                <p>Simplemente parpadeas... Y eso es tu perdición. Porque el fantasma, en un instante, ha recorrido la corta distancia que os separaba.</p>
-                <p>Ahora puedes ver su rostro en toda su plenitud. Y comprendes, en lo más profundo de tu alma, que
-                ese es el rostro de la muerte. Jamás debiste entrar en esta casa...</p>
-                <p style="text-align: center"><strong>FIN</strong></p>
-            img: 'corridor-face.jpg'
+                <p>Te acercas al doctor y le hablas. A él, no a esa cosa maligna que parece habitarlo. Aguanta Moore, lucha le dices. Agarrándole de los hombros, le aseguras que juntos podréis con esa cosa si sigue luchando, cuando su mirada se desvía a la cómoda, que ahora está tirada en el suelo.</p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Te fijas hacia dónde va su mirada'
+                    href: 'A311'
+                -
+                    text: 'Prosigues con el exorcismo'
+                    href: 'B12'
+        A311:
+            text: >
+                <p>¿Qué mira? Te preguntas. Y te descubres siguiendo la dirección que escruta. Te levantas a recoger algo del suelo. Un marco con la foto de su hija yace roto, entre los restos medio destrozados de los muebles y abalorios. Lo recoges y se lo acercas. Tras unos segundos parece reconocerlo, y se abraza a él, con los ojos brillantes.</p>
+            img: 'room.jpg'
+            actions:
+                 -
+                    text: 'Continuar'
+                    href: 'B11'
+        B:
+            text: >
+                <p>Objetos vuelan por toda la habitación, y varios de ellos te golpean, uno de ellos muy fuerte, en la cabeza. Sientes el calor húmedo de la sangre descendiendo por tu sien. El anciano, con una fuerza inusual para alguien de su edad y complexión se sacude, y Johny cae al suelo. El padre Sánchez ocupa su lugar. El rito continúa.</p>
+                <p>ánchez ata al doctor a la cama, mientras este se retuerce, y prosigue salmodiando aferrado a su crucifijo, mientras los minutos se hacen horas. Moore duerme y finalmente descansais un poco. Mientras el padre visita el baño, el anciano recupera la conciencia y pide algo de agua.</p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Se la das, por supuesto'
+                    href: 'B1'
+                -
+                    text: 'Agua...bendita. Pero solo tienes para un pequeño trago'
+                    href: 'B2'
+                -
+                    text: 'Nada de agua'
+                    href: 'B3'
+        B1:
+            text: >
+                <p>Das de beber al doctor, y te lo agradece. Parece tranquilo. “Me encuentro algo mejor”, dice. Las cuerdas le hacen llagas en la piel. Te pide que se las aflojes un poco.</p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Claro'
+                    href: 'B11'
+                -
+                    text: 'De eso nada'
+                    href: 'B12'
+        B11:
+            text: >
+                <p>El exorcismo prosigue, y como la calma antes de la tormenta, solo había amainado antes de arreciar. Moore grita, llora, se retuerce. En la habitación todo retumba, más de una vez, y por alguna razón huele cada vez más fuerte a hierba cortada.</p>
+                <p>El padre prosigue impasible. En un descanso,a solas, Moore decrépito, agotado, consumido… te pide que acabes con su agonía. El padre nunca lo hará, está obsesionado y no parará. Déjale, descansar…</p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Aprietas la almohada contra su cara'
+                    href: 'B111'
+                -
+                    text: 'Le animas'
+                    href: 'B112'
+        B111:
+            text: >
+                <p>Gentilmente coges la almohada y la aprietas contra la cara del anciano. Cada vez más fuerte. Empieza a retorcerse, y a hacer sonidos pero no la sueltas. No hasta que no deja de moverse.</p>
+                <p>Todo ha acabado. Ya no sufrirá más. El padre Sánchez maldice y se mesa los cabellos antes de realizar la extremaunción. Todo acabado.</p>
+                <p>Con el tiempo empiezas a tener sueños extraños, violentos. Siempre te parece oler a hierba recién cortada. Todo ha acabado. Desterrasteis a esa cosa. </p>
+                <p>Pero algo se ha quedado. Dentro de ti.</p>
+            img: 'room.jpg'
+            end: true
+        B112:
+            text: >
+                <p>Agarras la mano del anciano y le animas a continuar, a aguantar. El insiste, suplica, y ante tus negativas finalmente grita con una voz extrañamente ronca y los ojos hundidos, y con una fuerza te aferra de la garganta, como una tenaza de acero, antes de que puedas decir nada. La vista se te nubla… notas angustia, dolor… Y luego nada.</p>
+                <p>Oscuridad. Este es tu fin.</p>
+            img: 'room.jpg'
+            end: true
+        B12:
+            text: >
+                <p>El exorcismo prosigue, y como la calma antes de la tormenta, solo había amainado antes de arreciar. Moore grita, llora, se retuerce. En la habitación todo retumba, más de una vez, y por alguna razón huele cada vez más fuerte a hierba cortada.</p>
+                <p>El padre prosigue impasible. En un descanso,a solas, Moore decrépito, agotado, consumido… te pide que acabes con su agonía. El padre nunca lo hará, está obsesionado y no parará. Déjale, descansar….</p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Aprietas la almohada contra su cara'
+                    href: 'B121'
+                -
+                    text: 'Le animas'
+                    href: 'B122'
+        B121:
+            text: >
+                <p>Gentilmente coges la almohada y la aprietas contra la cara del anciano. Cada vez más fuerte. Empieza a retorcerse, y a hacer sonidos pero no la sueltas. No hasta que no deja de moverse.</p>
+                <p>Todo ha acabado. Ya no sufrirá más. El padre Sánchez maldice y se mesa los cabellos antes de realizar la extremaunción. Todo acabado.</p>
+                <p>Con el tiempo empiezas a tener sueños extraños, violentos. Siempre te parece oler a hierba recién cortada. Todo ha acabado. Desterrasteis a esa cosa. </p>
+                <p>Pero algo se ha quedado. Dentro de ti.</p>
+            img: 'room.jpg'
+            end: true
+        B122:
+            text: >
+                <p>Agarras la mano del anciano y le animas a continuar, a aguantar. El insiste, suplica, y ante tus negativas finalmente grita con una voz extrañamente ronca y los ojos hundidos, y con una fuerza inconcebible rompe las cuerdas y te aferra de la garganta, como una tenaza de acero. La vista se te nubla, pero llegas a ver como gritando aparece el padre Sánchez con su crucifijo al frente.</p>
+                <p>Despiertas para descubrir que todo ha acabado. El doctor Moore duerme. Todo ha acabado.</p>
+                <p>Habéis conseguido desterrar a esa cosa.</p>
+            img: 'room.jpg'
+            end: true
+        B2:
+            text: >
+                <p>EAcercas al anciano el pequeño botecito en el que guardas agua, la que previamente el padre Sánchez bendijera. El doctor toma un pequeño sorbito y grita y maldice, fuera de sí, como si le hubieras dado ácido. El padre Sánchez, alertado por los gritos, vuelve rapidamente, y el exorcismo prosigue mientras todo el la habitación vuelve a temblar.</p>
+                <p>El rostro del anciano se desencaja, en una mueca antinatural, con los ojos hundidos y la mueca desencajada, y blasfema a gritos con una voz profunda mientras todo en la habitación vuela más violentamente que nunca. Una estantería cae, arrancada de la pared, sobre el padre Sánchez.</p>
+                <p>La cosa que fuera el doctor ríe a carcajadas.</p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Sacas al demonio del doctor a golpes'
+                    href: 'B21'
+                -
+                    text: 'Prosigues con la ceremonia'
+                    href: 'B22'
+        B21:
+            text: >
+                <p>“Sal de él, maldito” gritas, mientras golpeas en la cara a Moore, que no cambia esa mueca perversa, y continúa riendo a carcajadas. “Callate” dices y lo golpeas, mientras las carcajadas se hacen más intensas. “Cállate”, continúas una y otra vez, golpeándolo más y más fuerte, sin parar… hasta que notas a Johny agarrándote por la espalda.</p>
+                <p>El doctor es una pulpa sanguinolienta.</p>
+                <p>En el funeral el padre Sánchez sólo te hace un gesto con la cabeza, apesadumbrado. Notas los murmullos detrás de ti.</p>
+                <p>Pero al fin todo ha terminado. Habéis conseguido desterrar a esa cosa. O eso piensas.</p>
+                <p>Con el tiempo empiezas a tener sueños extraños, violentos. Siempre te parece oler a hierba recién cortada. Todo ha acabado.</p>
+                <p>Pero algo se ha quedado. Dentro de ti.</p>
+            img: 'room.jpg'
+            end: true
+        B22:
+            text: >
+                <p>Todo a tu alrededor sale disparado, y muchos objetos te golpean mientras el doctor ríe a carcajadas. Pero tú prosigues, impasible. De debajo de las alfombras y los muebles, emergen retorciéndose gusanos blanquecinos, y el anciano grita, y ruge. Tú prosigues, impasible. El doctor muerde su lengua, que entre sangre y babas te escupe. Y tú prosigues, cuando todo acaba.</p>
+                <p>De repente todo está en silencio. En normalidad.</p>
+                <p>Moore descansa al fin. Su rostro parece tranquilo.</p>
+                <p>Pones una mano sobre él, está frío. Está muerto. Sánchez, que se ha recuperado, pone una mano en tu hombro. El doctor, un hombre bueno que salvó la vida de tantos ha muerto. Una lágrima cae por tu mejilla. Pero sabes que has detenido algo mucho peor.</p>
+            img: 'room.jpg'
+            end: true
+        B3:
+            text: >
+                <p>No hay agua para ti, le respondes. El doctor suplica, tengo mucha sed, pero sabes que son trucos de la criatura que lo ocupa. Cuando vuelve el padre el ritual prosigue, interminable. Moore, alterna un sueño agitado y un sopor taciturno, hasta que finalmente reposa.</p>
+                <p>Cuando le pasas una mano por el rostro, lo notas frío. Está muerto. Su gesto refleja sufrimiento. El padre Sánchez maldice y se mesa los cabellos antes de realizar la extremaunción. Todo acabado.</p>
+                <p>Un tiempo después llega la citación a tu casa. La hija de Moore presenta cargos. El informe del forense habla de úlceras por todo el cuerpo debido a ataduras, y causa de la muerte paro cardíaco debido a fuerte estrés y deshidratación.</p>
+            img: 'room.jpg'
             end: true
