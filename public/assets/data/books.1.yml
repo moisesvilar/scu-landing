@@ -1,172 +1,52 @@
 -
     id: '1'
-    title: 'exorcismo'
+    title: 'demo'
     scenes:
         start:
             text: >
-                <p>
-                Estás exhausto.
-                </p>
-                <p>
-                Han pasado más de tres horas desde que el padre Sánchez, George y tú os encerrasteis junto con el
-                viejo doctor Moore en su habitación. Y la situación no ha hecho más que empeorar.
-                </p>
+                <p>El sudor cae por tu frente. Lleváis tres horas en la habitación del doctor Richard Moore, que parece fuera de sí. El Padre Sánchez se aferra a su crucifijo salmodiando incesante pasajes de la biblia, mientras tú y Johny tratáis de retener el cuerpo menudo del anciano, cuando todo en la habitación empieza a moverse y objetos salen despedidos.</p>
             img: 'room.jpg'
             actions:
                 -
-                    text: 'Miras al padre Sánchez'
-                    href: 'start-1'
-                -
-                    text: 'Miras al doctor Moore'
-                    href: 'start-2'
-                -
-                    text: 'Miras a George'
-                    href: 'start-3'
-        start-1:
-            text: >
-                <p>
-                El párroco mantiene sus ojos cerrados mientras murmulla 
-                pasajes bíblicos en latín.
-                </p>
-                <p>
-                Aferra en su mano derecha un crucifijo que extiende
-                hacia el anciano postrado en su cama. En su mano izquierda, sostiene 
-                una vieja biblia abierta por la mitad.
-                </p>
-                <p>
-                En su rostro también se pueden leer las marcas del cansacio.
-                </p>
-            img: 'room.jpg'
-            actions:
-                -
-                    text: 'Miras al doctor Moore'
-                    href: 'start-2'
-                -
-                    text: 'Miras a George'
-                    href: 'start-3'
-        start-2:
-            text: >
-                <p>
-                El anciano está irreconocible. Sus venas están exageradamente marcadas
-                por todo su cuerpo. Sus ojos llevan blancos desde hace horas. Y su mandíbula
-                se le ha desencajado hasta formar una mueca grotesca en su cara.
-                </p>
-                <p>
-                De repente, Moore exclama un grito aterrador, gutural, inhumano. La mesilla, 
-                un taburete y un pequeño armario comienzan a flotar ante vuestros ojos... ¡Y los
-                tres objetos salen despedidos hacia vosotros! 
-                </p>
-            img: 'room.jpg'
-            actions:
-                -
-                    text: '¡Tratas de ponerte a cubierto!'
+                    text: 'Tratas de ponerte a cubierto'
                     href: 'A'
                 -
-                    text: '¡Ayudas a George a sujetar al anciano!'
+                    text: 'Permaneces impasible sujetando al doctor'
                     href: 'B'
-        start-3:
-            text: >
-                <p>
-                El joven George ha aguantado la tensión mejor de lo que esperabas.
-                Está sujetando con fuerza al anciano contra la cama.
-                </p>
-                <p>
-                Crees que puedes percibir los temblores que recorren el cuerpo del 
-                muchacho cada vez que uno de esos sonidos demoníacos salen de la garganta 
-                del doctor.
-                </p>
-            img: 'room.jpg'
-            actions:
-                -
-                    text: 'Miras al padre Sánchez'
-                    href: 'start-1'
-                -
-                    text: 'Miras al doctor Moore'
-                    href: 'start-2'
         A:
             text: >
-                <p>
-                Te tiras al suelo. Escuchas como los objetos se estrellan contra las paredes.
-                </p>
-                <p>
-                Miras hacia arriba. El padre Sánchez permanece impasible continuando con su 
-                ritual.
-                </p>
-                <p>
-                ¡George grita aterrado! Te levantas de inmediato y ves cómo el doctor Moore 
-                lo mantiene agarrado por el pescuezo... ¡mientras flota dos palmos por encima
-                de la cama!
-                </p>
+                <p>Te refugias como puedes de la lluvia de trastos, evitando lo peor. El doctor Moore se levanta sobre la cama, como accionado por un resorte, con los ojos en blanco, y agarra con fuerza a Johny, que grita aterrado, mientras el anciano murmura palabras inteligibles.</p>
             img: 'room.jpg'
             actions:
                 -
                     text: 'Das un paso atrás, precavido'
                     href: 'A1'
                 -
-                    text: 'Te abalanzas sobre Moore'
+                    text: 'Intentas retener a Moore nuevamente'
                     href: 'A2'
                 -
                     text: 'Rocías a Moore con agua bendita'
                     href: 'A3'
         A1:
             text: >
-                <p>
-                La habitación comienza a temblar.
-                </p>
-                <p>
-                Algo roza tus pies. Miras al suelo. Está cubierto con una ligera niebla y,
-                entre ella, consigues ver cómo se retuercen pequeños gusanos blanquecinos.
-                </p>
-                <p>
-                El padre Sánchez alza la voz en su salmodia. Pero el anciano no se inmuta.
-                Lo agarra por el cuello con su mano libre y lo eleva con una fuerza increíble.
-                El crucifijo cae al suelo.
-                </p>
-                <p>
-                Moore rompe en una carcajada que te hiela la sangre.
-                </p>
+                <p>La habitación tiembla, como si de un terremoto se tratase. De debajo de las alfombras y los muebles, emergen retorciéndose gusanos blanquecinos. Sánchez se acerca al doctor con el crucifijo en la mano, vociferando, pero él lo manda volando de un manotazo, y, agarrando al padre por el cuello lo eleva con facilidad, mientras rompe en carcajadas.</p>
             img: 'room.jpg'
             actions:
                 -
-                    text: 'Recoges el crucifijo e intentas que Moore suelte a Sánchez'
+                    text: 'Recoges el crucifijo y tratas que Moore suelte al padre'
                     href: 'A11'
                 -
                     text: 'Sacas tu pistola y disparas'
                     href: 'A12'
         A11:
             text: >
-                <p>
-                Te abalanzas sobre el crucifijo. Lo extiendes hacia el anciano, intentando 
-                imitar al padre Sánchez. Pero no funciona.
-                </p>
-                <p>
-                Moore te sonríe de forma grotesca y con un rápido movimiento parte el cuello del padre Sánchez,
-                dejando tras de sí un chasquido sordo.
-                </p>
-                <p>
-                Tragas saliva... Sólo contemplas una posibilidad.
-                </p>
-            img: 'room.jpg'
-            actions:
-                -
-                    text: 'Sacas tu pistola y disparas'
-                    href: 'A11-1'
-        A11-1:
-            text: >
-                <p>
-                Sueltas el crucifijo, sacas tu vieja Beretta y aprietas el gatillo.
-                Tres veces. Bam, bam... ¡BAM! La pared se llena de sangre. El anciano está muerto.
-                </p>
-                <p>
-                De repente, sientes un fuerte golpe en la nuca. Caes al suelo.
-                </p>
-                <p>
-                Consigues ver a tu agresor antes de perder el conocimiento. Es George...
-                con los ojos completamente rojos. 
-                Y comprendes, en lo más profundo de tu ser, que aquella cosa <strong>ahora está suelta</strong>.
-                </p>
+                <p>Corres a por el crucifijo y, portándolo ante ti te acercas al doctor, cuando con un horrible chasquido el cuello del padre Sánchez se parte y cae al suelo, inerte. Moore, con la cara totalmente desfigurada se gira hacia ti. Sacas tu pistola y disparas, una y otra vez, hasta que el anciano cae. Sozollando te desmoronas en el suelo. Sin que puedas hacer nada, Johny, que ha aparecido a tu lado, te golpea con una lámpara en la cabeza. Mientras tu vista se nubla ves sus ojos. Negros, como el alquitrán.</p>
+                <p>En tu interior sabes que no es Johny. Es alguien, algo, que usa su cuerpo. Algo que no es de este mundo.</p>
+                <p>Algo que ahora, está suelto.</p>
+                
             img: 'face.jpg'
             end: true
+            
         A12:
             text: >
                 <p>Desenfundas tu pistola, y disparas a bocajarro al doctor, en la cabeza. Sus sesos se esparcen por la pared, y ensordecido y gritando, Sánchez cae al suelo. Sozollando te desmoronas en el suelo. Sin que puedas hacer nada, Johny, que ha aparecido a tu lado, te golpea con una lámpara en la cabeza. Tu vista se nubla, pero alcanzas a entrever como el Padre Sánchez se lanza contra él.</p>
