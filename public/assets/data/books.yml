@@ -87,8 +87,6 @@
             text: >
                 <p>
                 Te tiras al suelo. Escuchas como los objetos se estrellan contra las paredes.
-                </p>
-                <p>
                 Miras hacia arriba. El padre Sánchez permanece impasible continuando con su 
                 ritual.
                 </p>
@@ -273,8 +271,19 @@
                     href: 'B11'
         B:
             text: >
-                <p>Objetos vuelan por toda la habitación, y varios de ellos te golpean, uno de ellos muy fuerte, en la cabeza. Sientes el calor húmedo de la sangre descendiendo por tu sien. El anciano, con una fuerza inusual para alguien de su edad y complexión se sacude, y Johny cae al suelo. El padre Sánchez ocupa su lugar. El rito continúa.</p>
-                <p>ánchez ata al doctor a la cama, mientras este se retuerce, y prosigue salmodiando aferrado a su crucifijo, mientras los minutos se hacen horas. Moore duerme y finalmente descansais un poco. Mientras el padre visita el baño, el anciano recupera la conciencia y pide algo de agua.</p>
+                <p>
+                Objetos vuelan por toda la habitación, y varios de ellos te golpean, 
+                uno de ellos muy fuerte, en la cabeza. Sientes el calor húmedo de la 
+                sangre descendiendo por tu sien. El anciano, con una fuerza inusual 
+                para alguien de su edad y complexión se sacude, y Johny cae al suelo. 
+                El padre Sánchez ocupa su lugar. El rito continúa.
+                </p>
+                <p>
+                Sánchez ata al doctor a la cama, mientras este se retuerce, y prosigue 
+                salmodiando aferrado a su crucifijo, mientras los minutos se hacen horas. 
+                Moore duerme y finalmente descansais un poco. Mientras el padre visita el 
+                baño, el anciano recupera la conciencia y pide algo de agua.
+                </p>
             img: 'room.jpg'
             actions:
                 -
