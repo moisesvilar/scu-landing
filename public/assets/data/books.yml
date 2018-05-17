@@ -111,11 +111,9 @@
         A1:
             text: >
                 <p>
-                La habitación comienza a temblar.
-                </p>
-                <p>
+                La habitación comienza a temblar. 
                 Algo roza tus pies. Miras al suelo. Está cubierto con una ligera niebla y,
-                entre ella, consigues ver cómo se retuercen pequeños gusanos blanquecinos.
+                entre ella se retuercen pequeños gusanos blanquecinos.
                 </p>
                 <p>
                 El padre Sánchez alza la voz en su salmodia. Pero el anciano no se inmuta.
@@ -128,7 +126,7 @@
             img: 'room.jpg'
             actions:
                 -
-                    text: 'Recoges el crucifijo e intentas que Moore suelte a Sánchez'
+                    text: 'Recoges el crucifijo'
                     href: 'A11'
                 -
                     text: 'Sacas tu pistola y disparas'
@@ -154,8 +152,8 @@
         A11-1:
             text: >
                 <p>
-                Sueltas el crucifijo, sacas tu vieja Beretta y aprietas el gatillo.
-                Tres veces. Bam, bam... ¡BAM! La pared se llena de sangre. El anciano está muerto.
+                Sacas tu vieja Beretta y aprietas el gatillo.
+                Bam, bam... ¡BAM! El anciano está muerto.
                 </p>
                 <p>
                 De repente, sientes un fuerte golpe en la nuca. Caes al suelo.
