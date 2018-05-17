@@ -933,7 +933,14 @@ IndexController.ACTION_TEMPLATE = `<a href='{href}' id='{id}' class='btn action'
 IndexController.SUBMIT_TEXT_IN_SENDING_STATE = 'Un segundo...';
 
 IndexController.prototype.showModal = function() {
-    $('#init-modal').modal('show');
+    var $modal = $('#init-modal');
+    if (cookie.get('cookies') !== 'true') {
+        $modal.modal('show');
+        $modal.find('.set-cookies').click(function(e) {
+            e.preventDefault();
+            cookie.set('cookies', 'true', { expires: 365 });
+        });
+    }
 };
 
 IndexController.prototype.setBlogAnchor = function() {
