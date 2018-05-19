@@ -5,6 +5,23 @@
         start:
             text: >
                 <p>
+                Bienvenido.
+                </p>
+                <p>
+                La historia que puedes jugar a continuación ocurre muchos años antes de los sucesos
+                narrados en SCU.
+                </p>
+                <p>
+                Esperamos que te guste.
+                </p>
+            img: 'house-forest.jpg'
+            actions:
+                -
+                    text: '¡Empezar!'
+                    href: 'start-0'
+        start-0:
+            text: >
+                <p>
                 Estás exhausto.
                 </p>
                 <p>
