@@ -64,12 +64,12 @@
         start-2:
             text: >
                 <p>
-                El anciano está irreconocible. Sus venas están exageradamente marcadas
-                por todo su cuerpo y su mandíbula se le ha desencajado hasta formar 
+                El anciano está en un estado lamentable. Su cuerpo está retorcido sobre la cama
+                y su mandíbula se le ha desencajado hasta formar 
                 una mueca grotesca en su cara.
                 </p>
                 <p>
-                De repente, Moore exclama un grito aterrador, gutural, inhumano. La mesilla, 
+                De repente, Moore se arquea y exclama un grito aterrador. La mesilla, 
                 un taburete y un pequeño armario comienzan a flotar ante vuestros ojos... ¡Y los
                 tres objetos salen despedidos hacia vosotros! 
                 </p>
@@ -89,7 +89,7 @@
                 </p>
                 <p>
                 Crees que puedes percibir los temblores que recorren el cuerpo del 
-                muchacho cada vez que uno de esos sonidos demoníacos salen de la garganta 
+                muchacho cada vez que uno de esos gritos salen de la garganta 
                 del doctor.
                 </p>
             img: 'room.jpg'
@@ -108,7 +108,7 @@
                 ritual.
                 </p>
                 <p>
-                ¡George grita aterrado! Te levantas de inmediato y ves como el doctor Moore 
+                ¡George exclama un grito! Te levantas de inmediato y ves como el doctor Moore 
                 lo mantiene agarrado por el cuello... ¡mientras flota dos palmos por encima
                 de la cama!
                 </p>
@@ -153,7 +153,7 @@
                 imitar al padre Sánchez. Pero no funciona.
                 </p>
                 <p>
-                Moore te sonríe de forma grotesca y con un rápido movimiento parte el cuello del padre Sánchez,
+                Moore te mira, ladea la cabeza y te sonríe. con un rápido movimiento parte el cuello del padre Sánchez,
                 dejando tras de sí un chasquido sordo.
                 </p>
                 <p>
@@ -175,7 +175,7 @@
                 </p>
                 <p>
                 Consigues ver a tu agresor antes de perder el conocimiento. Es George...
-                con los ojos completamente rojos. 
+                con los ojos completamente negros. 
                 Y comprendes, en lo más profundo de tu ser, que aquella cosa <strong>ahora está suelta</strong>.
                 </p>
             img: 'face.jpg'
@@ -205,7 +205,7 @@
                 </p>
                 <p>
                 Sin reacción posible por tu parte, te propina un tremendo puñetazo en la cara. Sánchez agarra
-                tu pistola y dispara a George en el pecho. El muchacho cae sobre la cama, boca abajo. También
+                tu pistola y dispara a George en el pecho. El muchacho cae sobre la cama. También
                 está muerto.
                 </p>
             img: 'room.jpg'
@@ -221,7 +221,7 @@
                 - continúa el párroco - y George, un joven con toda la vida por delante...
                 </p>
                 <p>
-                Algo te atenaza el corazón. Pero te consuelas pensando que, por lo menos, habéis detenido 
+                Sientes un nudo en el estómago. Pero te consuelas pensando que, por lo menos, habéis detenido 
                 a esa cosa. Fuese lo que fuese.
                 </p>
             img: 'room.jpg'
@@ -230,11 +230,11 @@
             text: >
                 <p>
                 Sánchez y tú, al unísono, os lanzais sobre el anciano. ¡Pero es demasiado fuerte! Te propina un 
-                simple manotazo y consigue lanzarte contra la pared.
+                manotazo y te lanza contra la pared.
                 </p>
                 <p>
-                Levantas la mirada. George sigue gritando, presa del pánico. Y Sánchez intenta librarse del doctor,
-                que ahora lo tiene agarrado por el cuello mientras lanza sonoras y terribles carcajadas.
+                Levantas la mirada. George sigue gritando. Sánchez intenta librarse del doctor,
+                que ahora lo tiene agarrado por el cuello mientras lanza sonoras carcajadas.
                 </p>
             img: 'room.jpg'
             actions:
@@ -262,11 +262,11 @@
             text: >
                 <p>
                 - No tenías otra opción - dice el padre Sánchez - Era demasiado fuerte - Mirais a vuestro alrededor.
-                George solloza en una esquina, agazapado. Por el resto, todo es calma y paz. Sánchez mira al anciano 
+                Excepto George, que solloza en una esquina, todo es calma y paz. Sánchez mira al anciano 
                 - Era un buen hombre.
                 </p>
                 <p>
-                Algo te atenaza el corazón. Pero te consuelas pensando que, por lo menos, habéis detenido 
+                Sientes un nudo en el estómago. Pero te consuelas pensando que, por lo menos, habéis detenido 
                 a esa cosa. Fuese lo que fuese.
                 </p>
             img: 'room.jpg'
@@ -275,10 +275,10 @@
             text: >
                 <p>
                 Rápidamente, destapas el frasco de agua que el padre Sánchez había bendecido horas antes.
-                Rocías a Moore con su contenido. El anciano grita con una vez extraña y gutural, desgarradora.
+                Rocías a Moore con su contenido. Y una vez el agua toca su piel, el anciano grita de dolor.
                 </p>
                 <p>
-                Se gira hacia ti. Te mira con unos ojos completamente negros. Y sonríe grotescamente.
+                Se gira hacia ti. Te mira con unos ojos completamente negros. Y sonríe.
                 </p>
                 <p>
                 Antes de que puedas hacer nada, aprieta su puño y el cuello del padre Sánchez se parte 
@@ -314,14 +314,14 @@
             text: >
                 <p>
                 Disparas una y otra vez. Bam, bam ¡BAM! El anciano cae desplomado. George solloza en 
-                una esquina. Está bien.
+                una esquina.
                 </p>
                 <p>
                 Miras a tu alrededor. El doctor, un buen hombre que salvó la vida de tantos, y el padre
                 Sánchez, tu fiel mentor y compañero, están muertos.
                 </p>
                 <p>
-                Algo te atenaza el corazón. Pero te consuelas pensando que, por lo menos, habéis detenido 
+                Sientes un nudo en el estómago. Pero te consuelas pensando que, por lo menos, habéis detenido 
                 a esa cosa. Fuese lo que fuese.
                 </p>
             img: 'room.jpg'
@@ -330,16 +330,13 @@
             text: >
                 <p>
                 Bajas la Beretta y aprietas el gatillo. El impacto en sus rodillas hace que se
-                derrumbe, entre gritos de dolor.
-                </p>
-                <p>
-                El doctor, o mejor dicho, esa cosa que antes era el doctor posa sus manos en
-                un charcho de su propia sangre... ¡Y encuentra uno de los pedazos del jarrón 
+                derrumbe. El doctor posa una de sus manos en
+                un charco de su propia sangre... ¡Y encuentra uno de los pedazos del jarrón 
                 hecho añicos!
                 </p>
                 <p>
                 Se impulsa con el otro brazo y en un rápido movimiento usa el filo cortante para 
-                abalanzarse contra el cuello de George, llevándose por delante carne y tendones...
+                abalanzarse contra el cuello de George, llevándose por delante la vida del joven...
                 </p>
             img: 'room.jpg'
             actions:
@@ -373,7 +370,7 @@
                 de un charco de sangre. No hay ni rastro del doctor.
                 </p>
                 <p>
-                Un escalofrío recorre tu espalda. Esa cosa está suelta.
+                Un escalofrío recorre tu espalda. <strong>Esa cosa está suelta.</strong>
                 </p>
             img: 'room.jpg'
             end: true
@@ -381,7 +378,7 @@
             text: >
                 <p>
                 Rápidamente, destapas el frasco de agua que el padre Sánchez había bendecido horas antes.
-                Rocías a Moore con su contenido. El anciano grita con una vez extraña y gutural, desgarradora.
+                Rocías a Moore con su contenido. Nada más el agua toca su piel el anciano grita de dolor.
                 </p>
                 <p>
                 George consigue liberarse y cae tosiendo al suelo. Sánchez levanta el crucifijo, retoma 
@@ -504,7 +501,7 @@
             text: >
                 <p>
                 Te cruzas de brazos. Pasan un par de segundos. Cuando el anciano comprende que no
-                piensas hacer nada, baja la mirada.
+                piensas hacer nada, baja la mirada con tristeza.
                 </p>
                 <p>
                 El padre Sánchez entra en la habitación.
@@ -676,14 +673,14 @@
             text: >
                 <p>
                 Acercas al anciano el frasquito donde guardas el agua bendecida por Sánchez horas antes.
-                Nada más tomar el primer sorbo, Moore grita y maldice. Das un paso atrás, asustado.
+                Nada más tomar el primer sorbo, Moore grita de agonía, tan fuerte que te duelen los oidos.
                 </p>
                 <p>
-                El padre Sánchez entra con brusquedad en la habitación, alertado por los gritos.
+                El padre Sánchez entra en la habitación. - ¡Pero qué coño...!
                 </p>
                 <p>
-                Moore exhala un último y desgarrador grito... ¡y una de las estanterías cae sobre 
-                el padre Sánchez, arrancada de la pared!
+                Moore se incorpora sobre la cama... ¡y una gran estantería cae sobre 
+                el padre Sánchez!
                 </p>
             img: 'room.jpg'
             actions:
@@ -735,12 +732,12 @@
                 </p>
                 <p>
                 Del suelo comienza a surgir una leve niebla y unos gusanos blanquecinos se retuercen
-                en ella. El anciando se muerde la lengua y entre sangre y saliva te escupe.
+                en ella. El anciando se muerde la lengua y te escupe sangre y saliva.
                 </p>
             img: 'room.jpg'
             actions:
                 -
-                    text: 'Pero yo no me detengo'
+                    text: 'Pero yo no me detengo...'
                     href: 'B22-1'
         B22-1:
             text: >
