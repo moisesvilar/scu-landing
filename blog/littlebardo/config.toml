@@ -5,7 +5,6 @@ theme = "hugo-theme-blueberry-detox"
 publishDir = "../../public/blog"
 [params]
     Author = "Littlebardo"
-    Keywords = "Terror Novela Interactiva Decisiones"
     dateformat = "02/01/2016"
     disqusShortname = "littlebardo"
     googleAnalytics = "UA-116134922-1"
