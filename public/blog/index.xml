@@ -5,20 +5,21 @@
     <link>/blog/</link>
     <description>Recent content on Littlebardo Chronicles</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>es-ES</language>
-    <lastBuildDate>Sat, 14 Apr 2018 19:38:16 +0200</lastBuildDate>
+    <language>es</language>
+    <lastBuildDate>Sun, 17 Jun 2018 11:07:37 +0200</lastBuildDate>
     
 	<atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>my first post</title>
-      <link>/blog/my-first-post/</link>
-      <pubDate>Sat, 14 Apr 2018 19:38:16 +0200</pubDate>
+      <title>¿Quiénes somos?</title>
+      <link>/blog/quienes-somos/</link>
+      <pubDate>Sun, 17 Jun 2018 11:07:37 +0200</pubDate>
       
-      <guid>/blog/my-first-post/</guid>
-      <description>Well, the way they make shows is, they make one show. That show&amp;rsquo;s called a pilot. Then they show that show to the people who make shows, and on the strength of that one show they decide if they&amp;rsquo;re going to make more shows. Some pilots get picked and become television programs. Some don&amp;rsquo;t, become nothing. She starred in one of the ones that became nothing.
-Normally, both your asses would be dead as fucking fried chicken, but you happen to pull this shit while I&amp;rsquo;m in a transitional period so I don&amp;rsquo;t wanna kills you, I wanna help you.</description>
+      <guid>/blog/quienes-somos/</guid>
+      <description>¡Hola a todos y bienvenidos a nuestro blog!
+Nos gustaría empezar este camino explicando quiénes somos, qué nos gusta y qué vas a encontrar en este blog. ¿Empezamos?
+Quiénes somos Somos tres chicos y una chica, gallegos, apasionados por las buenas historias y con muchas ganas de compartir nuestras inquietudes con vosotros. Nuestros nombres son Alberto, Luisma, Moisés y Xiana. Pero eso no es lo importante. Lo importante es lo que nos gusta.</description>
     </item>
     
   </channel>

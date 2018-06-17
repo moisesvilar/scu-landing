@@ -1,10 +1,15 @@
-languageCode = "es-ES"
+languageCode = "es"
 title = "Littlebardo Chronicles"
 baseurl = "/blog/"
 theme = "hugo-theme-blueberry-detox"
 publishDir = "../../public/blog"
 [params]
     Author = "Littlebardo"
+    keywords = ["Novela interactiva", "Terror", "Decisiones", "SCU", "Rol", "Juegos de rol", "Películas", "Fantasía", "Videojuegos"]
+    description = "Aquí hablaremos de literatura, de terror, de fantasía, de videojuegos, de juegos de rol... y de cómo avanza nuestro pequeño proyecto: SCU"
     dateformat = "02/01/2016"
     disqusShortname = "littlebardo"
     googleAnalytics = "UA-116134922-1"
+    twitter_name = "scuapp"
+    instagram = "scuapp"
+    facebook = "SCUAPP"

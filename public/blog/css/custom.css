@@ -1,0 +1,27 @@
+.blog-title {
+    font-size: 40px;
+}
+
+.blog-description {
+    color: #666;
+}
+
+.post-header h3 {
+    font-size: 3rem;
+}
+
+.post-content h1 {
+    font-size: 2rem;
+}
+
+.share .fa-heart {
+    color: #f33;
+}
+
+.share .fa-twitter {
+    color: #1DA1F2;
+}
+
+.share .fa-facebook {
+    color: #4267b2;
+}
