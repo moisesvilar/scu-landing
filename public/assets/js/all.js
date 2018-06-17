@@ -909,7 +909,7 @@ var a=n(2);a(window.location.href)&&window.isAddThisTrackingFrame||!function(){f
     BookService.FILE_URL='assets/data/books.yml'
     BookService.prototype.getRandomBook=function(){var index=Math.floor(Math.random()*this.books.length);return this.books[index];}
     function DatabaseService(){firebase.initializeApp(DatabaseService.FIREBASE_CONFIG);this.database=firebase.database();}
-DatabaseService.FIREBASE_CONFIG={apiKey:'AIzaSyDc2cVi7YSZcD6RMGMuW2hHJ42ITvqf4z0',authDomain:'bardo-b9003.firebaseapp.com',databaseURL:'https://bardo-b9003.firebaseio.com',projectId:'bardo-b9003',storageBucket:'bardo-b9003.appspot.com',messagingSenderId:'1052343586713'};DatabaseService.prototype.writeEmail=function(email){const emailsRef=this.database.ref('emails');const newEmailRef=emailsRef.push();return newEmailRef.set({email:email});};
+DatabaseService.FIREBASE_CONFIG={apiKey:'AIzaSyDc2cVi7YSZcD6RMGMuW2hHJ42ITvqf4z0',authDomain:'bardo-b9003.firebaseapp.com',databaseURL:'https://bardo-b9003.firebaseio.com',projectId:'bardo-b9003',storageBucket:'bardo-b9003.appspot.com',messagingSenderId:'1052343586713'};DatabaseService.prototype.writeEmail=function(email){const emailsRef=this.database.ref('emails');const newEmailRef=emailsRef.push();const ts = new Date();return newEmailRef.set({email:email, ts: ts.toString()});};
 
 $(document).ready(function() {
     new IndexController();
