@@ -26,6 +26,6 @@ En este blog vamos a intentar tocar todo lo que nos apasiona... y alguna cosa m�
 
 **¿Y a vosotros? ¿Qué os apasiona? ¿Qué esperáis de este blog? ¡Nos haría mucha ilusión si nos lo contáis en los comentarios!**
 
-¡Y recordad! Un like, un tweet, un compartir en Facebook... de este artículo es amor.
+¡Y recordad! Un like, un tweet, un compartir... es amor.
 
 **¡Nos vemos pronto!**
