@@ -12,7 +12,7 @@
                 var resizer = function () {
                   $this.css('font-size', Math.max(Math.min($this.width() / (compressor*10), parseFloat(settings.maxFontSize)), parseFloat(settings.minFontSize)));
                 };
-                //resizer();
+                resizer();
                 $(window).on('resize orientationchange', resizer);
               });
             };
