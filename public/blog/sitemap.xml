@@ -3,6 +3,11 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>/blog/el-futuro-de-la-aplicacion/</loc>
+    <lastmod>2018-06-24T18:51:37+02:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/blog/quienes-somos/</loc>
     <lastmod>2018-06-17T11:07:37+02:00</lastmod>
   </url>
@@ -14,7 +19,7 @@
   
   <url>
     <loc>/blog/</loc>
-    <lastmod>2018-06-17T11:07:37+02:00</lastmod>
+    <lastmod>2018-06-24T18:51:37+02:00</lastmod>
     <priority>0</priority>
   </url>
   
