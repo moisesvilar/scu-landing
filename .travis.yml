@@ -4,6 +4,6 @@ node_js:
 script:
   - echo "Deploy!!"
 install:
-  - npm install -g firebase-tools
+  - travis_wait 30 npm install -g firebase-tools
 after_success:
   - firebase deploy --project bardo-b9003 --token $FIREBASE_TOKEN
