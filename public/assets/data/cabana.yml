@@ -1,0 +1,1110 @@
+-
+  id: '2'
+  title: 'La Cabaña'
+  scenes:
+    start-BORRAR:
+      text: >
+        <p>La noche te ha sorprendido</p>
+        <p>Hace más de tres horas que has abandonado tu coche, con el motor muerto, en 
+        medio de aquella carretera de montaña. Sin pensártelo dos veces, has comenzado a caminar,
+        con la esperanza de encontrar ayuda lo antes posible.</p>
+        <p>Y por fin, entre la oscuridad de la espesura, consigues ver una luz amarillenta.</p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'Te diriges hacia ella'
+          href: 'luz'
+        -
+          text: 'Pasas de largo'
+          href: 'pasar-luz'
+    pasar-luz:
+      text: >
+        <p>El camino lleva directamente hacia ella. Si quieres evitarla, deberás adentrarte
+        en la espesura</p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'Mejor voy hacia ella'
+          href: 'luz'
+        -
+          text: 'Atravieso el bosque sin dudarlo'
+          href: 'bosque'
+    bosque:
+      text: >
+        <p>FALTA DESARROLLAR. AL FINAL, MUERES, OF COURSE</p>
+      img: 'forest.jpg'
+      actions:
+        -
+          text: ''
+          href: ''
+    # FALTA DESARROLLAR
+    luz:
+      text: >
+        <p>Continúas por el camino. Poco a poco, el tono amarillento de esa luz envuelve 
+        el bosque que te rodea.</p>
+        <p>La luz proviene de la ventana de una vieja cabaña de madera. Desde fuera, parece 
+        abandonada. El porche está muy descuidado y los cristales de las ventanas están 
+        sucios.</p>
+        <p>Pero, si está abandonada... ¿quién ha encendido esa luz?</p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'Llamas a la puerta'
+          href: 'llamar-puerta'
+        -
+          text: 'Te quedas fuera'
+          href: 'quedar-fuera-2'
+    llamar-puerta:
+      text: >
+        <p>Vamos a averiguarlo, piensas.</p>
+        <p>Golpeas la puerta con decisión. Transcurre un segundo, dos, tres...</p>
+        <p>Ante tus ojos atónitos, la puerta se abre muy lentamente...</p>
+        <p>En el interior, reina la oscuridad.</p>
+      img: 'door.jpg'
+      actions:
+        -
+          text: 'Entras'
+          href: 'entrar-1'
+        -
+          text: 'Te quedas fuera'
+          href: 'quedar-fuera-1'
+    quedar-fuera-1:
+      text: >
+        <p>Un escalofrío recorre tu espalda. Das un par de pasos atrás.</p>
+        <p>De repente, una voz suave, masculina, proveniente del interior de la cabaña pronuncia:</p>
+        <p><em><i>«¿Quién eres?»</em></i></p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'No contestas'
+          href: 'no-contestar'
+        -
+          text: 'Pides ayuda'
+          href: 'pedir-ayuda-1'
+    quedar-fuera-2:
+      text: >
+        <p>Un escalofrío recorre tu espalda. Das un par de pasos atrás.</p>
+        <p>De repente, una voz suave, masculina, proveniente del interior de la cabaña pronuncia:</p>
+        <p><em>«¿Quién eres?»</em></p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'No contestas'
+          href: 'no-contestar'
+        -
+          text: 'Pides ayuda'
+          href: 'pedir-ayuda-2'
+    no-contestar:
+      text: >
+        <p>
+        El miedo te atenaza el pecho y decides no pronunciar ni una palabra.
+        Poco a poco, vas alejándote de la cabaña, un paso tras otro, sin perder de vista
+        la puerta...
+        </p>
+        <p>De repente, la misma voz, ya no tan suave, exclama con una furia explosiva:</p>
+        <p><em>«¡No escapes, intruso!»</em></p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'Te detienes y pides ayuda'
+          href: 'pedir-ayuda-1'
+        -
+          text: '¡Echas a correr!'
+          href: 'escapar'
+    escapar:
+      text: >
+        <p>Sin pensártelo dos veces, das media vuelta y comienzas a correr camino abajo.</p>
+        <p>A tu espalda, oyes un estruendo, pero no te atreves a mirar. Simplemente sigues 
+        corriendo. Tras recorrer unos diez metros.. ¡algo te golpea con fuerza por detrás!
+        Sales despedido hacia los árboles. Tu cara impacta en uno de ellos. Notas el sabor
+        salado de la sangre en tus labios.</p>
+        <p>
+        Tropiezas, caes, ruedas por la ladera empinada del bosque. Tu descenso termina abruptamente, boca arriba. La luna ahora brilla 
+        en todo su esplendor. Parece que se burla de ti.</p>
+      img: 'forest.jpg'
+      actions:
+        -
+          text: 'Estoy perdido...'
+          href: 'caida-bosque'
+    caida-bosque:
+      text: >
+        <p>Te duele el pecho. Seguramente te has roto un par de costillas.
+        Una sombra tapa el brillo lunar. Es una silueta de un hombre. No puedes ver su cara
+        pero parece que porta un viejo fúsil, de los que salen en las películas de guerra antíguas.</p>
+        <p>En un segundo, te apunta a la cara y dispara.</p>
+        <p>Nunca debiste entrar en ese maldito bosque.</p>
+      img: 'forest.jpg'
+      end: true
+    pedir-ayuda-1:
+      text: >
+        <p>Tragas saliva y consigues romper la película de terror que te envuelve la lengua.</p>
+        <p>&mdash; Hola... Necesito ayuda...&mdash; balbuceas</p>
+        <p>Tras unos segundos, la misma voz resuena de nuevo:</p>
+        <p><em>«Primero tienes que mostrar que eres digno de confianza...»</em></p>
+      img: 'door.jpg'
+      actions:
+        -
+          text: 'No dices nada...'
+          href: 'no-contestar'
+        -
+          text: 'Entras'
+          href: 'entrar-2'
+    pedir-ayuda-2:
+      text: >
+        <p>Tragas saliva y consigues romper la película de terror que te envuelve la lengua.</p>
+        <p>&mdash; Hola... Necesito ayuda...&mdash; balbuceas</p>
+        <p>Tras unos segundos, la misma voz resuena de nuevo:</p>
+        <p><em>«Primero tienes que mostrar que eres digno de confianza...»</em></p>
+        <p>Ante tus ojos atónitos, la puerta se abre muy lentamente...
+        En el interior, reina la oscuridad.</p>
+      img: 'door.jpg'
+      actions:
+        -
+          text: 'No dices nada...'
+          href: 'no-contestar'
+        -
+          text: 'Entras'
+          href: 'entrar-2'
+    entrar-1:
+      text: >
+        <p>Das un par de pasos hacia la oscuridad del interior. La luz proviene de una
+        pequeña vela al lado de la ventana, a tu derecha.</p>
+        <p>Está todo muy oscuro y el polvo en suspensión forma una molesta cortina que 
+        te impide ver con claridad.</p>
+        <p>Pero jurarías que hay alguien ahí contigo...</p>
+      img: 'entrada.jpg'
+      actions:
+        -
+          text: 'Pides ayuda'
+          href: 'pedir-ayuda-3'
+        -
+          text: '¡Echas a correr!'
+          href: 'escapar'
+    entrar-2:
+      text: >
+        <p>Das un par de pasos hacia la oscuridad del interior. La luz proviene de una
+        pequeña vela al lado de la ventana, a tu derecha.</p>
+        <p>Está todo muy oscuro y el polvo en suspensión forma una molesta cortina que 
+        te impide ver con claridad.</p>
+        <p>Pero jurarías que hay alguien ahí contigo...</p>
+      img: 'entrada.jpg'
+      actions:
+        -
+          text: 'Tragas saliva y esperas...'
+          href: 'tragar-saliva-esperar'
+        -
+          text: '¡Echas a correr!'
+          href: 'escapar'
+    pedir-ayuda-3:
+      text: >
+        <p>Tragas saliva y consigues romper la película de terror que te envuelve la lengua.</p>
+        <p>&mdash; Hola... Necesito ayuda...&mdash; balbuceas</p>
+        <p>Tras unos segundos, la misma voz resuena de nuevo:</p>
+        <p><em>«Primero tienes que mostrar que eres digno de confianza...»</em></p>
+      img: 'door.jpg'
+      actions:
+        -
+          text: 'Tragas saliva y esperas...'
+          href: 'tragar-saliva-esperar'
+        -
+          text: '¡Echas a correr!'
+          href: 'escapar'
+    tragar-saliva-esperar:
+      text: >
+        <p>No lo ves venir ¡BUM! La puerta se cierra violentamente detrás de ti.</p>
+        <p><em>«Sólo los miembros de la "Texas" recibirán ayuda. Los intrusos serán eliminados...»</em></p>
+        <p>Una breve brisa sopla en frente de ti. Por un instante ves una silueta que se desliza 
+        suavemente hacia el pasillo que tienes a tu izquierda.</p>
+      img: 'entrada.jpg'
+      actions:
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'entrada'
+        -
+          text: 'Intentas abrir la puerta'
+          href: 'intentar-salir'
+    intentar-salir:
+      text: >
+        <p>Agarras el pomo de la puerta y tiras. No se mueve ni un ápice.</p>
+        <p>Golpeas, empujas, pataleas, emites un gruñido cargado de frustracción.
+        Pero la puerta no cede.</p>
+        <p>Estás encerrado...</p>
+      img: 'entrada.jpg'
+      actions:
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'entrada'
+    entrada:
+      text: >
+        <p>
+        Estás de espaldas a la puerta principal. La sala es amplia y abierta.
+        Justo en frente hay una pequeña cocina antigua.
+        A la derecha, una especie de comedor con una amplia mesa y 
+        una estantería contra la pared. En frente, a la derecha de donde te encuentras,
+        hay un salón con algunos sillones mugrientos y carcomidos.
+        Por último, a tu izquierda, una esquina se dobla hacia un oscuro pasillo.
+        </p>
+      img: 'entrada.jpg'
+      actions:
+        - 
+          text: 'Te diriges a la cocina'
+          href: 'cocina'
+        - 
+          text: 'Te diriges al comedor'
+          href: 'comedor'
+        - 
+          text: 'Te diriges al salón'
+          href: 'salon'
+        - 
+          text: 'Te diriges al pasillo'
+          href: 'pasillo'
+    cocina:
+      text: >
+        <p>Es una cocina muy, muy antigua. De horno de leña y fogones de hierro.
+        Hay unas alacenas con las puertas colgando de sus bornes dejando al descubierto 
+        su interior. Una mesa de madera podrida adorna la estancia.</p>
+        <p>Todo está lleno de polvo y escrementos de alimañas.</p>
+        <p>No parece que aquí haya nada interesante.</p>
+      img: 'cocina.jpg'
+      actions:
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    comedor:
+      text: >
+        <p>
+        En el centro de la estancia hay una amplia mesa de madera noble, bien conservada, 
+        pero cubierta de polvo y musgo. Está rodeada por cuatro sillas con sus cojines
+        totalmente deshechos por las ratas.</p>
+        <p>
+        Al fondo, contra una de las paredes, se alza una gran estantería llena de libros,
+        algunos de los cuales todavía se encuentran en buen estado, sorprendentemente.
+        </p>
+      img: 'comedor.jpg'
+      actions:
+        -
+          text: 'Le echas un vistazo a la estantería'
+          href: 'estanteria'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    estanteria: # FALTA PONER PISTAS
+      text: >
+        <p>FALTA PONER PISTAS</p>
+      img: 'estanteria.jpg'
+      actions:
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    salon:
+      text: >
+        <p>Hay un gran ventanal al fondo que dejan pasar la ténue luz de la luna. Justo en frente
+        está dispuesta una pequeña mesita de te con docenas de telarañas tejidas entre sus patas. 
+        A ambos lados de la misma hay sendos sillones mugrientos y apestosos. No apetece echarse 
+        una siesta en ellos.</p>
+        <p>Pero lo que más te llama la atención en las estancia es una gran chimenea en una de las
+        paredes.</p>
+      img: 'salon.jpg'
+      actions:
+        -
+          text: 'Le echas un vistazo a la chimenea'
+          href: 'chimenea'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    chimenea: # FALTA PONER PISTAS
+      text: >
+        <p>FALTA PONER PISTAS</p>
+      img: 'chimenea.jpg'
+      actions: 
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    pasillo:
+      text: >
+        <p>
+        Te asomas al pasillo con un nudo en el estómago. Está oscuro como una cueva.
+        Hay dos puertas cerradas. Una, de doble hoja, grande e imponente. 
+        Otra, más pequeña y humilde.
+        Al fondo parece que hay algo que brilla...
+        </p>
+        <p>¿Son pasos eso que escuchas? No puedes estar seguro... quizás solo sea el viento.</p>
+      img: 'pasillo.jpg'
+      actions:
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+        -
+          text: 'Abrir la puerta grande'
+          href: 'dormitorio'
+        -
+          text: 'Abrir la puerta pequeña'
+          href: 'baño'
+        -
+          text: 'Ir al fondo'
+          href: 'fondo-pasillo'
+    dormitorio:
+      text: >
+        <p>
+        Dentro hay un dormitorio, bastante bien conservado con respecto al resto de la cabaña.
+        Hay dos camas gemelas, antiguas. Deben valer una fortuna. También hay un viejo escritorio
+        y un armario, cada uno a ambos lados de la estancia.
+        </p>
+      img: 'dormitorio.jpg'
+      actions:
+        -
+          text: 'Volver al pasillo'
+          href: 'pasillo'
+        -
+          text: 'Le echas un vistazo al escritorio'
+          href: 'escritorio'
+        -
+          text: 'Le echas un vistazo al armario'
+          href: 'armario'
+    armario: # FALTA PONER PISTAS
+      text: >
+        <p>FALTA PONER PISTAS</p>
+      img: 'armario.jpg'
+      actions: 
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    escritorio: # FALTA PONES PISTAS
+      text: >
+        <p>FALTA PONER PISTAS</p>
+      img: 'escritorio.jpg'
+      actions: 
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    baño:
+      text: >
+        <p>
+        Detrás hay un baño con su bañera, su inodoro, su lava manos... todo totalmente destrozado.
+        No lo han usado en años.
+        </p>
+      img: 'baño.jpg'
+      actions:
+        -
+          text: 'Volver al pasillo'
+          href: 'pasillo'
+    fondo-pasillo:
+      text: >
+        <p>
+        Te acercas poco a poco al brillo que hay al fondo del pasillo. Descubres que es un viejo
+        espejo, con el cristal roto.
+        </p>
+        <p>
+        Pero cuando te fijas detenidamente ves que hay una mancha con la forma de la palma de una mano
+        de un color parduzco. Es barro.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Comprobar la mancha en el espejo'
+          href: 'fantasma'
+        -
+          text: 'Volver al pasillo'
+          href: 'pasillo'
+    fantasma:
+      text: >
+        <p>
+        Tocas la mancha. El barro todavía está húmedo. Alguién la ha dejado hace poco.
+        </p>
+        <p>
+        De repente, allí donde tu dedo ha tocado el espejo, empieza a formarse una imagen en él... 
+        Son letras y rezan así&#58;
+        </p>
+        <p>
+          <em>
+            ¿Estás preparado para probar que eres digno de confianza, que eres miembro de la "Texas"
+            y que has estado en la batalla de Montecassino?
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Estoy preparado'
+          href: 'pregunta-1'
+        -
+          text: 'Todavía no'
+          href: 'no-jugar'
+    no-jugar:
+      text: >
+        <p>
+          <em>
+            No tardes... Si quieres salir de aquí con vida...
+          </em>
+        </p>
+        <p>
+        Las palabras se desvanecen en el espejo y la mancha con forma de palma de una mano vuelve
+        a aparecer.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Comprobar la mancha en el espejo'
+          href: 'fantasma'
+        -
+          text: 'Volver al pasillo'
+          href: 'pasillo'
+    start: # pregunta-1
+      text: >
+        <p>
+          <em>
+            El teniente general Mark Clark comandaba el V ejército americano. Por todos era 
+            sabido que a nuestro general, John Oswell, no le caía demasiado bien. Eran como 
+            el día y la noche. Oswell, frío y tranquilo. Clark, ardiente y temerario.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'No era Clark, era Eisenhower'
+          href: 'respuesta-1-1'
+        -
+          text: 'No era el V, sino el VII ejército americano'
+          href: 'respuesta-1-2'
+        -
+          text: '¿John Oswell? Querrás decir Fred Walker'
+          href: 'respuesta-1-3'
+    end-juego-default:
+      text: >
+        <p>
+          <em>
+            Lo siento, pero no eres digno de confianza...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        </p>
+        <p>
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-1-1:
+      text: >
+        <p>
+        &#8212; Mark Clark no comandaba el ejército americano. Era el general Dwight D. Eisenhower
+        en presona.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-1'
+    end-juego-1:
+      text: >
+        <p>
+          <em>
+            ¿Eisenhower dirigiendo personalmente un ejército? Lo siento, pero no eres digno
+            de confianza...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-1-2:
+      text: >
+        <p>&#8212; Mark Clark comandaba el VII ejército americano, no el VII</p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-default'
+    respuesta-1-3:
+      text: >
+        <p>&#8212; Fred Walker era el general de la 36ª división de infantería americana.
+        No sé quien es John Oswell.</p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-1-3-correcta'
+    respuesta-1-3-correcta:
+      text: >
+        <p>
+          <em>
+            Perfecto. Continuemos...
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-2'
+    pregunta-2:
+      text: >
+        <p>
+          <em>
+            Llegamos a la ladera de Montecassino en diciembre de 1944. Hacía un frío de mil
+            demonios. La ropa se nos congelaba si no teníamos cuidado al secarla después de
+            vadear un río.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-3'
+        -
+          text: 'No hacía frío. El día era caluroso'
+          href: 'respuesta-2-2'
+        -
+          text: 'No fue en diciembre de 1944, sino en enero de 1944'
+          href: 'respuesta-2-3'
+    respuesta-2-2:
+      text: >
+        <p>
+        &#8212; Aunque era un día de invierno, la mañana amaneció soleada, calurosa y agradable.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-2'
+    end-juego-2:
+      text: >
+        <p>
+          <em>
+            No. Fue uno de los días más fríos que recuerdo en toda mi vida.
+            Lo siento, pero no eres digno de confianza...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-2-3:
+      text: >
+        <p>
+        Los aliados llegaron a Montecassino con el año 1944 ya empezado, concretamente en enero,
+        no en 1943.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-3'
+    end-juego-3:
+      text: >
+        <p>
+          <em>
+            En enero comenzó la batalla, pero nosotros llegamos en diciembre...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    pregunta-3:
+      text: >
+        <p>
+          <em>
+            Nuestra misión era simple&#58; debíamos cruzar el río Lento y tomar posiciones 
+            al oeste para encerrar a los alemanes atrincherados en la aldea de San Angelo, 
+            en la cumbre de Montecassino.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'No era al oeste, sino al este'
+          href: 'respuesta-3-1'
+        -
+          text: 'No eran alemanes, eran italianos'
+          href: 'respuesta-3-2'
+        -
+          text: 'No era el río Lento, sino el río Rápido'
+          href: 'respuesta-3-3'
+    respuesta-3-1:
+      text: >
+        <p>
+        &#8212; Vuestra misión era tomar la orilla este del río, no la oeste.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-4'
+    respuesta-3-2:
+      text: >
+        <p>
+        &#8212; Era el ejército italiano el que se atrincheraba en San Angelo, no los nazis.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-5'
+    respuesta-3-3:
+      text: >
+        <p>
+        &#8212; El río que pasa por Montecassino y que separa Nápoles de Roma es el río 
+        Rápido, no el río Lento.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-3-correcta'
+    end-juego-4:
+      text: >
+        <p>
+          <em>
+            Deberías coger un mapa y aprenderte donde está Montecassino...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    end-juego-5:
+      text: >
+        <p>
+          <em>
+            Italia ya se había rendido en septiembre de 1943 y los alemanes habían tomado 
+            el norte de la península...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-3-correcta:
+      text: >
+        <p>
+          <em>
+            Perfecto, continuemos.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-4'
+    pregunta-4:
+      text: >
+        <p>
+          <em>
+            Mientras tanto, la 18ª división británica tomaría una posición elevada e 
+            impediría que los alemanes pudieran jodernos desde las alturas.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Contínua'
+          href: 'end-juego-default'
+        -
+          text: '¿Británicos? Eran franceses'
+          href: 'respuesta-4-1'
+        -
+          text: 'No era la 18ª británica, sino la 46ª'
+          href: 'respuesta-4-2'
+    respuesta-4-1:
+      text: >
+        <p>
+          &#8212; Eran los franceses los que debían tomar esa posición, no los británicos.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-6'
+    end-juego-6:
+      text: >
+        <p>
+          <em>
+            Un verdadero miembro de la Texas jamás se equivocaría en esto...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-4-2:
+      text: >
+        <p>
+          &#8212; La 46ª británica era la que debía proteger vuestro flanco, no la 18ª.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-4-2-correcta'
+    respuesta-4-2-correcta:
+      text: >
+        <p>
+          <em>
+            Correcto. Un verdadero miembro de la Texas no olvidaría ese dato nunca. Continuemos...
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-5'
+    pregunta-5:
+      text: >
+        <p>
+          <em>
+            Walker confiaba en la artillería pesada para hacer que los alemanes no sacaran 
+            la nariz de su fortaleza. Pero Clark no estaba nada convencido. Pronto se demostró 
+            que éste último tenía razón.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'Walker confiaba en los paracaidistas'
+          href: 'respuesta-5-1'
+        -
+          text: 'El fan de la artillería pesada era Clark, no Walker'
+          href: 'respuesta-5-2'
+    respuesta-5-1:
+      text: >
+        <p>
+          &#8212; En lo que confiaba Walker era en que los paracaidistas tomasen San Angelo antes
+          de que la 36ª cruzase el río.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-7'
+    end-juego-7:
+      text: >
+        <p>
+          <em>
+            No podían lanzarse paracaidistas porque San Angelo estaba plagada de defensas antiaéreas...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-5-2:
+      text: >
+        <p>
+          &#8212; Era Clark el que confiaba toda la suerte en la artillería pesada para mantener a los
+          nazis metidos en San Angelo. Walker creía precisamente lo contrario.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-5-2-correcta'
+    respuesta-5-2-correcta:
+      text: >
+        <p>
+          <em>
+            Bendito Walker... Si hubiese tenido más agallas para enfrentarse a Clark... Quizás muchos
+            de nosotros hoy seguiríamos con vida. Continuemos...
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-6'
+    pregunta-6:
+      text: >
+        <p>
+          <em>
+            La batalla comenzó el día 20. Fue un puto infierno desde el primer minuto. 
+            Las aguas del río bajaban rápidas y profundas y sus laderas eran abruptas y 
+            jodidamente altas.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'El río estaba tranquilo'
+          href: 'respuesta-6-1'
+        -
+          text: 'La batalla comenzó el día 17'
+          href: 'respuesta-6-2'
+    respuesta-6-1:
+      text: >
+        <p>
+          &#8212; Las aguas del Rápido bajaban tranquilas aquella noche. Y encontrásteis un 
+          sitio perfecto para cruzarlos. No tuvisteis problemas.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-default'
+    respuesta-6-2:
+      text: >
+        <p>
+          &#8212; Para el día 20, la batalla ya había comenzado. Concretamente, empezó tres días 
+          antes, el 17.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-6-2-correcta'
+    respuesta-6-2-correcta:
+      text: >
+        <p>
+          <em>
+            Exacto... El día 20 fue la noche del bombardeo, pero no adelantemos acontecimientos.
+            Continuemos.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-7'
+    pregunta-7:
+      text: >
+        <p>
+          <em>
+            Un pequeño grupo, comandado por Stovall, cruzó el río y realizó un reconocimiento. 
+            Su informe fue contundente&#58; no íbamos a poder tomar la orilla oeste. Pero a Clark 
+            le importó una soberana mierda y ordenó un ataque frontal.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-8'
+        -
+          text: 'No era Stovall, sino Orwell'
+          href: 'respuesta-7-1'
+        -
+          text: 'En realidad Stovall dio un informe favorable'
+          href: 'respuesta-7-2'
+        -
+          text: 'Fue Walker el que ordenó el ataque, no Clark'
+          href: 'respuesta-7-3'
+    respuesta-7-1:
+      text: >
+        <p>
+          &#8212; El grupo de reconocimiento fue liderado por Orwell, no por Stovall.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-8'
+    end-juego-8:
+      text: >
+        <p>
+          <em>
+            Te contaré un secreto&#58; yo tampoco sé quién es Oswell...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-7-2:
+      text: >
+        <p>
+          &#8212; Stovall, realmente, aconsejó el ataque. No encontró motivos para que no 
+          pudiéseis tomar la otra orilla del río.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-9'
+    end-juego-9:
+      text: >
+        <p>
+          <em>
+            Stovall tenía más razón que el imbécil de Clark con todas esas medallas en su 
+            asqueroso pecho
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-7-3:
+      text: >
+        <p>
+          &#8212; Walker fue el que finalmente tomó la decisión de lanzar el ataque. 
+          Clark, por el contrario, se opuso.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-10'
+    end-juego-10:
+      text: >
+        <p>
+          <em>
+            Walker jamás se opondría a una orden directa de Clark por mucho que no le convenciese.
+            Era su superior...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    pregunta-8:
+      text: >
+        <p>
+          <em>
+            Las protestas de Walker deberían haber sido más duras… Lo único que consiguió 
+            es que aprobasen un bombardeo nocturno el día 20 sobre la aldea de San Angelo.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-9'
+        -
+          text: 'El bombardeo sería durante el día'
+          href: 'respuesta-8-1' # TODO
+        -
+          text: 'El bombardeo sería el día 20'
+          href: 'respuesta-8-2' # TODO
+        -
+          text: 'Se bombardearía el monasterio, no San Angelo'
+          href: 'respuesta-8-3' # TODO
+    pregunta-9:
+      text: >
+        <p>
+          <em>
+            Puto inútil… Lo único que tuvieron que hacer los alemanes fue meter la cabeza en 
+            cualquier agujero y esperar a que pasase la noche. A la mañana siguiente estaban 
+            preparados para darnos por el culo con una ametralladora en una mano y una buena 
+            jarra de cerveza caliente en la otra.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-10'
+        -
+          text: 'Los alemanes atacaron de noche, no por la mañana'
+          href: 'respuesta-9-1' # TODO
+    pregunta-10:
+      text: >
+        <p>
+          <em>
+            Nos dieron con todo. Nuestros chicos caían desmembrados en las frías aguas del 
+            río. Unos pocos pudimos llegar a la otra orilla a borde de aquellas viejas 
+            barcazas ya que nuestros puentes habían sido volados por la artillería alemana.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-11'
+        -
+          text: 'No cruzásteis en barca'
+          href: 'respuesta-10-1' # TODO
+    pregunta-11:
+      text: >
+        <p>
+          <em>
+            Entonces llegó el mazazo definitivo&#58; los franceses no habían alcanzado su posición. 
+            Estábamos rodeados. Las balas comenzaron a impactar sobre nuestras cabezas.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'Donde dices franceses quieres decir británicos'
+          href: 'respuesta-11-1' # TODO
+    respuesta-11-1:
+      text: >
+        <p>
+          &#8212; Los británicos fueron los que no alcanzaron su posición. Os fallaron aquél día...
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-11-1-correcta'
+    respuesta-11-1-correcta:
+      text: >
+        <p>
+          <em>
+            Malditos británicos... Brillantes a la hora de la diplomacia. Pero no puedes 
+            contar con ellos para nada más...
+          </em>
+        </p>
+        <p>
+          <em>
+            Mis recuerdos llegan hasta aquí... Si realmente estuviste allí, podrás decirme cómo
+            terminó todo.
+          </em>
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Por supuesto'
+          href: 'conclusion' # TODO

@@ -1,0 +1,2556 @@
+-
+    id: '1'
+    title: 'El Exorcismo'
+    scenes:
+        start:
+            text: >
+                <p>
+                Estás exhausto.
+                </p>
+                <p>
+                Han pasado más de tres horas desde que el padre Sánchez, George y tú os encerrasteis junto con el
+                viejo doctor Moore en su habitación. Y la situación no ha hecho más que empeorar.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Miras al padre Sánchez'
+                    href: 'start-1'
+                -
+                    text: 'Miras al doctor Moore'
+                    href: 'start-2'
+                -
+                    text: 'Miras a George'
+                    href: 'start-3'
+        start-1:
+            text: >
+                <p>
+                El párroco mantiene sus ojos cerrados mientras murmulla 
+                pasajes bíblicos en latín.
+                </p>
+                <p>
+                Aferra en su mano derecha un crucifijo que extiende
+                hacia el anciano postrado en su cama. En su mano izquierda, sostiene 
+                una vieja biblia abierta por la mitad.
+                </p>
+                <p>
+                En su rostro también se pueden leer las marcas del cansacio.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Miras al doctor Moore'
+                    href: 'start-2'
+                -
+                    text: 'Miras a George'
+                    href: 'start-3'
+        start-2:
+            text: >
+                <p>
+                El anciano está en un estado lamentable. Su cuerpo está retorcido sobre la cama
+                y su mandíbula se le ha desencajado hasta formar 
+                una mueca grotesca en su cara.
+                </p>
+                <p>
+                De repente, Moore se arquea y exclama un grito aterrador. La mesilla, 
+                un taburete y un pequeño armario comienzan a flotar ante vuestros ojos... ¡Y los
+                tres objetos salen despedidos hacia vosotros! 
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: '¡Tratas de ponerte a cubierto!'
+                    href: 'A'
+                -
+                    text: '¡Ayudas a George a sujetar al anciano!'
+                    href: 'B'
+        start-3:
+            text: >
+                <p>
+                El joven George ha aguantado la tensión mejor de lo que esperabas.
+                Está sujetando con fuerza al anciano contra la cama.
+                </p>
+                <p>
+                Crees que puedes percibir los temblores que recorren el cuerpo del 
+                muchacho cada vez que uno de esos gritos salen de la garganta 
+                del doctor.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Miras al padre Sánchez'
+                    href: 'start-1'
+                -
+                    text: 'Miras al doctor Moore'
+                    href: 'start-2'
+        A:
+            text: >
+                <p>
+                Te tiras al suelo. Escuchas como los objetos se estrellan contra las paredes.
+                Miras hacia arriba. El padre Sánchez permanece impasible continuando con su 
+                ritual.
+                </p>
+                <p>
+                ¡George exclama un grito! Te levantas de inmediato y ves como el doctor Moore 
+                lo mantiene agarrado por el cuello... ¡mientras flota dos palmos por encima
+                de la cama!
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Das un paso atrás, precavido'
+                    href: 'A1'
+                -
+                    text: 'Te abalanzas sobre Moore'
+                    href: 'A2'
+                -
+                    text: 'Rocías a Moore con agua bendita'
+                    href: 'A3'
+        A1:
+            text: >
+                <p>
+                La habitación comienza a temblar. 
+                Algo roza tus pies. Miras al suelo. Está cubierto con una ligera niebla y,
+                entre ella se retuercen pequeños gusanos blanquecinos.
+                </p>
+                <p>
+                El padre Sánchez alza la voz en su salmodia. Pero el anciano no se inmuta.
+                Lo agarra por el cuello con su mano libre y lo eleva con una fuerza increíble.
+                El crucifijo cae al suelo.
+                </p>
+                <p>
+                Moore rompe en una carcajada que te hiela la sangre.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Recoges el crucifijo'
+                    href: 'A11'
+                -
+                    text: 'Sacas tu pistola y disparas'
+                    href: 'A12'
+        A11:
+            text: >
+                <p>
+                Te abalanzas sobre el crucifijo. Lo extiendes hacia el anciano, intentando 
+                imitar al padre Sánchez. Pero no funciona.
+                </p>
+                <p>
+                Moore te mira, ladea la cabeza y te sonríe. con un rápido movimiento parte el cuello del padre Sánchez,
+                dejando tras de sí un chasquido sordo.
+                </p>
+                <p>
+                Tragas saliva... Sólo contemplas una posibilidad.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Sacas tu pistola y disparas'
+                    href: 'A11-1'
+        A11-1:
+            text: >
+                <p>
+                Sacas tu vieja Beretta y aprietas el gatillo.
+                Bam, bam... ¡BAM! El anciano está muerto.
+                </p>
+                <p>
+                De repente, sientes un fuerte golpe en la nuca. Caes al suelo.
+                </p>
+                <p>
+                Consigues ver a tu agresor antes de perder el conocimiento. Es George...
+                con los ojos completamente negros. 
+                Y comprendes, en lo más profundo de tu ser, que aquella cosa <strong>ahora está suelta</strong>.
+                </p>
+            img: 'face.jpg'
+            end: true
+        A12:
+            text: >
+                <p>
+                Sin pensártelo dos veces, sacas tu vieja Beretta, apuntas a la cabeza del anciano y disparas casi 
+                a bocajarro. Imposible fallar.
+                </p>
+                <p>
+                Sus sesos quedan esparcidos por toda la pared. Sánchez cae al suelo. Sollozando, también te 
+                arrodillas a su lado. Es extraño, pero notas que la habitación huele a cesped recién cortado.
+                </p>
+                <p>
+                George se acerca a vosotros...
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Lo miras...'
+                    href: 'A12-1'
+        A12-1:
+            text: >
+                <p>
+                ¡Sus ojos! ¡Están completamente negros!
+                </p>
+                <p>
+                Sin reacción posible por tu parte, te propina un tremendo puñetazo en la cara. Sánchez agarra
+                tu pistola y dispara a George en el pecho. El muchacho cae sobre la cama. También
+                está muerto.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: ¿Pero qué coño...?
+                    href: 'A12-2'
+        A12-2:
+            text: >
+                <p>
+                - No había otra opción - dice el padre Sánchez - Era demasiado fuerte - Mirais a vuestro alrededor.
+                La habitación ahora respira calma - El doctor, un buen hombre que salvó la vida de tantos...
+                - continúa el párroco - y George, un joven con toda la vida por delante...
+                </p>
+                <p>
+                Sientes un nudo en el estómago. Pero te consuelas pensando que, por lo menos, habéis detenido 
+                a esa cosa. Fuese lo que fuese.
+                </p>
+            img: 'room.jpg'
+            end: true
+        A2:
+            text: >
+                <p>
+                Sánchez y tú, al unísono, os lanzais sobre el anciano. ¡Pero es demasiado fuerte! Te propina un 
+                manotazo y te lanza contra la pared.
+                </p>
+                <p>
+                Levantas la mirada. George sigue gritando. Sánchez intenta librarse del doctor,
+                que ahora lo tiene agarrado por el cuello mientras lanza sonoras carcajadas.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Sacas tu pistola y disparas'
+                    href: 'A21'
+                -
+                    text: 'Rocías a Moore con agua bendita'
+                    href: 'A22'
+        A21:
+            text: >
+                <p>
+                Sin pensártelo dos veces, sacas tu vieja Beretta, apuntas a la cabeza del anciano y disparas casi 
+                a bocajarro. Imposible fallar. Sus sesos quedan esparcidos por toda la pared.
+                </p>
+                <p>
+                Todavía estupefacto por lo que acabas de hacer, notas la mano del padre Sánchez sobre tu hombro.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Lo miras'
+                    href: 'A21-1'
+        A21-1:
+            text: >
+                <p>
+                - No tenías otra opción - dice el padre Sánchez - Era demasiado fuerte - Mirais a vuestro alrededor.
+                Excepto George, que solloza en una esquina, todo es calma y paz. Sánchez mira al anciano 
+                - Era un buen hombre.
+                </p>
+                <p>
+                Sientes un nudo en el estómago. Pero te consuelas pensando que, por lo menos, habéis detenido 
+                a esa cosa. Fuese lo que fuese.
+                </p>
+            img: 'room.jpg'
+            end: true
+        A22:
+            text: >
+                <p>
+                Rápidamente, destapas el frasco de agua que el padre Sánchez había bendecido horas antes.
+                Rocías a Moore con su contenido. Y una vez el agua toca su piel, el anciano grita de dolor.
+                </p>
+                <p>
+                Se gira hacia ti. Te mira con unos ojos completamente negros. Y sonríe.
+                </p>
+                <p>
+                Antes de que puedas hacer nada, aprieta su puño y el cuello del padre Sánchez se parte 
+                con un chasquido.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Sacas tu pistola y disparas'
+                    href: 'A221'
+                -
+                    text: 'Corres a buscar ayuda'
+                    href: 'A222'
+        A221:
+            text: >
+                <p>
+                Sacas tu vieja Beretta y apuntas al doctor. ¡Pero se abalanza sobre ti! A una velocidad
+                increible, te agarra por el cuello. Te cuesta respirar... ¿De dónde saca esa fuerza?
+                </p>
+                <p>
+                George consigue agarrar un jarrón y en el último momento lo hace añicos contra la cabeza 
+                del anciano. Te suelta. Tienes solo unos segundos para decidir qué hacer...
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Disparas a matar, aún a riesgo de darle a George'
+                    href: 'A2211'
+                -
+                    text: 'Disparas a las piernas, tratando de detenerlo'
+                    href: 'A2212'
+        A2211:
+            text: >
+                <p>
+                Disparas una y otra vez. Bam, bam ¡BAM! El anciano cae desplomado. George solloza en 
+                una esquina.
+                </p>
+                <p>
+                Miras a tu alrededor. El doctor, un buen hombre que salvó la vida de tantos, y el padre
+                Sánchez, tu fiel mentor y compañero, están muertos.
+                </p>
+                <p>
+                Sientes un nudo en el estómago. Pero te consuelas pensando que, por lo menos, habéis detenido 
+                a esa cosa. Fuese lo que fuese.
+                </p>
+            img: 'room.jpg'
+            end: true
+        A2212:
+            text: >
+                <p>
+                Bajas la Beretta y aprietas el gatillo. El impacto en sus rodillas hace que se
+                derrumbe. El doctor posa una de sus manos en
+                un charco de su propia sangre... ¡Y encuentra uno de los pedazos del jarrón 
+                hecho añicos!
+                </p>
+                <p>
+                Se impulsa con el otro brazo y en un rápido movimiento usa el filo cortante para 
+                abalanzarse contra el cuello de George, llevándose por delante la vida del joven...
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: '¡Disparas de nuevo!'
+                    href: 'A2212-1'
+        A2212-1:
+            text: >
+                <p>
+                George balbucea mientras se echa las manos al cuello y la sangre sale a borbotones.
+                </p>
+                <p>
+                Tú apuntas a la cabeza del anciano y aprietas el gatillo. Sus sesos se esparcen por
+                toda la pared.
+                </p>
+                <p>
+                El buen doctor, el joven George y tu fiel compañero Sánchez... Todos están muertos. 
+                Habéis conseguido detener esa cosa, pero el precio ha sido demasiado alto.
+                </p>
+            img: 'room.jpg'
+            end: true
+        A222:
+            text: >
+                <p>
+                Sales disparado hacia la puerta y la cierras de un portazo. Bajas a trompicones 
+                las escaleras. Detrás de ti oyes los gritos de George. Agarras el teléfono y
+                llamas a la policía.
+                </p>
+                <p>
+                Los agentes no tardan mucho en llegar. Entráis en la habitación. George yace en medio 
+                de un charco de sangre. No hay ni rastro del doctor.
+                </p>
+                <p>
+                Un escalofrío recorre tu espalda. <strong>Esa cosa está suelta.</strong>
+                </p>
+            img: 'room.jpg'
+            end: true
+        A3:
+            text: >
+                <p>
+                Rápidamente, destapas el frasco de agua que el padre Sánchez había bendecido horas antes.
+                Rocías a Moore con su contenido. Nada más el agua toca su piel el anciano grita de dolor.
+                </p>
+                <p>
+                George consigue liberarse y cae tosiendo al suelo. Sánchez levanta el crucifijo, retoma 
+                su salmodia con fuerzas renovadas y avanza hacia el doctor.
+                </p>
+                <p>
+                De repente, el anciano parpadea y mira a ambos lados. Parece confundido...
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Intentas razonar con él'
+                    href: 'A31'
+                -
+                    text: 'Prosigues con el exorcismo'
+                    href: 'B11'
+        A31:
+            text: >
+                <p>
+                ¡Sí! ¡Ahora lo ves claro! Debes hablar con él, no con esa cosa que lo ha 
+                poseído, sino con el buen y honrado doctor. Lo agarras por los hombros.
+                </p>
+                <p>
+                - ¡Aguanta, Moore, lucha! - le gritas - ¡Puedes derrotarlo!
+                </p>
+                <p>
+                La mirada del anciano se desvía a la mesilla destrozada en el suelo...
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Miras también la mesilla'
+                    href: 'A311'
+                -
+                    text: 'Prosigues con el exorcismo'
+                    href: 'B11'
+        A311:
+            text: >
+                <p>
+                Junto a las astillas, hay un marco con la foto de una joven. Lo recoges y se 
+                lo acercas.
+                </p>
+                <p>
+                El anciano mira la foto, la acaricia. Parece reconocer a esa persona. Crees ver unas 
+                lágrimas en sus ojos brillantes.
+                </p>
+                <p>
+                Sánchez y tú cruzáis vuestras miradas. El párroco asiente - Bien hecho - te susurra.
+                </p>
+            img: 'room.jpg'
+            actions:
+                 -
+                    text: 'Sánchez, termina esto de una vez'
+                    href: 'B12'
+        B:
+            text: >
+                <p>
+                Te abalanzas sobre el anciano y lo sujetas con fuerza. Una de las patas de la
+                mesilla impacta en tu cabeza pero no sueltas al doctor. Sientes 
+                la sangre corriendo por tu cara.
+                </p>
+                <p>
+                Sánchez detiene un minuto el ritual y os ayuda. Ata al doctor a la cama. George
+                y tú podéis descansar mientras Sánchez prosigue con su salmodia.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Te desplomas en una silla'
+                    href: 'B-1'
+        B-1:
+            text: >
+                <p>
+                Pasan un par de horas. El doctor duerme y el padre Sánchez necesita salir a tomar el aire.
+                George y tú le echáis un ojo al anciano mientras tanto.
+                </p>
+                <p>
+                De repente, Moore despierta. - A...gu...a - os pide.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Por supuesto. ¡Pero que sea agua bendita!'
+                    href: 'B2'
+                -
+                    text: 'Por supuesto. Agua fresca.'
+                    href: 'B1'
+                -
+                    text: 'Nada de agua'
+                    href: 'B3'
+        B1:
+            text: >
+                <p>
+                Das de beber al doctor y te lo agradece - Me encuentro algo mejor - te dice. 
+                Parece tranquilo - La cuerda está muy apretada... - te mira, con súplica.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'La aflojaré un poco'
+                    href: 'B1-1'
+                -
+                    text: 'La cuerda se queda como está'
+                    href: 'B1-2'
+        B1-1:
+            text: >
+                <p>
+                Desaflojas un poco el nudo de la cuerda que rodea a Moore - Gracias - te dice casi en un 
+                susurro.
+                </p>
+                <p>
+                El padre Sánchez entra en la habitación.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Que continúe el exorcismo'
+                    href: 'B11'
+        B1-2:
+            text: >
+                <p>
+                Te cruzas de brazos. Pasan un par de segundos. Cuando el anciano comprende que no
+                piensas hacer nada, baja la mirada con tristeza.
+                </p>
+                <p>
+                El padre Sánchez entra en la habitación.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Que continúe el exorcismo'
+                    href: 'B12'
+        B11:
+            text: >
+                <p>
+                El párroco agarra el crucifico y la biblia y retoma el ritual. Moore grita, llora, se retuerce.
+                Por alguna razón, huele cada vez más fuerte a cesped recién cortado.
+                </p>
+                <p>
+                El anciano te mira. Mueve los labios. Parece que quiere decirte algo.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Te inclinas para escucharle'
+                    href: 'B11-1'
+                -
+                    text: 'Lo ignoras. El exorcismo debe continuar'
+                    href: 'B112'
+        B11-1:
+            text: >
+                <p>
+                - Ma...tad...me - consigue decir el doctor, totalmente agotado.
+                </p>
+                <p>
+                Un escalofrío recorre tu espalda. En unos minutos, todo podría haber terminado...
+                </p>
+                <p>
+                Echas un vistazo a la almohada empapada de sudor que yace al lado del anciano.
+                Debes tomar una decisión.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Aprietas la almohada contra su cara'
+                    href: 'B111'
+                -
+                    text: '¡No! ¡Debes luchar! ¡Podemos vencerlo!'
+                    href: 'B112'
+        B111:
+            text: >
+                <p>
+                Coges la almohada y la colocas sobre la cara del doctor. Aprietas, cada vez
+                más fuerte. Se retuerce, gruñe, patalea. Pero no desistes... hasta que deja
+                de moverse. Ya no sufrirá más.
+                </p>
+                <p>
+                El padre Sánchez maldice y se mesa los cabellos. Le realiza la extremaunción.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Todo ha acabado... ¿verdad?'
+                    href: 'B111-1'
+        B111-1:
+            text: >
+                <p>
+                Sí, conseguisteis desterrar a aquella cosa. Pero... en las siguientes noches
+                empiezas a tener sueños extraños. Cada vez son más violentos. Y ese molesto olor
+                a cesped recién cortado...
+                </p>
+                <p>
+                Sí, todo ha acabado. Pero algo se ha quedado... dentro de ti.
+                </p>
+            img: 'face.jpg'
+            end: true
+        B112:
+            text: >
+                <p>
+                Le agarras la mano con fuerza - ¡Aguanta! ¡Ya queda poco! - El anciano
+                suplica, pero tú no desistes.
+                </p>
+                <p>
+                De repente, con una fuerza inhumana, te aferra de la garganta. Sus dedos son como 
+                tenazas de acero. No puedes gritar, no puedes respirar...
+                </p>
+                <p>
+                La vista se te nubla. Notas dolor, después angustia y finalmente, nada. Sólo oscuridad.
+                </p>
+            img: 'room.jpg'
+            end: true
+        B12:
+            text: >
+                <p>
+                El párroco agarra el crucifijo y la biblia y retoma el ritual. Moore grita, llora, se retuerce.
+                Por alguna razón, huele cada vez más fuerte a cesped recién cortado.
+                </p>
+                <p>
+                El anciano te mira. Mueve los labios. Parece que quiere decirte algo.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Te inclinas para escucharle'
+                    href: 'B12-1'
+                -
+                    text: 'Lo ignoras. El exorcismo debe continuar'
+                    href: 'B112'
+        B12-1:
+            text: >
+                <p>
+                - Ma...tad...me - consigue decir el doctor, totalmente agotado.
+                </p>
+                <p>
+                Un escalofrío recorre tu espalda. En unos minutos, todo podría haber terminado...
+                </p>
+                <p>
+                Echas un vistazo a la almohada empapada de sudor que yace al lado del anciano.
+                Debes tomar una decisión.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Aprietas la almohada contra su cara'
+                    href: 'B121'
+                -
+                    text: '¡No! ¡Debes luchar! ¡Podemos vencerlo!'
+                    href: 'B122'
+        B121:
+            text: >
+                <p>
+                Coges la almohada y la colocas sobre la cara del doctor. Aprietas, cada vez
+                más fuerte. Se retuerce, gruñe, patalea. Pero no desistes... hasta que deja
+                de moverse. Ya no sufrirá más.
+                </p>
+                <p>
+                El padre Sánchez maldice y se mesa los cabellos. Le realiza la extremaunción.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Todo ha acabado... ¿verdad?'
+                    href: 'B121-1'
+        B121-1:
+            text: >
+                <p>
+                Sí, conseguisteis desterrar a aquella cosa. Pero... en las siguientes noches
+                empiezas a tener sueños extraños. Cada vez son más violentos. Y ese molesto olor
+                a cesped recién cortado...
+                </p>
+                <p>
+                Sí, todo ha acabado. Pero algo se ha quedado... dentro de ti.
+                </p>
+            img: 'face.jpg'
+            end: true
+        B122:
+            text: >
+                <p>
+                Le agarras la mano con fuerza - ¡Aguanta! ¡Ya queda poco! - El anciano
+                suplica, pero tú no desistes.
+                </p>
+                <p>
+                Poco a poco, las fuerzas se le agotan. Los gritos se ahogan. El anciano duerme.
+                </p>
+                <p>
+                El padre Sánchez cierra su biblia. Te mira y sonríe. Habéis conseguido desterrar 
+                a esa cosa.
+                </p>
+            img: 'room.jpg'
+            end: true
+        B2:
+            text: >
+                <p>
+                Acercas al anciano el frasquito donde guardas el agua bendecida por Sánchez horas antes.
+                Nada más tomar el primer sorbo, Moore grita de agonía, tan fuerte que te duelen los oidos.
+                </p>
+                <p>
+                El padre Sánchez entra en la habitación. - ¡Pero qué coño...!
+                </p>
+                <p>
+                Moore se incorpora sobre la cama... ¡y una gran estantería cae sobre 
+                el padre Sánchez!
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Sacas al demonio del doctor a golpes'
+                    href: 'B21'
+                -
+                    text: 'Prosigues con la ceremonia'
+                    href: 'B22'
+        B21:
+            text: >
+                <p>
+                Te lanzas sobre Moore - ¡Sal, maldito! ¡SAL! - le golpeas una y otra vez en la cara.
+                Pero su perversa mueca permanece invariante. Se ríe.
+                </p>
+                <p>
+                - ¡Cállate! - le gritas. Las carcajadas se hacen más intensas. - ¡Que te calles! - le 
+                golpeas cada vez más fuerte. Las carcajadas cesan. La cara del doctor es una masa de
+                carne y sangre. Notas como alguien te agarra por la espalda.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Te das la vuelta'
+                    href: 'B21-1'
+        B21-1:
+            text: >
+                <p>
+                Es George. Su mirada destila miedo.
+                </p>
+                <p>
+                A su lado, el padre Sánchez niega con la cabeza, apesadumbrado...
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Todo ha acabado... ¿verdad?'
+                    href: 'B111-1'
+        B22:
+            text: >
+                <p>
+                Recoges el crucifijo y retomas el ritual.
+                </p>
+                <p>
+                La habitación tiembla mientras Moore ríe a carcajadas. Pero tú no te detienes.
+                </p>
+                <p>
+                Ahora apesta a césped recién cortado. El anciano grita. Pero tú no te detienes.
+                </p>
+                <p>
+                Del suelo comienza a surgir una leve niebla y unos gusanos blanquecinos se retuercen
+                en ella. El anciando se muerde la lengua y te escupe sangre y saliva.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Pero yo no me detengo...'
+                    href: 'B22-1'
+        B22-1:
+            text: >
+                <p>
+                De repende, todo termina. Las carcajadas cesan abruptamente. El anciano reposa
+                sobre la cama con la lengua fuera y los ojos abiertos.
+                </p>
+                <p>
+                Te acercas y le tocas la cara. Está frío. Ha muerto. Le cierras los párpados.
+                </p>
+                <p>
+                Sánchez, ya recuperado, posa una mano sobre tu hombro - El doctor era un buen hombre -
+                te dice -  Ahora puede descansar.
+                </p>
+            img: 'room.jpg'
+            end: true
+        B3:
+            text: >
+                <p>
+                - Ni lo sueñes, engendro - le escupes.
+                </p>
+                <p>
+                El anciano suplica y llora - No me tragaré un truco tan burdo - sentencias.
+                </p>
+                <p>
+                El padre Sánchez entra en la habitación.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Que continúe el exorcismo'
+                    href: 'B3-1'
+        B3-1:
+            text: >
+                <p>
+                Sánchez sigue con su letanía. Poco a poco, Moore va perdiendo fuerzas. 
+                Ya no hay más risas ni carcajadas. Su respiración se hace más lenta y pesada.
+                </p>
+                <p>
+                Hasta que finalmente se hace el silencio. Moore reposa en la cama con unos ojos
+                abiertos de par en par que reflejan dolor.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Te acercas a él'
+                    href: 'B3-2'
+        B3-2:
+            text: >
+                <p>
+                Le tocas la cara para cerrarle los párpados. Está muerto. El padre Sánchez
+                maldice mientras se mesa los cabellos.
+                </p>
+                <p>
+                - Descanse en paz - le dice mientras realiza la extremaunción.
+                </p>
+            img: 'room.jpg'
+            actions:
+                -
+                    text: 'Todo ha acabado'
+                    href: 'B3-3'
+        B3-3:
+            text: >
+                <p>
+                Unos días después llega una citación judicial a tu casa.
+                </p>
+                <p>
+                La hija de Moore ha presentado cargos contra ti. El informe del forense habla 
+                de torturas: úlceras por todo el cuerpo debido a ataduras, deshidratación...
+                </p>
+                <p>
+                - Maldita sea - dices en voz alta - Voy a necesitar un buen abogado.
+                </p>
+            img: 'room.jpg'
+            end: true
+-
+  id: '2'
+  title: 'La Cabaña'
+  scenes:
+    start:
+      text: >
+        <p>La noche te ha sorprendido</p>
+        <p>Hace más de tres horas que has abandonado tu coche, con el motor muerto, en 
+        medio de aquella carretera de montaña. Sin pensártelo dos veces, has comenzado a caminar,
+        con la esperanza de encontrar ayuda lo antes posible.</p>
+        <p>Y por fin, entre la oscuridad de la espesura, consigues ver una luz amarillenta.</p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'Te diriges hacia ella'
+          href: 'luz'
+        -
+          text: 'Pasas de largo'
+          href: 'pasar-luz'
+    pasar-luz:
+      text: >
+        <p>El camino lleva directamente hacia ella. Si quieres evitarla, deberás adentrarte
+        en la espesura</p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'Mejor voy hacia la luz'
+          href: 'luz'
+        -
+          text: 'Atravieso el bosque sin dudarlo'
+          href: 'bosque'
+    bosque:
+      text: >
+        <p>
+        Dejas la luz a tu espalda y te adentras en el bosque, alejándote del camino.
+        </p>
+        <p>
+        Al principio, la tarea parece sencilla. Pero poco a poco la noche se hace más negra. Y el bosque más espeso.
+        En pocos minutos, los matorrales te llega a la cintura. Y los troncos de los árboles están tan pegados que te 
+        obstaculizan el paso. Comienza a soplar un viento fuerte que sacude las ramas con violencia. Una de ellas te 
+        golpea la cara.
+        </p>
+      img: 'forest.jpg'
+      actions:
+        -
+          text: 'Mala idea. Vuelvo hacia atrás'
+          href: 'bosque-atras'
+        -
+          text: 'Me detengo a pensar...'
+          href: 'bosque-pensar'
+    bosque-atras:
+        text: >
+          <p>
+          Miras hacia atrás y te das cuenta que retomar el camino de vuelta es imposible. No puedes ver la luz y mucho menos 
+          el camino.
+          </p>
+          <p>
+          Estás perdido...
+          </p>
+        img: 'forest.jpg'
+        actions:
+          -
+            text: 'Me detengo a pensar...'
+            href: 'bosque-pensar'
+    bosque-pensar:
+      text: >
+        <p>
+        Intentas orientarte. Miras arriba buscando la luna. Pero el cielo está escondido tras las copas frondosas de los árboles.
+        </p>
+        <p>
+          <em>«¡Musgo!»</em>, piensas, <em>«¡El musgo crece en la parte norte del tronco de los áboles! ¿O era en la parte sur?»</em>.
+          Comienzas a buscar alguna indicación de musgo alrededor de los árboles.
+        </p>
+        <p>
+        De repente, a escasos metros de ti, ves la silueta de un hombre.
+        </p>
+      img: 'forest.jpg'
+      actions:
+        -
+          text: 'Le pido ayuda'
+          href: 'bosque-ayuda'
+        -
+          text: 'No digo nada...'
+          href: 'bosque-silencio'
+    bosque-silencio:
+      text: >
+        <p>
+        No tienes ni idea de quién puede estar deambulando por estos bosques a estas horas. Quizás se
+        haya perdido, como tú. Pero la probabilidad que dos imbéciles se pierdan en el mismo bosque la misma noche es bastante baja...
+        Mejor no arriesgarse así que intentas mantenerte en silencio. Quizás no te haya visto...
+        </p>
+        <p>
+          <em>«¿Quién eres»</em>. Su voz es grave y profunda, como si se pronunciase desde muy, muy lejos... aunque sólo os separan 
+          escasos metros...
+        </p>
+      img: 'forest.jpg'
+      actions:
+        -
+          text: 'No contesto...'
+          href: 'bosque-end'
+        -
+          text: '¡Me he perdido!'
+          href: 'bosque-ayuda'
+    bosque-ayuda:
+      text: >
+        <p>
+          &#8212; ¡Me he perdido! &#8212; exclamas &#8212; Mi coche me ha dejado tirado en la carretera, he intentado seguir el camino 
+          pero me he perdido en el bosque... ¡Necesito usar un teléfono!
+        </p>
+        <p>
+        La silueta permanece impasible.
+        </p>
+      img: 'forest.jpg'
+      actions:
+        -
+          text: 'Me acerco un par de pasos'
+          href: 'bosque-end'
+        -
+          text: 'Espero un poco'
+          href: 'bosque-end'
+    bosque-end:
+      text: >
+        <p>
+          <em>«No sé quien eres... Pero si sé que no eres de la "Texas"... No puedes continuar»</em>.
+        </p>
+        <p>
+        Todo transcurre en un par de segundos. Del brazo derecho de aquella figura surge la silueta de lo que parece ser un antiguo
+        fusil, de esos que aparecen en las películas bélicas. Te apunta a la cabeza y dispara. La bala te atraviesa el cráneo de lado a lado.
+        </p>
+        <p>
+        Jamás debiste entrar en este bosque.
+        </p>
+      img: 'forest-rojo.jpg'
+      end: true
+    luz:
+      text: >
+        <p>Continúas por el camino. Poco a poco, el tono amarillento de esa luz envuelve 
+        el bosque que te rodea.</p>
+        <p>La luz proviene de la ventana de una vieja cabaña de madera. Desde fuera, parece 
+        abandonada. El porche está muy descuidado y los cristales de las ventanas están 
+        sucios.</p>
+        <p>Pero, si está abandonada... ¿quién ha encendido esa luz?</p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'Llamas a la puerta'
+          href: 'llamar-puerta'
+        -
+          text: 'Te quedas fuera'
+          href: 'quedar-fuera-2'
+    llamar-puerta:
+      text: >
+        <p>Vamos a averiguarlo, piensas.</p>
+        <p>Golpeas la puerta con decisión. Transcurre un segundo, dos, tres...</p>
+        <p>Ante tus ojos atónitos la puerta se abre muy lentamente...</p>
+        <p>En el interior reina la oscuridad.</p>
+      img: 'door.jpg'
+      actions:
+        -
+          text: 'Entras'
+          href: 'entrar-1'
+        -
+          text: 'Te quedas fuera'
+          href: 'quedar-fuera-1'
+    quedar-fuera-1:
+      text: >
+        <p>Un escalofrío recorre tu espalda. Das un par de pasos atrás.</p>
+        <p>De repente, una voz suave, masculina, proveniente del interior de la cabaña pronuncia:</p>
+        <p><em><i>«¿Quién eres?»</em></i></p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'No contestas'
+          href: 'no-contestar'
+        -
+          text: 'Pides ayuda'
+          href: 'pedir-ayuda-1'
+    quedar-fuera-2:
+      text: >
+        <p>Un escalofrío recorre tu espalda. Das un par de pasos atrás.</p>
+        <p>De repente, una voz suave, masculina, proveniente del interior de la cabaña pronuncia:</p>
+        <p><em>«¿Quién eres?»</em></p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'No contestas'
+          href: 'no-contestar'
+        -
+          text: 'Pides ayuda'
+          href: 'pedir-ayuda-2'
+    no-contestar:
+      text: >
+        <p>
+        El miedo te atenaza el pecho y decides no pronunciar ni una palabra.
+        Poco a poco, vas alejándote de la cabaña, un paso tras otro, sin perder de vista
+        la puerta...
+        </p>
+        <p>De repente, la misma voz, ya no tan suave, exclama con una furia explosiva:</p>
+        <p><em>«¡No escapes, intruso!»</em></p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'Te detienes y pides ayuda'
+          href: 'pedir-ayuda-2'
+        -
+          text: '¡Echas a correr!'
+          href: 'escapar'
+    escapar:
+      text: >
+        <p>Sin pensártelo dos veces, das media vuelta y comienzas a correr camino abajo.</p>
+        <p>A tu espalda, oyes un estruendo, pero no te atreves a mirar. Simplemente sigues 
+        corriendo. Tras recorrer unos diez metros.. ¡algo te golpea con fuerza por detrás!
+        Sales despedido hacia los árboles. Tu cara impacta en uno de ellos. Notas el sabor
+        salado de la sangre en tus labios.</p>
+        <p>
+        Tropiezas, caes, ruedas por la ladera empinada del bosque. Tu descenso termina abruptamente, boca arriba. La luna ahora brilla 
+        en todo su esplendor. Parece que se burla de ti.</p>
+      img: 'forest.jpg'
+      actions:
+        -
+          text: 'Estoy perdido...'
+          href: 'caida-bosque'
+    caida-bosque:
+      text: >
+        <p>Te duele el pecho. Seguramente te has roto un par de costillas.
+        Una sombra tapa el brillo lunar. Es una silueta de un hombre. No puedes ver su cara
+        pero parece que porta un viejo fúsil, de los que salen en las películas de guerra antíguas.</p>
+        <p>En un segundo, te apunta a la cara y dispara.</p>
+        <p>Nunca debiste entrar en ese maldito bosque.</p>
+      img: 'forest.jpg'
+      end: true
+    pedir-ayuda-1:
+      text: >
+        <p>Tragas saliva y consigues romper la película de terror que te envuelve la lengua.</p>
+        <p>&mdash; Hola... Necesito ayuda...&mdash; balbuceas</p>
+        <p>Tras unos segundos, la misma voz resuena de nuevo:</p>
+        <p><em>«Primero tienes que mostrar que eres digno de confianza...»</em></p>
+      img: 'door.jpg'
+      actions:
+        -
+          text: 'No dices nada...'
+          href: 'no-contestar'
+        -
+          text: 'Entras'
+          href: 'entrar-2'
+    pedir-ayuda-2:
+      text: >
+        <p>Tragas saliva y consigues romper la película de terror que te envuelve la lengua.</p>
+        <p>&mdash; Hola... Necesito ayuda...&mdash; balbuceas</p>
+        <p>Tras unos segundos, la misma voz resuena de nuevo:</p>
+        <p><em>«Primero tienes que mostrar que eres digno de confianza...»</em></p>
+        <p>Ante tus ojos atónitos, la puerta se abre muy lentamente...
+        En el interior, reina la oscuridad.</p>
+      img: 'door.jpg'
+      actions:
+        -
+          text: 'Entras'
+          href: 'entrar-2'
+    entrar-1:
+      text: >
+        <p>Das un par de pasos hacia la oscuridad del interior. La luz proviene de una
+        pequeña vela al lado de la ventana, a tu derecha.</p>
+        <p>Está todo muy oscuro y el polvo en suspensión forma una molesta cortina que 
+        te impide ver con claridad.</p>
+        <p>Pero jurarías que hay alguien ahí contigo...</p>
+      img: 'entrada.jpg'
+      actions:
+        -
+          text: 'Pides ayuda'
+          href: 'pedir-ayuda-3'
+        -
+          text: '¡Echas a correr!'
+          href: 'escapar'
+    entrar-2:
+      text: >
+        <p>Das un par de pasos hacia la oscuridad del interior. La luz proviene de una
+        pequeña vela al lado de la ventana, a tu derecha.</p>
+        <p>Está todo muy oscuro y el polvo en suspensión forma una molesta cortina que 
+        te impide ver con claridad.</p>
+        <p>Pero jurarías que hay alguien ahí contigo...</p>
+      img: 'entrada.jpg'
+      actions:
+        -
+          text: 'Tragas saliva y esperas...'
+          href: 'tragar-saliva-esperar'
+        -
+          text: '¡Echas a correr!'
+          href: 'escapar'
+    pedir-ayuda-3:
+      text: >
+        <p>Tragas saliva y consigues romper la película de terror que te envuelve la lengua.</p>
+        <p>&mdash; Hola... Necesito ayuda...&mdash; balbuceas</p>
+        <p>Tras unos segundos, la misma voz resuena de nuevo:</p>
+        <p><em>«Primero tienes que mostrar que eres digno de confianza...»</em></p>
+      img: 'entrada.jpg'
+      actions:
+        -
+          text: 'Esperas...'
+          href: 'tragar-saliva-esperar'
+        -
+          text: '¡Echas a correr!'
+          href: 'escapar'
+    tragar-saliva-esperar:
+      text: >
+        <p>No lo ves venir ¡BUM! La puerta se cierra violentamente detrás de ti.</p>
+        <p><em>«Sólo los miembros de la "Texas" recibirán ayuda. Los intrusos serán eliminados...»</em></p>
+        <p>Una breve brisa sopla en frente de ti. Por un instante ves una silueta que se desliza 
+        suavemente hacia el pasillo que tienes a tu izquierda.</p>
+      img: 'entrada.jpg'
+      actions:
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'entrada'
+        -
+          text: 'Intentas abrir la puerta'
+          href: 'intentar-salir'
+    intentar-salir:
+      text: >
+        <p>Agarras el pomo de la puerta y tiras. No se mueve ni un ápice.</p>
+        <p>Golpeas, empujas, pataleas, emites un gruñido cargado de frustracción.
+        Pero la puerta no cede.</p>
+        <p>Estás encerrado...</p>
+      img: 'entrada.jpg'
+      actions:
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'entrada'
+    entrada:
+      text: >
+        <p>
+        Estás de espaldas a la puerta principal. La sala es amplia y abierta.
+        Justo en frente hay una pequeña cocina antigua.
+        A la derecha, una especie de comedor con una amplia mesa y 
+        una estantería contra la pared. En frente, a la derecha de donde te encuentras,
+        hay un salón con algunos sillones mugrientos y carcomidos.
+        Por último, a tu izquierda, una esquina se dobla hacia un oscuro pasillo.
+        </p>
+      img: 'entrada.jpg'
+      actions:
+        - 
+          text: 'Te diriges a la cocina'
+          href: 'cocina'
+        - 
+          text: 'Te diriges al comedor'
+          href: 'comedor'
+        - 
+          text: 'Te diriges al salón'
+          href: 'salon'
+        - 
+          text: 'Te diriges al pasillo'
+          href: 'pasillo'
+    cocina:
+      text: >
+        <p>Es una cocina muy, muy antigua. De horno de leña y fogones de hierro.
+        Hay unas alacenas con las puertas colgando de sus bornes dejando al descubierto 
+        su interior. Una mesa de madera podrida adorna la estancia.</p>
+        <p>Todo está lleno de polvo y escrementos de alimañas.</p>
+        <p>No parece que aquí haya nada interesante.</p>
+      img: 'cocina.jpg'
+      actions:
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    comedor:
+      text: >
+        <p>
+        En el centro de la estancia hay una amplia mesa de madera noble, bien conservada, 
+        pero cubierta de polvo y musgo. Está rodeada por cuatro sillas con sus cojines
+        totalmente deshechos por las ratas.</p>
+        <p>
+        Al fondo, contra una de las paredes, se alza una gran estantería llena de libros,
+        algunos de los cuales todavía se encuentran en buen estado, sorprendentemente.
+        </p>
+      img: 'comedor.jpg'
+      actions:
+        -
+          text: 'Le echas un vistazo a la estantería'
+          href: 'estanteria'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    estanteria:
+      text: >
+        <p>
+        Hay infinidad de libros. Pero la mayoría están podridos e inservibles. Sólo uno se conserva en un relativo buen estado.
+        Se titula «La Batalla del Río Rápido»
+        </p>
+      img: 'estanteria.jpg'
+      actions:
+        -
+          text: 'Echar un vistazo al libro'
+          href: 'libro'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    libro:
+      text: >
+        <p>
+        El índice reza&#58;
+        </p>
+        <ol>
+          <li>Comandantes y líderes</li>
+          <li>Climatología</li>
+          <li>Disposición de fuerzas</li>
+          <li>Transcurso de la batalla</li>
+          <li>Consecuencias</li>
+        </ol>
+      img: 'estanteria.jpg'
+      actions:
+        -
+          text: 'Leer el capítulo 1'
+          href: 'libro-comandantes'
+        -
+          text: 'Leer el capítulo 2'
+          href: 'libro-climatologia'
+        -
+          text: 'Leer el capítulo 3'
+          href: 'libro-fuerzas'
+        -
+          text: 'Leer el capítulo 4'
+          href: 'libro-batalla'
+        -
+          text: 'Leer el capítulo 5'
+          href: 'libro-consecuencias'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    libro-comandantes:
+      text: >
+        <p>
+          <em>
+            Alemania&#58; X Ejército (General Frido von Senger)
+          </em>
+        </p>
+        <p>
+          <em>
+            Estados Unidos&#58; V Ejército (General Mark Clark)
+          </em>
+        </p>
+        <p>
+          <em>
+            Reino Unido&#58; VII Ejército (General Sir Bernard L. Montgomery)
+          </em>
+        </p>
+      img: 'estanteria.jpg'
+      actions:
+        -
+          text: 'Volver al índice'
+          href: 'libro'
+    libro-climatologia:
+      text: >
+        <p>
+          <em>
+            Entre el 20 y el 22 de enero de 1944, las aguas del río Rápido no eran aptas para ninguna operación.
+            Pobre visibilidad durante el día debido al humo alemán e imposible durante la noche. Había 4 pulgadas de 
+            barro debido a las fuertes lluvias, que también aumentaron la profundidad del río. Además, la temperatura 
+            del agua estaba sólo un par de grados por encima de la congelación.
+          </em>
+        </p>
+      img: 'estanteria.jpg'
+      actions:
+        -
+          text: 'Volver al índice'
+          href: 'libro'
+    libro-fuerzas:
+      text: >
+        <p>
+          <em>
+            Los alemanes habían tomado posiciones altas al oeste del río, en San Angelo y en el sur, en el valle Liri.
+            Esto les otorgaba una gran ventaja táctica. Su capacidad de fuego se basaba en un gran número de ametralladoras 
+            y artillería antiaerea.
+          </em>
+        </p>
+        <p>
+          <em>
+            Los Aliados habían tomado posiciones en una llanura al este del río, con las excepciones de Monte Trocchio
+            y Monte Porchia, la únicas áreas con buena visibilidad para los aliados, aunque muy alejadas del río. La superiodad 
+            alemana obligó a los aliados a tomar acciones nocturnas.
+          </em>
+        </p>
+      img: 'estanteria.jpg'
+      actions:
+        -
+          text: 'Volver al índice'
+          href: 'libro'
+    libro-batalla:
+      text: >
+        <p>
+          <em>
+          El 20 de enero, las tropas de la 36ª División de infantería americana, bajo el mando del General Fred Walker, recibieron órdenes de 
+          cruzar el río y tomar posiciones en la orilla oeste. En un primer momento, intentaron cruzarlo construyendo puentes, pero 
+          la artillería alemana los destruía rápidamente desde San Angelo. Se vieron obligados a badearlo utilizando pequeñas barcazas 
+          y balsas improvisadas.
+          </em>
+        </p>
+        <p>
+          <em>
+            Por su parte, la 46ª división británica debía tomar posiciones en la cresta Sant'Ambrogio, para otorgar una ventaja táctica 
+            a las tropas americanas...
+          </em>
+          [ININTELIGIBLE]
+        </p>
+      img: 'estanteria.jpg'
+      actions:
+        -
+          text: 'Volver al índice'
+          href: 'libro'
+    libro-consecuencias:
+      text: >
+        <p>
+          <em>
+            La derrota de los aliados fue contundente. 143 muertos. 663 heridos. 375 desaparecidos. 500 prisioneros. La 36ª división 
+            de infantería americana prácticamente aniquilada. Frente a estos números, las pírricas bajas alemanas&#58; 64 muertos y 179 heridos.
+          </em>
+        </p>
+        <p>
+          <em>
+            En 1946, el general Clark fue llevado ante un tribunal militar por los supervivientes de la 36ª división. Pero el Secretario de Guerra,
+            Robert Paterson, lo exculpó de cualquier responsabilidad.
+          </em>
+        </p>
+      img: 'estanteria.jpg'
+      actions:
+        -
+          text: 'Volver al índice'
+          href: 'libro'
+    salon:
+      text: >
+        <p>Hay un gran ventanal al fondo que deja pasar la ténue luz de la luna. Justo en frente
+        está dispuesta una pequeña mesita de te con docenas de telarañas tejidas entre sus patas. 
+        A ambos lados de la misma hay sendos sillones mugrientos y apestosos. No apetece echarse 
+        una siesta en ellos.</p>
+        <p>Pero lo que más te llama la atención en la estancia es una gran chimenea en una de las
+        paredes.</p>
+      img: 'salon.jpg'
+      actions:
+        -
+          text: 'Le echas un vistazo a la chimenea'
+          href: 'chimenea'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    chimenea:
+      text: >
+        <p>
+        En la repisa, hay algunas fotografías antíguas, imágenes de santos y vírgenes y lo que parece una insignia.
+        </p>
+      img: 'chimenea.jpg'
+      actions:
+        -
+          text: 'Ver las fotografías'
+          href: 'fotografias'
+        -
+          text: 'Ver las imágenes'
+          href: 'imagenes'
+        -
+          text: 'Ver la insignia'
+          href: 'insignia'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    fotografias:
+      text: >
+        <p>
+        Concretamente hay dos.
+        </p>
+        <p>
+        En la primera, un grupo de 5 soldados descansan a la vera de un camino, con los fusiles apoyados en sus rodillas.
+        Hay dos que llevan la bandera norteamericana en el brazo. También hay un británico, un francés y un canadiense.
+        </p>
+        <p>
+        La segunda es la foto de un hombre en uniforme de gala. Es joven y apuesto.
+        </p>
+      img: 'chimenea.jpg'
+      actions:
+        -
+          text: 'Ver las imágenes'
+          href: 'imagenes'
+        -
+          text: 'Ver la insignia'
+          href: 'insignia'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    imagenes:
+      text: >
+        <p>
+        Son sencillas imágenes de vírgenes y santos. No tienen nada de especial.
+        </p>
+      img: 'chimenea.jpg'
+      actions:
+        -
+          text: 'Ver las fotografías'
+          href: 'fotografias'
+        -
+          text: 'Ver la insignia'
+          href: 'insignia'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    insignia:
+      text: >
+        <p>
+        Tiene forma de cabeza de flecha, de color verde azulado. En su centro hay una 'T' mayúscula de color dorado. Hay un pequeño 
+        texto bordado en la parte inferior&#58; «Aquí llegan las tropas de la 36ª»
+        </p>
+      img: 'chimenea.jpg'
+      actions:
+        -
+          text: 'Ver las fotografías'
+          href: 'fotografias'
+        -
+          text: 'Ver las imágenes'
+          href: 'imagenes'
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+    pasillo:
+      text: >
+        <p>
+        Te asomas al pasillo con un nudo en el estómago. Está oscuro como una cueva.
+        Hay dos puertas cerradas. Una, de doble hoja, grande e imponente. 
+        Otra, más pequeña y humilde.
+        Al fondo parece que hay algo que brilla...
+        </p>
+        <p>¿Son pasos eso que escuchas? No puedes estar seguro... quizás solo sea el viento.</p>
+      img: 'pasillo.jpg'
+      actions:
+        -
+          text: 'Volver a la entrada'
+          href: 'entrada'
+        -
+          text: 'Abrir la puerta grande'
+          href: 'dormitorio'
+        -
+          text: 'Abrir la puerta pequeña'
+          href: 'baño'
+        -
+          text: 'Ir al fondo'
+          href: 'fondo-pasillo'
+    dormitorio:
+      text: >
+        <p>
+        Dentro hay un dormitorio, bastante bien conservado con respecto al resto de la cabaña.
+        Hay dos camas gemelas, antiguas. Deben valer una fortuna. También hay un viejo escritorio
+        y un armario, cada uno a ambos lados de la estancia.
+        </p>
+      img: 'dormitorio.jpg'
+      actions:
+        -
+          text: 'Volver al pasillo'
+          href: 'pasillo'
+        -
+          text: 'Le echas un vistazo al escritorio'
+          href: 'escritorio'
+        -
+          text: 'Le echas un vistazo al armario'
+          href: 'armario'
+    armario:
+      text: >
+        <p>
+        Está llena de ropa podrida y mordisqueada por las ratas. También hay algún uniforme militar antiguo.
+        </p>
+      img: 'armario.jpg'
+      actions: 
+        -
+          text: 'Echas un vistazo a la ropa'
+          href: 'armario-ropa'
+        -
+          text: 'Echas un vistazo a los uniformes'
+          href: 'armario-uniformes'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    armario-ropa:
+      text: >
+        <p>
+        Es ropa de hombre. Muy antigua. Pantalones, camisas, algún zapato... Nada que te llame la atención.
+        </p>
+      img: 'armario.jpg'
+      actions: 
+        -
+          text: 'Echas un vistazo a los uniformes'
+          href: 'armario-uniformes'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    armario-uniformes:
+      text: >
+        <p>
+        Ropa de campaña de infantería, con la bandera americana en un costado. Al quitarla, queda al descubierto 
+        un tubo de cartón de un metro de largo y cuatro dedos de ancho.
+        </p>
+      img: 'armario.jpg'
+      actions: 
+        -
+          text: 'Echas un vistazo a la ropa'
+          href: 'armario-ropa'
+        -
+          text: 'Echas un vistazo al tubo de cartón'
+          href: 'armario-mapa'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    armario-mapa:
+      text: >
+        <p>
+        Es una de esas fundas para mapas y planos. Lo abres y extraes su contenido&#58; un viejo mapa de algún lugar que jurarías que es Italia,
+        por los nombres. Un rio lo atraviesa en diagonal desde la esquina superior derecha. A la izquierda del río, hay un punto marcado
+        como «San Angelo», con la bandera nazi pintada al lado. Un trazo a tinta la rodea, con una leyenda escrita a mano&#58; 
+        «Clark quiere bombardear aquí». Al otro lado, hay dos banderas, una americana y otra británica. En la americana reza «36ª Division» 
+        y una flecha parte de ella para cruzar el río. En la británica, «46ª Division» y otra flecha que se dirige a un punto marcado 
+        como «San Ambrogio».
+        </p>
+      img: 'armario.jpg'
+      actions: 
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'   
+    escritorio:
+      text: >
+        <p>
+        Un montón de papeles. Algunos escritos a máquina y otros a mano. Te llama la atención una carpetilla de cuero rojo.
+        </p>
+      img: 'escritorio.jpg'
+      actions: 
+        -
+          text: 'Cojo la carpeta'
+          href: 'carpeta'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    carpeta:
+      text: >
+        <p>
+        Dentro hay cinco folios. Parecen cinco páginas arrancadas de un diario, ya que en el encabezado están las fechas&#58; del 17 al 21 de enero de 1944.
+        </p>
+      img: 'escritorio.jpg'
+      actions:
+        -
+          text: 'Leer la página del 17 de enero'
+          href: '17-enero'
+        -
+          text: 'Leer la página del 18 de enero'
+          href: '18-enero'
+        -
+          text: 'Leer la página del 19 de enero'
+          href: '19-enero'
+        -
+          text: 'Leer la página del 20 de enero'
+          href: '20-enero'
+        -
+          text: 'Leer la página del 21 de enero'
+          href: '21-enero'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    17-enero:
+      text: >
+        <p><em>
+        Nos hemos detenido en la ladera de una montaña. “Montecassino” dicen algunos que se llama. Los oficiales nos comentan que estamos a
+        menos de una jornada de toparnos con las defensas de la línea Gustav. En lo alto de la montaña se divisa claramente un monasterio. 
+        Los alemanes han establecido allí su base. No podremos pasar.
+        </em></p>
+      img: 'escritorio.jpg'
+      actions:
+        -
+          text: 'Ver el resto'
+          href: 'carpeta'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    18-enero:
+      text: >
+        <p><em>
+        He visto al general Walker muy enfadado. Se lo he comentado a Stuttgart y ha encogido los hombros. “Creo que anda a las malas con Clark. 
+        Al parecer nos quieren enviar al otro lado del río”. ¿Con este tiempo? ¿Con los alemanes en la cima de la montaña? Es un suicidio.
+        </em></p>
+      img: 'escritorio.jpg'
+      actions:
+        -
+          text: 'Ver el resto'
+          href: 'carpeta'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    19-enero:
+      text: >
+        <p><em>
+        Stuttgart estaba en lo cierto. Van a bombardear esta noche la cima de la montaña para intentar que los alemanes no nos ataquen mientras vadeamos el río. 
+        Pero es una locura. Un pequeño grupo comandado por Stovall ha cruzado el río esta tarde en una operación de reconocimiento. La palabra más repetida es 
+        “suicidio”. Esperemos que se equivoquen…
+        </em></p>
+      img: 'escritorio.jpg'
+      actions:
+        -
+          text: 'Ver el resto'
+          href: 'carpeta'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    20-enero:
+      text: >
+        <p><em>
+        El sonido de la artillería es atronador. Estamos agazapados en la orilla este del río, en una trinchera que hemos cavado en las últimas horas del día, 
+        ocultos bajo la maleza. Esperamos las órdenes para comenzar el avance y cruzar el río, badeándolo. La artillería alemana ha destruído los puentes 
+        construidos por los zapadores. Que Dios nos proteja.
+        </em></p>
+      img: 'escritorio.jpg'
+      actions:
+        -
+          text: 'Ver el resto'
+          href: 'carpeta'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    21-enero:
+      text: >
+        <p><em>
+        Un desastre. Un desastre sangriento. La artillería no hizo efecto y los británicos no consiguieron llegar a su posición. Los alemanes nos 
+        ametrallaron sin piedad. En el medio del río. No había lugar donde esconderse. Tanta sangre… Tantos gritos… El pelotón de Strom fue aniquilado 
+        por un mortero. No quedó nadie en pie. Cavamos trincheras con nuestros propios cascos mientras las balas silbaban sobre nuestras cabezas. 
+        Ahora mismo escribo con la cabeza hundida en el barro. Rezando. Padre Nuestro Todopoderoso, ayúdanos. Vienen a matarnos. Ayúdanos.
+        </em></p>
+      img: 'escritorio.jpg'
+      actions:
+        -
+          text: 'Ver el resto'
+          href: 'carpeta'
+        -
+          text: 'Echas un vistazo a tu alrededor'
+          href: 'dormitorio'
+    baño:
+      text: >
+        <p>
+        Detrás hay un baño con su bañera, su inodoro, su lava manos... todo totalmente destrozado.
+        No lo han usado en años.
+        </p>
+      img: 'baño.jpg'
+      actions:
+        -
+          text: 'Volver al pasillo'
+          href: 'pasillo'
+    fondo-pasillo:
+      text: >
+        <p>
+        Te acercas poco a poco al brillo que hay al fondo del pasillo. Descubres que es un viejo
+        espejo, con el cristal roto.
+        </p>
+        <p>
+        Pero cuando te fijas detenidamente ves que hay una mancha con la forma de la palma de una mano
+        de un color parduzco. Es barro.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Comprobar la mancha en el espejo'
+          href: 'fantasma'
+        -
+          text: 'Volver al pasillo'
+          href: 'pasillo'
+    fantasma:
+      text: >
+        <p>
+        Tocas la mancha. El barro todavía está húmedo. Alguién la ha dejado hace poco.
+        </p>
+        <p>
+        De repente, allí donde tu dedo ha tocado el espejo, empieza a formarse una imagen en él... 
+        Son letras y rezan así&#58;
+        </p>
+        <p>
+          <em>
+            ¿Estás preparado para probar que eres digno de confianza, que eres miembro de la "Texas"
+            y que has estado en la batalla de Montecassino?
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Estoy preparado'
+          href: 'pregunta-1'
+        -
+          text: 'Todavía no'
+          href: 'no-jugar'
+    no-jugar:
+      text: >
+        <p>
+          <em>
+            No tardes... Si quieres salir de aquí con vida...
+          </em>
+        </p>
+        <p>
+        Las palabras se desvanecen en el espejo y la mancha con forma de palma de una mano vuelve
+        a aparecer.
+        </p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Comprobar la mancha en el espejo'
+          href: 'fantasma'
+        -
+          text: 'Volver al pasillo'
+          href: 'pasillo'
+    pregunta-1:
+      text: >
+        <p>
+          <em>
+            El teniente general Mark Clark comandaba el V ejército americano. Por todos era 
+            sabido que a nuestro general, John Oswell, no le caía demasiado bien. Eran como 
+            el día y la noche. Oswell, frío y tranquilo. Clark, ardiente y temerario.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'No era Clark, era Eisenhower'
+          href: 'respuesta-1-1'
+        -
+          text: '¿John Oswell? Querrás decir Fred Walker'
+          href: 'respuesta-1-3'
+        -
+          text: 'No era el V, sino el VII ejército americano'
+          href: 'respuesta-1-2'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    end-juego-default:
+      text: >
+        <p>
+          <em>
+            Lo siento, pero no eres digno de confianza...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        </p>
+        <p>
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-1-1:
+      text: >
+        <p>
+        &#8212; Mark Clark no comandaba el ejército americano. Era el general Dwight D. Eisenhower
+        en presona.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-1'
+    end-juego-1:
+      text: >
+        <p>
+          <em>
+            ¿Eisenhower dirigiendo personalmente un ejército? Lo siento, pero no eres digno
+            de confianza...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-1-2:
+      text: >
+        <p>&#8212; Mark Clark comandaba el VII ejército americano, no el VII</p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-default'
+    respuesta-1-3:
+      text: >
+        <p>&#8212; Fred Walker era el general de la 36ª división de infantería americana.
+        No sé quien es John Oswell.</p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-1-3-correcta'
+    respuesta-1-3-correcta:
+      text: >
+        <p>
+          <em>
+            Perfecto. Continuemos...
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-2'
+    pregunta-2:
+      text: >
+        <p>
+          <em>
+            Llegamos a la ladera de Montecassino en enero de 1944. Hacía un frío de mil
+            demonios. La ropa se nos congelaba si no teníamos cuidado al secarla después de
+            vadear un río.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-3'
+        -
+          text: 'No hacía frío. El día era caluroso'
+          href: 'respuesta-2-2'
+        -
+          text: 'No fue en enero de 1944, sino en diciembre de 1944'
+          href: 'respuesta-2-3'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-2-2:
+      text: >
+        <p>
+        &#8212; Aunque era un día de invierno, la mañana amaneció soleada, calurosa y agradable.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-2'
+    end-juego-2:
+      text: >
+        <p>
+          <em>
+            No. Fue uno de los días más fríos que recuerdo en toda mi vida.
+            Lo siento, pero no eres digno de confianza...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-2-3:
+      text: >
+        <p>
+        Los aliados llegaron a Montecassino a finales del año 1944, no en enero.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-default'
+    pregunta-3:
+      text: >
+        <p>
+          <em>
+            Nuestra misión era simple&#58; debíamos cruzar el río Lento y tomar posiciones 
+            al oeste para encerrar a los alemanes atrincherados en la aldea de San Angelo, 
+            en la cumbre de Montecassino.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'No era el río Lento, sino el río Rápido'
+          href: 'respuesta-3-3'
+        -
+          text: 'No era al oeste, sino al este'
+          href: 'respuesta-3-1'
+        -
+          text: 'No eran alemanes, eran italianos'
+          href: 'respuesta-3-2'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-3-1:
+      text: >
+        <p>
+        &#8212; Vuestra misión era tomar la orilla este del río, no la oeste.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-4'
+    respuesta-3-2:
+      text: >
+        <p>
+        &#8212; Era el ejército italiano el que se atrincheraba en San Angelo, no los nazis.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-5'
+    respuesta-3-3:
+      text: >
+        <p>
+        &#8212; El río que pasa por Montecassino y que separa Nápoles de Roma es el río 
+        Rápido, no el río Lento.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-3-correcta'
+    end-juego-4:
+      text: >
+        <p>
+          <em>
+            Deberías coger un mapa y aprenderte donde está Montecassino...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    end-juego-5:
+      text: >
+        <p>
+          <em>
+            Italia ya se había rendido en septiembre de 1943 y los alemanes habían tomado 
+            el norte de la península...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-3-correcta:
+      text: >
+        <p>
+          <em>
+            Perfecto, continuemos.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-4'
+    pregunta-4:
+      text: >
+        <p>
+          <em>
+            Mientras tanto, la 18ª división británica tomaría una posición elevada e 
+            impediría que los alemanes pudieran jodernos desde las alturas.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Contínua'
+          href: 'end-juego-default'
+        -
+          text: '¿Británicos? Eran franceses'
+          href: 'respuesta-4-1'
+        -
+          text: 'No era la 18ª británica, sino la 46ª'
+          href: 'respuesta-4-2'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-4-1:
+      text: >
+        <p>
+          &#8212; Eran los franceses los que debían tomar esa posición, no los británicos.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-6'
+    end-juego-6:
+      text: >
+        <p>
+          <em>
+            Un verdadero miembro de la Texas jamás se equivocaría en esto...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-4-2:
+      text: >
+        <p>
+          &#8212; La 46ª británica era la que debía proteger vuestro flanco, no la 18ª.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-4-2-correcta'
+    respuesta-4-2-correcta:
+      text: >
+        <p>
+          <em>
+            Correcto. Un verdadero miembro de la Texas no olvidaría ese dato nunca. Continuemos...
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-5'
+    pregunta-5:
+      text: >
+        <p>
+          <em>
+            Walker confiaba en la artillería pesada para hacer que los alemanes no sacaran 
+            la nariz de su fortaleza. Pero Clark no estaba nada convencido. Pronto se demostró 
+            que éste último tenía razón.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'Walker confiaba en los paracaidistas'
+          href: 'respuesta-5-1'
+        -
+          text: 'El fan de la artillería pesada era Clark, no Walker'
+          href: 'respuesta-5-2'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-5-1:
+      text: >
+        <p>
+          &#8212; En lo que confiaba Walker era en que los paracaidistas tomasen San Angelo antes
+          de que la 36ª cruzase el río.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-7'
+    end-juego-7:
+      text: >
+        <p>
+          <em>
+            No podían lanzarse paracaidistas porque San Angelo estaba plagada de defensas antiaéreas...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-5-2:
+      text: >
+        <p>
+          &#8212; Era Clark el que confiaba toda la suerte en la artillería pesada para mantener a los
+          nazis metidos en San Angelo. Walker creía precisamente lo contrario.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-5-2-correcta'
+    respuesta-5-2-correcta:
+      text: >
+        <p>
+          <em>
+            Bendito Walker... Si hubiese tenido más agallas para enfrentarse a Clark... Quizás muchos
+            de nosotros hoy seguiríamos con vida. Continuemos...
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-6'
+    pregunta-6:
+      text: >
+        <p>
+          <em>
+            La batalla comenzó el día 21. Fue un puto infierno desde el primer minuto. 
+            Las aguas del río bajaban rápidas y profundas y sus laderas eran abruptas y 
+            jodidamente altas.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'La batalla comenzó el día 20'
+          href: 'respuesta-6-2'
+        -
+          text: 'El río estaba tranquilo'
+          href: 'respuesta-6-1'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-6-1:
+      text: >
+        <p>
+          &#8212; Las aguas del Rápido bajaban tranquilas aquella noche. Y encontrásteis un 
+          sitio perfecto para cruzarlos. No tuvisteis problemas.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-default'
+    respuesta-6-2:
+      text: >
+        <p>
+          &#8212; Todo correcto, pero la batalla comenzó un día antes, el 20.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-6-2-correcta'
+    respuesta-6-2-correcta:
+      text: >
+        <p>
+          <em>
+            Exacto... El día 21 fue la noche en que... Mejor continuemos.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Eso, continuemos'
+          href: 'pregunta-7'
+    pregunta-7:
+      text: >
+        <p>
+          <em>
+            Un pequeño grupo, comandado por Stovall, cruzó el río y realizó un reconocimiento. 
+            Su informe fue contundente&#58; no íbamos a poder tomar la orilla oeste. Pero a Clark 
+            le importó una soberana mierda y ordenó un ataque frontal.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-8'
+        -
+          text: 'No era Stovall, sino Orwell'
+          href: 'respuesta-7-1'
+        -
+          text: 'En realidad Stovall dio un informe favorable'
+          href: 'respuesta-7-2'
+        -
+          text: 'Fue Walker el que ordenó el ataque, no Clark'
+          href: 'respuesta-7-3'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-7-1:
+      text: >
+        <p>
+          &#8212; El grupo de reconocimiento fue liderado por Orwell, no por Stovall.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-8'
+    end-juego-8:
+      text: >
+        <p>
+          <em>
+            Te contaré un secreto&#58; yo tampoco sé quién es Oswell...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-7-2:
+      text: >
+        <p>
+          &#8212; Stovall, realmente, aconsejó el ataque. No encontró motivos para que no 
+          pudiéseis tomar la otra orilla del río.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-9'
+    end-juego-9:
+      text: >
+        <p>
+          <em>
+            Stovall tenía más razón que el imbécil de Clark con todas esas medallas en su 
+            asqueroso pecho
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    respuesta-7-3:
+      text: >
+        <p>
+          &#8212; Walker fue el que finalmente tomó la decisión de lanzar el ataque. 
+          Clark, por el contrario, se opuso.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-10'
+    end-juego-10:
+      text: >
+        <p>
+          <em>
+            Walker jamás se opondría a una orden directa de Clark por mucho que no le convenciese.
+            Era su superior...
+          </em>
+        </p>
+        <p>
+        Nada más terminas de leer estas palabras, el espejo estalla en mil pedazos, uno de los cuales
+        te atraviesa la garganta, seccionándote la arteria carótida.
+        No puedes hacer nada más que agarrarte desesperadamente el cuello mientras la vida se te
+        escapa a borbotones. Jamás debiste entrar en esta cabaña
+        </p>
+      img: 'espejo-rojo.jpg'
+      end: true
+    pregunta-8:
+      text: >
+        <p>
+          <em>
+            Las protestas de Walker deberían haber sido más duras… Lo único que consiguió 
+            es que aprobasen un bombardeo nocturno sobre la aldea de San Angelo.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-9'
+        -
+          text: 'El bombardeo sería durante el día'
+          href: 'respuesta-8-1'
+        -
+          text: 'Se bombardearía el monasterio, no San Angelo'
+          href: 'respuesta-8-2'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-8-1:
+      text: >
+        <p>
+         &#8212; El bombardeo fue lanzado por el día, no por la noche.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-default'
+    respuesta-8-2:
+      text: >
+        <p>
+         &#8212; La artillería apuntaba al monasterio, no a la aldea de San Angelo.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-default'
+    pregunta-9:
+      text: >
+        <p>
+          <em>
+            Puto inútil… Lo único que tuvieron que hacer los alemanes fue mover su posición desde la ladera este a la oeste, apuntarnos mientras 
+            cruzábamos el río al aire libre y darnos por el culo con una ametralladora en una mano y una buena 
+            jarra de cerveza caliente en la otra.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-10'
+        -
+          text: 'Los alemanes no os atacaron a vosotros, sino a la artillería.'
+          href: 'respuesta-9-1'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-9-1:
+      text: >
+        <p>
+         &#8212; Los alemanes atacaron directamente a vuestra artillería al oeste. Vosotros pudistéis cruzar el río con tranquilidad.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-default'
+    pregunta-10:
+      text: >
+        <p>
+          <em>
+            Nos dieron con todo. Nuestros chicos caían desmembrados en las frías aguas del 
+            río. Unos pocos pudimos llegar a la otra orilla a borde de aquellas viejas 
+            barcazas ya que nuestros puentes habían sido volados por la artillería alemana.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'pregunta-11'
+        -
+          text: 'No cruzásteis en barca, los puentes aguantaron.'
+          href: 'respuesta-10-1'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-10-1:
+      text: >
+        <p>
+         &#8212; No cruzasteis en barca. Algunos de los puentes construidos aguantaron y pudisteis cruzar por ellos.
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'end-juego-default'
+    pregunta-11:
+      text: >
+        <p>
+          <em>
+            Entonces llegó el mazazo definitivo&#58; los franceses no habían alcanzado su posición. 
+            Estábamos rodeados. Las balas comenzaron a impactar sobre nuestras cabezas.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Continúa'
+          href: 'end-juego-default'
+        -
+          text: 'Donde dices franceses quieres decir británicos'
+          href: 'respuesta-11-1'
+        -
+          text: 'Mmm... Mejor vuelvo en un rato'
+          href: 'no-jugar'
+    respuesta-11-1:
+      text: >
+        <p>
+          &#8212; Los británicos fueron los que no alcanzaron su posición. Os fallaron aquél día...
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Cruzar los dedos...'
+          href: 'respuesta-11-1-correcta'
+    respuesta-11-1-correcta:
+      text: >
+        <p>
+          <em>
+            Malditos británicos... Brillantes a la hora de la diplomacia. Pero no puedes 
+            contar con ellos para nada más...
+          </em>
+        </p>
+        <p>
+          <em>
+            Mis recuerdos llegan hasta aquí... Si realmente estuviste allí, podrás decirme cómo
+            terminó todo.
+          </em>
+        </p>
+      img: 'espejo-verde.jpg'
+      actions:
+        -
+          text: 'Por supuesto'
+          href: 'conclusion-1'
+    conclusion-1:
+      text: >
+        <p>Las letras se borran rápidamente del espejo. No queda rastro de la marca de barro. Pero en su reflejo, ves un hombre detrás de ti.</p>
+      img: 'espejo.jpg'
+      actions:
+        -
+          text: 'Me doy la vuelta'
+          href: 'conclusion-2'
+    conclusion-2:
+      text: >
+        <p>Es un hombre alto, rondando los veinticinco años. Viste como una soldado de la II Guerra Mundial. Y porta un fusil. Sus ojos son vidriosos y te observan con una pizca de
+        lo que interpretas como... camaradería.</p>
+        <p>
+          ¿Y bien? &#8212; la voz de aquel hombre se emite sin necesidad de que abra los labios. Pero en su tono no hay amenaza. Sólo curiosidad.
+        </p>
+      img: 'pasillo-fantasma.jpg' # CAMBIAR
+      actions:
+        -
+          text: 'Finalmente ganamos la guerra'
+          href: 'ganamos-1'
+        -
+          text: 'Clark fue juzgado, pero declarado inocente'
+          href: 'clark-inocente-1'
+        -
+          text: 'Clark fue juzgado y declarado culpable'
+          href: 'clark-culpable-1'
+    ganamos-1:
+      text: >
+        <p>&#8212; Finalmente, se consiguió tomar Roma. Y más adelante Berlín. Europa fue liberada; vuestra muerte no fue en vano.</p>
+        <p>El joven baja la mirada y tuerce sus labios en una tosca sonrisa.</p>
+        <p>&#8212; Supongo que deberé contentarme con eso... &#8212; dice con desasosiego.</p>
+        <p>Pestañeas y ya no está. Ha desaparecido sin dejar rastro.</p>
+      img: 'pasillo.jpg'
+      actions:
+        -
+          text: '¡Es hora de salir de aquí!'
+          href: 'salir-mal-1'
+    clark-inocente-1:
+      text: >
+        <p>&#8212; Al terminar la guerra, Clark fue juzgado por un tribunal militar por las decisiones tomadas en Montecassino. Pero fue puesto en libertad sin cargos.</p>
+        <p>El joven baja la mirada y tuerce sus labios en una tosca sonrisa.</p>
+        <p>&#8212; Supongo que así debe ser. Que valientes soldados mueran bajo las órdenes de un inútil no le importa a nadie... &#8212; dice con desasosiego.</p>
+        <p>Pestañeas y ya no está. Ha desaparecido sin dejar rastro.</p>
+      img: 'pasillo.jpg'
+      actions:
+        -
+          text: '¡Es hora de salir de aquí!'
+          href: 'salir-mal-1'
+    clark-culpable-1:
+      text: >
+        <p>&#8212; Al terminar la guerra, Clark fue juzgado por un tribunal militar por las decisiones tomadas en Montecassino. Lo encerraron durante muchos años.</p>
+        <p>El joven abre los ojos con sorpresa y sonríe con vehemencia.</p>
+        <p>&#8212; Al final de todo, se ha hecho justicia... &#8212; dice con entusiasmo.</p>
+        <p>Pestañeas y ya no está. Ha desaparecido sin dejar rastro.</p>
+      img: 'pasillo.jpg'
+      actions:
+        -
+          text: '¡Es hora de salir de aquí!'
+          href: 'salir-bien-1'
+    salir-mal-1:
+      text: >
+        <p>
+        Te diriges rápidamente hacia la puerta. Está abierta de par en par. La cruzas sin miramientos. Notar en tu rostro el aire fresco de la noche, 
+        escuchar el canto de los grillos, observar los árboles envueltos con la ténue luz de la luna... te parecen regalos de incalculable valor.
+        </p>
+      img: 'forest.jpg'
+      actions:
+        -
+          text: 'Basta de excursión campestre. Pasaré la noche en el coche.'
+          href: 'salir-mal-2'
+    salir-mal-2:
+      text: >
+        <p>
+        Bajas por el camino prácticamente corriendo. No te vuelves a mirar atrás ni una sola vez. Cuando te das cuenta, estás a escasos metros de tu coche. 
+        ¿Es posible que estuvieras todo este tiempo tan cerca de él?
+        </p>
+      img: 'coche.jpg'
+      actions:
+        -
+          text: 'Me da igual. Quiero salir de aquí.'
+          href: 'salir-mal-3'
+    salir-mal-3:
+      text: >
+        <p>
+        Montas en el coche y ¡arranca a la primera! Aprietas el acelerador y, dejando atrás una gran polvareda, dejas todo aquello atrás...
+        </p>
+      img: 'coche.jpg'
+      actions:
+        -
+          text: 'Por fin...'
+          href: 'salir-mal-4'
+    salir-mal-4:
+      text: >
+        <p>
+        Semanas después, desayunando en tu cafetería preferida, reparas en una noticia en el periódico...
+        </p>
+        <p>
+          <em>«<strong>Mujer desaparecida en el bosque.</strong> Hace tres días que Olivia Oldfield ha desaparecido en los bosques cercanos...»</em>
+        </p>
+        <p>Un escalofrío recorre tu espalda en el momento en el que te das cuenta que aquello todavía no ha terminado.</p>
+      img: 'periodico.jpg'
+      end: true
+    salir-bien-1:
+      text: >
+        <p>
+        Te diriges rápidamente hacia la puerta. Está abierta de par en par. La cruzas sin miramientos. Notar en tu rostro el aire fresco de la noche, 
+        escruchar el canto de los grillos, observar los árboles envueltos con la ténue luz de la luna... te parecen regalos de incalculable valor.
+        </p>
+      img: 'forest.jpg'
+      actions:
+        -
+          text: 'Basta de excursión campestre. Pasaré la noche en el coche.'
+          href: 'salir-bien-2'
+    salir-bien-2:
+      text: >
+        <p>
+        Bajas por el camino prácticamente corriendo. No te vuelves a mirar atrás ni una sola vez. Cuando te das cuenta, estás a escasos metros de tu coche. 
+        ¿Es posible que estuvieras todo este tiempo tan cerca de él?
+        </p>
+      img: 'coche.jpg'
+      actions:
+        -
+          text: 'Me da igual. Quiero salir de aquí.'
+          href: 'salir-bien-3'
+    salir-bien-3:
+      text: >
+        <p>
+        Montas en el coche y ¡arranca a la primera! Aprietas el acelerador y, dejando atrás una gran polvareda, dejas todo aquello atrás...
+        </p>
+      img: 'coche.jpg'
+      actions:
+        -
+          text: 'Por fin...'
+          href: 'salir-bien-4'
+    salir-bien-4:
+      text: >
+        <p>
+        Cuando llevas un buen trecho andado, y el sol empieza a despuntar en el horizonte, reparas en una pequeña mancha de vaho en la esquina del espejo retrovisor.
+        </p>
+        <p>En el medio de la mancha puedes leer claramente una sencilla y significativa palabra.</p>
+        <p><em><strong>Gracias.</strong></em></p>
+      img: 'carretera.jpg'
+      end: true
+    
