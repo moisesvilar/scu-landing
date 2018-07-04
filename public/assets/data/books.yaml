@@ -1722,9 +1722,9 @@
         -
           text: 'No era el V, sino el VII ejército americano'
           href: 'respuesta-1-2'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     end-juego-default:
       text: >
         <p>
@@ -1818,9 +1818,9 @@
         -
           text: 'No fue en enero de 1944, sino en diciembre de 1944'
           href: 'respuesta-2-3'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-2-2:
       text: >
         <p>
@@ -1880,9 +1880,9 @@
         -
           text: 'No eran alemanes, eran italianos'
           href: 'respuesta-3-2'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-3-1:
       text: >
         <p>
@@ -1976,9 +1976,9 @@
         -
           text: 'No era la 18ª británica, sino la 46ª'
           href: 'respuesta-4-2'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-4-1:
       text: >
         <p>
@@ -2046,9 +2046,9 @@
         -
           text: 'El fan de la artillería pesada era Clark, no Walker'
           href: 'respuesta-5-2'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-5-1:
       text: >
         <p>
@@ -2119,9 +2119,9 @@
         -
           text: 'El río estaba tranquilo'
           href: 'respuesta-6-1'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-6-1:
       text: >
         <p>
@@ -2178,9 +2178,9 @@
         -
           text: 'Fue Walker el que ordenó el ataque, no Clark'
           href: 'respuesta-7-3'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-7-1:
       text: >
         <p>
@@ -2279,9 +2279,9 @@
         -
           text: 'Se bombardearía el monasterio, no San Angelo'
           href: 'respuesta-8-2'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-8-1:
       text: >
         <p>
@@ -2319,9 +2319,9 @@
         -
           text: 'Los alemanes no os atacaron a vosotros, sino a la artillería.'
           href: 'respuesta-9-1'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-9-1:
       text: >
         <p>
@@ -2349,9 +2349,9 @@
         -
           text: 'No cruzásteis en barca, los puentes aguantaron.'
           href: 'respuesta-10-1'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-10-1:
       text: >
         <p>
@@ -2378,9 +2378,9 @@
         -
           text: 'Donde dices franceses quieres decir británicos'
           href: 'respuesta-11-1'
-        -
-          text: 'Mmm... Mejor vuelvo en un rato'
-          href: 'no-jugar'
+        # -
+          # text: 'Mmm... Mejor vuelvo en un rato'
+          # href: 'no-jugar'
     respuesta-11-1:
       text: >
         <p>
