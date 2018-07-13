@@ -905,11 +905,56 @@ var a=n(2);a(window.location.href)&&window.isAddThisTrackingFrame||!function(){f
     yaml=new Dumper();yaml.indentation=indent;return yaml.dump(input,inline,0,exceptionOnInvalidType,objectEncoder);};Yaml.stringify=function(input,inline,indent,exceptionOnInvalidType,objectEncoder){return this.dump(input,inline,indent,exceptionOnInvalidType,objectEncoder);};Yaml.load=function(path,callback,exceptionOnInvalidType,objectDecoder){return this.parseFile(path,callback,exceptionOnInvalidType,objectDecoder);};return Yaml;})();if(typeof window!=="undefined"&&window!==null){window.YAML=Yaml;}
     if(typeof window==="undefined"||window===null){this.YAML=Yaml;}
     module.exports=Yaml;},{"./Dumper":1,"./Parser":7,"./Utils":10}]},{},[11]);
-    function BookService(){this.books=YAML.load(BookService.FILE_URL);}
-    BookService.FILE_URL='assets/data/books.yml'
-    BookService.prototype.getRandomBook=function(){var index=Math.floor(Math.random()*this.books.length);return this.books[index];}
-    function DatabaseService(){firebase.initializeApp(DatabaseService.FIREBASE_CONFIG);this.database=firebase.database();}
-DatabaseService.FIREBASE_CONFIG={apiKey:'AIzaSyDc2cVi7YSZcD6RMGMuW2hHJ42ITvqf4z0',authDomain:'bardo-b9003.firebaseapp.com',databaseURL:'https://bardo-b9003.firebaseio.com',projectId:'bardo-b9003',storageBucket:'bardo-b9003.appspot.com',messagingSenderId:'1052343586713'};DatabaseService.prototype.writeEmail=function(email){const emailsRef=this.database.ref('emails');const newEmailRef=emailsRef.push();const ts = new Date();return newEmailRef.set({email:email, ts: ts.toString()});};
+
+    function BookService() {
+        this.books = YAML.load(BookService.FILE_URL);
+    }
+    
+    BookService.FILE_URL = 'assets/data/books.yaml'
+    
+    BookService.prototype.getRandomBook = function() {
+        var index = Math.floor(Math.random() * this.books.length);
+        return this.books[index];
+    }
+
+    BookService.prototype.getBook = function(bookId) {
+        const result = this.books.find(function(book) {
+            return book.id === bookId;
+        });
+        if (!result) {
+            throw new Error(`Book with id ${bookId} not found`)
+        }
+        return result;
+    }
+
+    BookService.prototype.getAll = function() {
+        return this.books;
+    }
+    
+    function DatabaseService() {
+        firebase.initializeApp(DatabaseService.FIREBASE_CONFIG);
+        this.database = firebase.database();
+    }
+    
+    DatabaseService.FIREBASE_CONFIG = {
+        apiKey: 'AIzaSyDc2cVi7YSZcD6RMGMuW2hHJ42ITvqf4z0',
+        authDomain: 'bardo-b9003.firebaseapp.com',
+        databaseURL: 'https://bardo-b9003.firebaseio.com',
+        projectId: 'bardo-b9003',
+        storageBucket: 'bardo-b9003.appspot.com',
+        messagingSenderId: '1052343586713'
+    };
+    
+    DatabaseService.prototype.writeEmail = function(email) {
+        const emailsRef = this.database.ref('emails');
+        const newEmailRef = emailsRef.push();
+        const ts = new Date();
+        return newEmailRef.set({
+            email: email,
+            ts: ts.toString()
+        });
+    };
+    
 
 $(document).ready(function() {
     new IndexController();
@@ -922,15 +967,27 @@ function IndexController() {
     this.setCookies();
     this.bookService = new BookService();
     this.databaseService = new DatabaseService();
-    this.book = this.bookService.getRandomBook();
-    this.preloadImages(this.book);
-    this.initStory(this.book);
+    this.preloadImages();
+    this.setBookActions();
     this.setContactForm();
     this.setGaEvents();
 }
 
 IndexController.ACTION_TEMPLATE = `<a href='{href}' id='{id}' class='btn action'>{text}</a>`;
 IndexController.SUBMIT_TEXT_IN_SENDING_STATE = 'Un segundo...';
+
+IndexController.prototype.setBookActions = function() {
+    const $actions = $('a.action.book');
+    const self = this;
+    $actions.click(function(e) {
+        e.preventDefault();
+        const $this = $(this);
+        const bookId = $this.attr('href');
+        const book = self.bookService.getBook(bookId);
+        self.initStory(book);
+        return false;
+    });
+};
 
 IndexController.prototype.showModal = function() {
     var $modal = $('#init-modal');
@@ -952,15 +1009,19 @@ IndexController.prototype.setBlogAnchor = function() {
     });
 }
 
-IndexController.prototype.preloadImages = function(book) {
-    var scenes = book.scenes;
-    for (var prop in scenes) {
-        var scene = scenes[prop];
-        if (scene.img) {
-            var img = new Image();
-            img.src = this.getFullPathToImage(scene.img);
+IndexController.prototype.preloadImages = function() {
+    const books = this.bookService.getAll();
+    const self = this;
+    books.forEach(function(book) {
+        var scenes = book.scenes;
+        for (var prop in scenes) {
+            var scene = scenes[prop];
+            if (scene.img) {
+                var img = new Image();
+                img.src = self.getFullPathToImage(scene.img);
+            }
         }
-    }
+    });
 };
 
 IndexController.prototype.setMailAnchors = function() {
