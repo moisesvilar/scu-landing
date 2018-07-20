@@ -1087,6 +1087,7 @@ IndexController.prototype.changeStory = function(book, scene, actionsHtml) {
     $actions.html(actionsHtml);
     this.showCallToActionIfEndingScene(scene, book.id);
     this.changeImage(scene.img);
+    this.preloadImages();
 };
 
 IndexController.prototype.changeImage = function(img) {
