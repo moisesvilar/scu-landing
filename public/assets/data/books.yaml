@@ -2593,7 +2593,8 @@
         -
           text: '2 horas antes ...'
           href: 'antes'
-
+    
+    # FALTA DESARROLLAR
     antes:
       text: >
         <p>Los tubos fluorescentes de la habitación se encienden con su sonido característico. 
@@ -2652,8 +2653,9 @@
           text: 'Con el tiempo te acabas acostumbrando'
           href: 'llegada-sala'
         - 
-          text: '.Aprovecha ahora que aún puedes y evitate esta mierda'
+          text: 'Aprovecha ahora que aún puedes y evitate esta mierda'
           href: 'llegada-sala'
+
     camino-silencio:
       text: >
         <p>El chico comienza a hablar - Buah tío! no sabes el lío que tienen con este caso, 
