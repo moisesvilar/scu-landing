@@ -2579,4 +2579,128 @@
         <p><em><strong>Gracias.</strong></em></p>
       img: 'carretera.jpg'
       end: true
-  
+-
+  id: '3'
+  title: 'La Morgue'
+  scenes:
+    start:
+      text: >
+        <p>Intentas calmarte pero notas la ira subiendo por el cuello, todo está rojo… 
+        mientras cortabas la piel y la carne de esa joven parece que un chorro de sangre 
+        te ha saltado a la cara. Otra noche rodeado de vísceras, otra de tantas…</p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: '2 horas antes ...'
+          href: 'antes'
+
+    antes:
+      text: >
+        <p>Los tubos fluorescentes de la habitación se encienden con su sonido característico. 
+        El joven becario que está de guardia en la morgue acaba de encender la luz 
+        de la habitación del archivo para buscar el expediente:</p>
+        <p>- “A ver… número 17283, cámara  21 ,Julia Erwergh… aquí está” 
+        – El joven te mira con cara alegre y te ofrece la carpeta.</p>
+      img: 'house-forest.jpg'
+      actions:
+        -
+          text: 'Leer el informe'
+          href: 'leer-informe'
+        -
+          text: 'Resúmemelo, no tengo tiempo para esto'
+          href: 'resumen-informe'
+
+    leer-informe:
+      text: >
+        <p>Informe de Julia Erwergh :ID: 17283 </p>
+      img: 'house-forest.jpg'
+      actions:
+        - 
+          text: 'seguir...'
+          href: 'seguir1'
+
+    resumen-informe:
+      text: >
+        <p></p>
+      img: 'house-forest.jpg'
+      actions:
+        - 
+          text: 'seguir...'
+          href: 'seguir1'  
+
+    seguir1:
+      text: >
+        <p>Cuando pasa el tren de las 23:15 todo el edificio tiembla y cae polvillo del cemento 
+        de las grietas del edificio… “cualquier día se nos cae encima” … dice el joven mientras 
+        cierra la puerta del archivo y camina detrás de ti hasta la sala de autopsias.</p>
+      img: 'house-forest.jpg'
+      actions:
+        - 
+          text: 'Caminar en silencio'
+          href: 'camino-silencio'
+        - 
+          text: '¿Eres nuevo chaval?'
+          href: 'camino-hablar'
+
+    camino-hablar:
+      text: >
+        <p>Si, me llamo Clarence, empecé hace una semana, la verdad es que creo que esto de la morgue 
+        no es lo mismo, con las cosas que veo me cuesta dormir...</p>
+      img: 'house-forest.jpg'
+      actions:
+        - 
+          text: 'Con el tiempo te acabas acostumbrando'
+          href: 'llegada-sala'
+        - 
+          text: '.Aprovecha ahora que aún puedes y evitate esta mierda'
+          href: 'llegada-sala'
+    camino-silencio:
+      text: >
+        <p>El chico comienza a hablar - Buah tío! no sabes el lío que tienen con este caso, 
+        nadie quiere comerse este marrón. Una chica muerta que no le importa a nadie, otro día en la ciudad de Midway… 
+        te cuenta que aun nadie ha inspeccionado el cadáver…</p>
+      img: 'house-forest.jpg'
+      actions:
+        - 
+          text: 'seguir...'
+          href: 'llegada-sala'
+
+    llegada-sala:
+      text: >
+        <p>Cuando llegas a la sala de autopsias  en dos paredes opuestas se levantan dos frigoríficos llenos 
+        de cámaras para cadáveres. Buscas la 21 y al abrirla ves a una chica joven, rubia de aspecto angelical 
+        con la tez muy pálida.</p>
+      img: 'house-forest.jpg'
+      actions:
+        - 
+          text: 'fijarse en la chica'
+          href: 'chica-cara'
+        - 
+          text: 'pedir ayuda para colocarla en la camilla...'
+          href: 'chica-camilla'
+
+    chica-cara:
+      text: >
+        <p>Te fijas en la cara de la chica ... no parece la del informe...</p>
+      img: 'house-forest.jpg'
+      actions:
+
+        - 
+          text: 'ey tío!, parece que este no es el cuerpo'
+          href: 'chica-levanta'
+      
+    chica-camilla:
+      text: >
+        <p>Entre los dos poneis a la chica en la camilla para comenzar con la autopsia.
+        Eh tio! ¿puedo quedarme contigo?, me gustaría ver como trabajas, 
+        siempre se puede aprender algo nuevo.</p>
+      img: 'house-forest.jpg'
+      actions:
+        - 
+          text: 'Claro, te enseñaré algunos trucos'
+          href: 'ayudante-stay'
+          end: true
+        - 
+          text: 'Lo siento, pero debo concentrarme...'
+          href: 'ayudante-leaves'
+          end: true
