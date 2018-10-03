@@ -10921,9 +10921,10 @@ a {
 #contact #sent {
     display: none;
 }
-#historia, #equipo {
+#historia, #video {
     background-color: #dddddd;
 }
+
 @media (max-width: 731px) {
     #header .cookies {
         font-size: 1.2em;
