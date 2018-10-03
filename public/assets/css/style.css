@@ -10921,9 +10921,10 @@ a {
 #contact #sent {
     display: none;
 }
-#historia, #equipo {
+#historia, #video {
     background-color: #dddddd;
 }
+
 @media (max-width: 731px) {
     #header .cookies {
         font-size: 1.2em;
@@ -11005,4 +11006,19 @@ a {
     #header .actions .action {
         margin: 10px 10px;
     }
+}
+
+.iframe-container {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+
+.iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
