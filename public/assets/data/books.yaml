@@ -2582,6 +2582,7 @@
 
 - # LA MORGUE
   # INTRODUCCION
+  # FALTA DESARROLLARLA MÁS.
   id: '3'
   title: 'La Morgue'
   scenes:
@@ -2597,7 +2598,7 @@
           href: 'antes'
           
     
-    # FALTA DESARROLLAR
+    # COMIENZO ESCENA.
     antes:
       text: >
         <p>Los tubos fluorescentes de la habitación se encienden con su sonido característico. 
@@ -2664,11 +2665,12 @@
         - 
           text: '¿Eres nuevo chaval?'
           href: 'camino-hablar'
-   #CONVERSACIÓN CON CLARENCE.
+   #CONVERSACIÓN CON CLARENCE. 
+   #La idea es que el lector le coja cariño al personaje de Clarence y mostrar que Damian a pesar de ser un tipo que tiene un lado oscuro es un tipo afable.
     camino-hablar:
       text: >
         <p>Si, me llamo Clarence, empecé hace una semana, la verdad es que creo que esto de la morgue 
-        no es lo mismo, con las cosas que veo me cuesta dormir...</p>
+        no es lo mío, desde que estoy aquí me cuesta dormir por las noches...</p>
       img: 'house-forest.jpg'
       actions:
         - 
@@ -2744,12 +2746,13 @@
         - 
           text: 'Claro, te enseñaré algunos trucos'
           href: 'chica-levanta'
-          
+         
         - 
           text: 'Lo siento, pero debo concentrarme...'
           href: 'chica-levanta'
     
-    #PELEA CON LA CHICA.
+    #PELEA CON LA CHICA. 
+    #Si todo ha ido bien y Damian y Clarence se han dado cuenta que la chica tiene demasiado "buen color" los dos sobrevivirán. Si no la chica matará a Clarence o a los 2.
     chica-levanta:
       text: >
         <p>De pronto la chica se abalanza encima de ti, intentando morderte. Su primer ataque es muy fuerte pero no demasiado inteligente, 
