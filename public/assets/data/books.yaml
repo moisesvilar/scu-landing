@@ -2579,7 +2579,9 @@
         <p><em><strong>Gracias.</strong></em></p>
       img: 'carretera.jpg'
       end: true
--
+
+-   # LA MORGUE
+
   id: '3'
   title: 'La Morgue'
   scenes:
@@ -2588,11 +2590,12 @@
         <p>Intentas calmarte pero notas la ira subiendo por el cuello, todo está rojo… 
         mientras cortabas la piel y la carne de esa joven parece que un chorro de sangre 
         te ha saltado a la cara. Otra noche rodeado de vísceras, otra de tantas…</p>
-      img: 'house-forest.jpg'
+      img: 'tool.jpg'
       actions:
         -
           text: '2 horas antes ...'
           href: 'antes'
+          
     
     # FALTA DESARROLLAR
     antes:
@@ -2618,11 +2621,29 @@
       actions:
         - 
           text: 'seguir...'
+          href: 'leer-informe2'
+    leer-informe2:
+      text: >
+        <p>
+        Edad = 18
+        Estado Civil = Soltera
+        Familiares Conocidos = Madre Evelynn Coleman y Padre France Erwergh.
+        Testigos = El caver lo encontró un vecino de la zona al que ya se ha tomado declaración. Nº de Documento = 2122334
+        Observaciones = El cadaver de la chica fué encontrado cerca de un edificio en construcción a las afueras de Evergreen.
+        El cuerpo estaba parcialmente enterrado en un descampado envuelto en un plástico. Informe científico Nº = 434351
+        </p>
+      img: 'house-forest.jpg'
+      actions:
+        - 
+          text: 'seguir...'
           href: 'seguir1'
+          #Opcion documento caso
+          #Opcion informe CSI.
 
     resumen-informe:
       text: >
-        <p></p>
+        <p>La víctima es una chica joven, de las viviendas pobres al sur de la calle 12. La encontraron 
+        tirada en un descampado cerca de donde vivía. No se sabe mucho más.</p>
       img: 'house-forest.jpg'
       actions:
         - 
@@ -2634,7 +2655,7 @@
         <p>Cuando pasa el tren de las 23:15 todo el edificio tiembla y cae polvillo del cemento 
         de las grietas del edificio… “cualquier día se nos cae encima” … dice el joven mientras 
         cierra la puerta del archivo y camina detrás de ti hasta la sala de autopsias.</p>
-      img: 'house-forest.jpg'
+      img: 'morgue-pasillo.jpg'
       actions:
         - 
           text: 'Caminar en silencio'
@@ -2655,12 +2676,13 @@
         - 
           text: 'Aprovecha ahora que aún puedes y evitate esta mierda'
           href: 'llegada-sala'
-
+        #Ampliar conversación con Clarence.
+    
     camino-silencio:
       text: >
-        <p>El chico comienza a hablar - Buah tío! no sabes el lío que tienen con este caso, 
+        <p>Buah tío! no sabes el lío que tienen con este caso, 
         nadie quiere comerse este marrón. Una chica muerta que no le importa a nadie, otro día en la ciudad de Midway… 
-        te cuenta que aun nadie ha inspeccionado el cadáver…</p>
+        eres el primero que viene a inspeccionar el cadaver, es como si todo el mundo quisiera mirar para otra lado...</p>
       img: 'house-forest.jpg'
       actions:
         - 
@@ -2672,7 +2694,7 @@
         <p>Cuando llegas a la sala de autopsias  en dos paredes opuestas se levantan dos frigoríficos llenos 
         de cámaras para cadáveres. Buscas la 21 y al abrirla ves a una chica joven, rubia de aspecto angelical 
         con la tez muy pálida.</p>
-      img: 'house-forest.jpg'
+      img: 'morgue.JPG'
       actions:
         - 
           text: 'fijarse en la chica'
@@ -2683,12 +2705,12 @@
 
     chica-cara:
       text: >
-        <p>Te fijas en la cara de la chica ... no parece la del informe...</p>
-      img: 'house-forest.jpg'
+        <p>Cuando te acercas para ver la cara de la chica ves algo raro... no está tan pálida como debería...</p>
+      img: 'morgue.JPG'
       actions:
 
         - 
-          text: 'ey tío!, parece que este no es el cuerpo'
+          text: 'ey Clarence!, ¿Le habeis hecho algún tratamiento de conservación especial al cadaver? ¿O cuando la encontraron ya estaba así?'
           href: 'chica-levanta'
       
     chica-camilla:
@@ -2696,13 +2718,84 @@
         <p>Entre los dos poneis a la chica en la camilla para comenzar con la autopsia.
         Eh tio! ¿puedo quedarme contigo?, me gustaría ver como trabajas, 
         siempre se puede aprender algo nuevo.</p>
-      img: 'house-forest.jpg'
+      img: 'morgue.JPG'
       actions:
         - 
           text: 'Claro, te enseñaré algunos trucos'
-          href: 'ayudante-stay'
-          end: true
+          href: 'chica-levanta'
+          
         - 
           text: 'Lo siento, pero debo concentrarme...'
-          href: 'ayudante-leaves'
+          href: 'chica-levanta'
+       
+    chica-levanta:
+      text: >
+        <p>De pronto la chica se abalanza encima de ti, intentando morderte. Su primer ataque es muy fuerte pero no demasiado inteligente, 
+        se abalanza sobre ti intentando agarrar tus hombros con sus manos para poder morderte. Consigues agarrar sus muñecas mientras cae para
+        evitar que te agarre y ves un destello que sale del bolsillo del pecho de tu bata, tu bisturí. 
+        Ella también lo ha visto… y cuando miras para arriba vuelves a ver su brillante sonrisa.</p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'Intentas girar para conseguir ponerte encima de ella.'
+          href: 'combate-fullmount'
+        - 
+          text: 'Intentas soltarle un brazo y coger el bisturí.'
+          href: 'combate-soltarse'
+          
+          text: 'Intentas darle un cabezazo en la cara.'
+          href: 'combate-cabezazo'
+          
+    combate-fullmount:
+      text: >
+        <p>Haciendo fuerza con tus piernas y tus caderas intentas voltear la posición para estar tu encima de ella. 
+        Con un giro rápido y poniendo toda tu fuerzas, has conseguido tirarla de lado.Te levantas y coges el bisturí. 
+        Ella se levanta y esta vez te mira con cara extrañada…(Se ha dado cuenta de algo en Damian).</p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'Intentas girar para conseguir ponerte encima de ella.'
+          href: 'combate-final'
+    
+    combate-soltarse:
+      text: >
+        <p>Tienes un plan, le sueltas el brazo, coges el bisturí y trazas un arco a la altura de su garganta. 
+        Cuando le sueltas el brazo para intentar coger bisturí notas el tacto metálico frío del bisturí y de pronto un pinchazo en el pecho. 
+        La mano de la chica ha atravesado tu pecho y te desvaneces… lo ultimo que vez es otra vez esa maldita sonrisa preciosa...
+        </p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'Has muerto...'
+          href: 'final'
           end: true
+    
+    combate-cabezazo:
+      text: >
+        <p>Le das un cabezazo mientras agarras sus manos. con todas tus fuerzas en un rápido movimiento lanzas tu cabeza contra su cara intentando 
+        hacerle el mayor daño posible. Escuchas crujir los huesos de su nariz y los dientes, pero sus brazos no han parado ni un segundo de hacer fuerza… 
+        Cuando levantas la cabeza y miras para ella te devuelve una sonrisa perturbadora con los dientes que le quedan y se lanza a darte un cabezazo. 
+        Otra vez crujido, pero ahora hay algo nuevo, un dolor impresionante que te recorre todo el cuerpo. Escuchas una risita y sientes otro golpe tan fuerte 
+        como el anterior… “Ahora voy a ver yo lo que tienes dentro…” - Es lo último que escuchas antes de rendirte, antes de dejarte caer en la oscuridad ...
+        </p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'Has muerto...'
+          href: 'final'
+          end: true
+    
+    combate-final:
+      text: >
+        <p>PUM!! recobras el sentido con un fuerte sonido y notas la cara llena de sangre. 
+        Damian! estas bien? -  Mir te levanta y te hace salir de la oscuridad…
+        Damian! Damian! Joder!
+        Mir estoy bien. Que cojones ha pasado?
+        </p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'Has muerto...'
+          href: 'final'
+          end: true
+    
