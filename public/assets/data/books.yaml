@@ -2580,8 +2580,8 @@
       img: 'carretera.jpg'
       end: true
 
--   # LA MORGUE
-
+- # LA MORGUE
+  # INTRODUCCION
   id: '3'
   title: 'La Morgue'
   scenes:
@@ -2624,6 +2624,7 @@
           href: 'leer-informe2'
     leer-informe2:
       text: >
+        #Formatear para que se vea como un informe en pantalla y pensar cosas para añadir. 
         <p>
         Edad = 18
         Estado Civil = Soltera
@@ -2663,7 +2664,7 @@
         - 
           text: '¿Eres nuevo chaval?'
           href: 'camino-hablar'
-
+   #CONVERSACIÓN CON CLARENCE.
     camino-hablar:
       text: >
         <p>Si, me llamo Clarence, empecé hace una semana, la verdad es que creo que esto de la morgue 
@@ -2671,12 +2672,32 @@
       img: 'house-forest.jpg'
       actions:
         - 
-          text: 'Con el tiempo te acabas acostumbrando'
-          href: 'llegada-sala'
+          text: 'Con el tiempo te acabas acostumbrando...'
+          href: 'clarence-friendly'
         - 
           text: 'Aprovecha ahora que aún puedes y evitate esta mierda'
           href: 'llegada-sala'
-        #Ampliar conversación con Clarence.
+     
+
+    clarence-friendly:
+      text: >
+        <p>Si, eso me dicen todos... pero empiezo a pensar que igual debería dedicarme a otra cosa... (El chico baja la cabeza aflijido)</p>
+      img: 'house-forest.jpg'
+      actions:
+        - 
+          text: 'Al final aunque ya sea tarde también ayudas a resolver lo que le ocurrió a esta gente'
+          href: 'clarence-friendly-apoyar'
+        - 
+          text: 'Pues la cosa no mejora con el tipi chico... si tienes problemas de estomago mejor que te dediques a otra cosa...'
+          href: 'clarence-friendly-desmoralizar'
+    
+    
+    
+    
+    
+    
+    
+    
     
     camino-silencio:
       text: >
@@ -2727,7 +2748,8 @@
         - 
           text: 'Lo siento, pero debo concentrarme...'
           href: 'chica-levanta'
-       
+    
+    #PELEA CON LA CHICA.
     chica-levanta:
       text: >
         <p>De pronto la chica se abalanza encima de ti, intentando morderte. Su primer ataque es muy fuerte pero no demasiado inteligente, 
@@ -2795,7 +2817,7 @@
       img: 'morgue.JPG'
       actions:
         - 
-          text: 'Has muerto...'
+          text: 'Mir estoy bien. Que cojones ha pasado?'
           href: 'final'
           end: true
     
