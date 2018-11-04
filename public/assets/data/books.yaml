@@ -2852,7 +2852,7 @@
 
     ataque-bisturi:
       text: >
-        <p>Agarras con todas tus fuerzas el pequeño bisturí mientras trazas arcos delante tuya... no parece buen plan</p>
+        <p>Agarras con todas tus fuerzas el pequeño bisturí mientras trazas arcos delante tuya... no parece buen plan...</p>
       img: 'morgue.JPG'
       actions:
         - 
@@ -2865,11 +2865,11 @@
     esperar:
       text: >
         <p>La chica te sonríe, y con un rápido movimiento agarra a Clarence(**TODO jaskas poner clarence o "el chico" segun si hablaste con el o no) 
-        que estaba hecho un ovillo en una esquina y lo interpone entre vosotros</p>
+        que estaba hecho un ovillo en una esquina y lo interpone entre vosotros agarrandolo por el cuello.</p>
       img: 'morgue.JPG'
       actions:
         - 
-          text: 'Mirar a tu alrededor'
+          text: '¡NO!,¡SUELTALO!...'
           href: 'mirar'
         - 
           text: 'Mantenerse a la espera'
@@ -2877,26 +2877,65 @@
     
     mirar:
       text: >
-        <p>Miras a tu alrededor intentando buscar algo que pueda ayudarte, pero ya es tarde... </p>
+        <p>Clarence forcejea con las piernas mientras corres hacia ella...   </p>
       img: 'morgue.JPG'
       actions:
         - 
           text: '...'
-          href: 'esperar2'
+          href: 'ataque-bueno'
     
     esperar2:
       text: >
-        <p>De pronto con un movimiento sobrehumano levanta a su presa atravesandola con su brazo por el pecho</p>
+        <p>De pronto con un movimiento sobrehumano atravisa con su brazo el pecho del joven que se queda inmobil</p>
       img: 'morgue.JPG'
       actions:
         - 
           text: 'Te abalanzas contra ella...'
           href: 'ataque-bueno'
-    
+        
+        - 
+          text: 'esperar...'
+          href: 'esperar3'
+
+    esperar3:
+      text: >
+        <p>Una gota de sudor cae por tu frente mientras continúas agarrando con fuerza tu visturí desesperadamente como si se tratase de un salvavidas en medio del oceano cuando la chica sonríe y antes de que te des
+        cuenta está justo delante de tu cara.</p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'Intentas clavarle el bisturí en la cabeza...'
+          href: 'fail1'
+        
+        - 
+          text: '¡Detente! puedo ayudarte ...'
+          href: 'fail2'
+
+    fail1:
+      text: >
+        <p>Cuando preparas tu brazo para clavarle el bisturí, la mano de la chica te agarra rapidamente por la muñeca y con la otra te atraviesa el pecho... Antes de que su visión se vuelva completamente negra
+        ves por ultima vez su sonrisa...</p>
+      img: 'morgue.JPG'
+      actions:
+      
+        - 
+          text: '...'
+          end: true
+
+    fail2:
+      text: >
+        <p>Ves por ultima vez la sonrisa de la chica cuando notas una mano atravesando tu pecho y la escuchas decir... No necesito la ayuda de un cobarde como tu...</p>
+      img: 'morgue.JPG'
+      actions:
+      
+        - 
+          text: '...'
+          end: true
+
     ataque-bueno:
       text: >
-        <p>Aprovechando que con el cuerpo ensartado tiene la movilidad muy limitada te abalanzas sobre ella como cuando jugabas en la liga universitaria. 
-        Mientras caeis escucha un ruido PUM!! gutural desagradable (El vampiro se ha clavado algo en la cabeza que la ha matado)</p>
+        <p>Aprovechando ahora tiene la movilidad muy limitada al tener que sujetar a Clarence te abalanzas sobre ella como cuando jugabas en la liga universitaria. 
+        Mientras caeis escucha un ruido golpe seco gutural desagradable. La chica se ha clavado un tubo de una lampara que cayo al suelo durante la pelea en la cabeza...</p>
       img: 'morgue.JPG'
       actions:
         - 
@@ -2958,4 +2997,8 @@
           text: 'Mir estoy bien. Tenemos a uno'
           href: 'final'
           end: true
+
+
+  ##Si Clarence sigue vivo --- Unirse al SCU? 
+  ##Preguntar nombre de la chica y si lo escriben bien dar algo de información adicional.
     
