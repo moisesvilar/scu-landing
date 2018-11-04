@@ -2588,32 +2588,74 @@
   scenes:
     start:
       text: >
-        <p>Intentas calmarte pero notas la ira subiendo por el cuello, todo está rojo… 
-        mientras cortabas la piel y la carne de esa joven parece que un chorro de sangre 
-        te ha saltado a la cara. Otra noche rodeado de vísceras, otra de tantas…</p>
+        <p>Cuando abres los ojos todo está rojo y sientes la ira subir por tu cuello, como un geiser, imparable, como otras veces...</p>
       img: 'tool.jpg'
       actions:
         -
-          text: '2 horas antes ...'
+          text: 'Respirar hondo para calmarte...'
+          href: 'sangre'
+    
+    sangre:
+      text: >
+        <p>Mientras cortabas la piel y la carne de esa joven parece que un chorro de sangre 
+        te ha saltado a la cara. Otra noche rodeado de vísceras, otra de tantas… </p>
+      img: 'morgue-building.jpg'
+      actions:
+        -
+          text: 'Dos horas antes ...'
           href: 'antes'
-          
+    
     
     # COMIENZO ESCENA.
     antes:
       text: >
-        <p>Los tubos fluorescentes del pasillo de la morgue se encienden con su sonido característico.</p>
-      img: 'house-forest.jpg'
+        <p>RIIIIIING .... RIIIIIING ... Estabas preparandote para ir a dormir cuando suena tu movil. </p>
+      img: 'morgue-building.jpg'
+      actions:
+        -
+          text: 'Coger el teléfono'
+          href: 'telefono'
+        
+        -
+          text: 'Ignorarlo'
+          href: 'telefono'
+
+    telefono:
+      text: >
+        <p>Hola Damian, soy Mir, perdona que te moleste a estas horas pero ha aparecido un cadaver de una chica de 17 años en un descampado en extrañas circustacias que 
+        encaja con el patrón de las últimas desaparecidas.</p>
+      img: 'morgue-building.jpg'
+      actions:
+        -
+          text: 'Voy para allá'
+          href: 'morgue-arrive'
+
+
+    #Al final vas a la morgue
+    morgue-arrive:
+      text: >
+        <p>Cuando llegas a la morgue de Green Shore son sobre las doce de la noche. En la entrada un joven afroamericano 
+        ve un partido en la televisión con cara de aburrimiento</p>
+      img: 'morgue-building.jpg'
+      actions:
+        -
+          text: 'Hola, soy del SCU ...'
+          href: 'morgue-salute'
+
+    morgue-salute:
+      text: >
+        <p>Si, me han avisado de que venías. Pasa por aquí, el joven se levanta de la silla y comienza a caminar por el pasillo. </p>
+      img: 'morgue-building.jpg'
       actions:
         -
           text: '¿Que tenemos?'
           href: 'resumen-informe'
 
-    #REVISAR FLUJO
     resumen-informe:
       text: >
         <p>La víctima es una chica de 17 años, de las viviendas pobres al sur de la calle 12. La encontró un vecino 
         tirada en un descampado cerca de donde vivía. No se sabe mucho más.</p>
-      img: 'house-forest.jpg'
+      img: 'morgue-entrance.jpg'
       actions:
         - 
           text: '¿Signos de violencia?'
@@ -2626,7 +2668,7 @@
           href: 'testigo'
         -
           text: 'Caminar en silencio...'
-          href: 'camino-silencio' 
+          href: 'llegada-sala' 
 
     violencia:
       text: >
@@ -2634,26 +2676,20 @@
         Parece que suele pasear al perro por esa zona</p>
       img: 'morgue-pasillo.jpg'
       actions:
-        - 
-          text: 'Caminar en silencio...'
-          href: 'llegada-sala'
+     
         - 
           text: 'Volver atrás'
           href: 'resumen-informe'
       
     testigo:
       text: >
-        <p>¿Testigo? ¡Esto es Midway!. Aquí nunca ha visto nadie nada ...</p>
+        <p>¿Testigo? ¡Esto es Midway!. Aquí nunca ha visto nadie nada ... El vecino que la encontró simplemente se la encontró allí.</p>
       img: 'morgue-pasillo.jpg'
       actions:
-        - 
-          text: 'Caminar en silencio...'
-          href: 'llegada-sala'
+     
         - 
           text: 'Volver atrás'
           href: 'resumen-informe'
-    
-    ###
 
     llegada-sala:
       text: >
@@ -2664,7 +2700,7 @@
       img: 'morgue.JPG'
       actions:
         - 
-          text: '¿Eres nuevo hermano, no me suena tu cara?'
+          text: '¿Eres nuevo hermano, no me suena tu cara? ...'
           href: 'clarence-hablar'
         - 
           text: 'Preparar tus utensilios'
@@ -2672,8 +2708,9 @@
 
     preparar-utensilios:
       text: >
-        <p>Sacas tus herramientas de la maleta y las colocas meticulosamente cada una en su lugar como haces siempre, es como un ritual...</p>
-      img: 'morgue.JPG'
+        <p>Sacas tus herramientas de la maleta y las colocas meticulosamente cada una en su lugar como haces siempre, es tu ritual, 
+        te hace sentir seguro y te ayuda a centrarte...</p>
+      img: 'tools.JPG'
       actions:
         - 
           text: 'Comenzar con la autopsia'
@@ -2683,8 +2720,8 @@
    #La idea es que el lector le coja cariño al personaje de Clarence y mostrar que Damian a pesar de ser un tipo que tiene un lado oscuro es un tipo afable.
     clarence-hablar:
       text: >
-        <p>Si, me llamo Clarence, empecé hace una semana ... Te dice el chico mientras vas preparandote.</p>
-      img: 'house-forest.jpg'
+        <p>Si, me llamo Clarence, empecé hace una semana ...</p>
+      img: 'moruge-with-body.jpg'
       actions:
         - 
           text: '¿Y que tal llevas el curro?'
@@ -2696,8 +2733,8 @@
 
     clarence-friendly:
       text: >
-        <p>Bueno... ¡Bien!, la verdad es que no hay mucho que hacer por aquí, así que aprovecho y tengo tiempo para ver los partidos de los NOMBRE EQUIPO de Midway</p>
-      img: 'house-forest.jpg'
+        <p>Bueno... ¡Bien!, la verdad es que no hay mucho que hacer por aquí, así que aprovecho y tengo tiempo para ver los partidos de los Pumas de Midway</p>
+      img: 'morgue-with-body.jpg'
       actions:
         - 
           text: 'eso es cierto, y la clientela no va a protestar...'
@@ -2705,13 +2742,15 @@
         - 
           text: 'pues no será porque no aparecen cadaveres en las calles de Midway...'
           href: 'clarence-friendly-desmoralizar'
-             
+
+
+    ##PENSAR ALGO MEJOR PARA ESTAS 2 OPCIONES.         
     clarence-friendly-apoyar:
       text: >
         <p>Buah tío! no sabes el lío que tienen con este caso, 
         nadie quiere comerse este marrón. Una chica muerta que no le importa a nadie, otro día en la ciudad de Midway… 
         eres el primero que viene a inspeccionar el cadaver, es como si todo el mundo quisiera mirar para otra lado...</p>
-      img: 'house-forest.jpg'
+      img: 'morgue-with-body.jpg'
       actions:
         - 
           text: 'Comenzar con la autopsia...'
@@ -2720,7 +2759,7 @@
     clarence-friendly-desmoralizar:
       text: >
         <p>Los jefes no quieren que malgastemos el poco presupuesto que tenemos en casos inutiles...</p>
-      img: 'house-forest.jpg'
+      img: 'morgue-with-body.jpg'
       actions:
         - 
           text: 'Comenzar con la autopsia...'
@@ -2731,7 +2770,7 @@
       text: >
         <p>Con decisión tomas el bisturí y realizas una incisión en forma de Y en el pecho, 
         partiendo desde los hombros y bajando a través del esternón y, comienzas a analizar los órganos de la cavidad abdominal.</p>
-      img: 'morgue.JPG'
+      img: 'autopsy.JPG'
       actions:
         - 
           text: 'Analizar los órganos'
@@ -2740,51 +2779,54 @@
           text: 'Analizar el sistema circulatorio'
           href: 'sangre'
         -
-          text: 'Analizar *********** TODO jaskas'
-          href: 'otro'
+          text: 'Buscar pistas en uñas y manos'
+          href: 'hands'
+        -
+          text: 'Espera un momento ...'
+          href: 'chica-ojos'
 
     organos:
       text: >
         <p>Los órganos de la chica parecen sufrir algún tipo de necrosis... como si se hubieran podrido...</p>
-      img: 'morgue.JPG'
+      img: 'autopsy.JPG'
       actions:
         - 
-          text: 'Analizar los órganos'
-          href: 'chica-levanta'
-        -
-          text: 'Analizar el sistema circulatorio'
-          href: 'chica-levanta'  
+          text: 'Volver ...'
+          href: 'comienzo-autopsia'
     
     sangre:
       text: >
         <p>Aún tiene restos de sangre... como puede ser...</p>
-      img: 'morgue.JPG'
+      img: 'autopsy.JPG'
       actions:
         - 
-          text: 'Analizar los órganos'
-          href: 'chica-levanta'
-        -
-          text: 'Analizar el sistema circulatorio'
-          href: 'chica-levanta' 
+          text: 'Volver ...'
+          href: 'comienzo-autopsia'
 
-    otro:
+    hands:
       text: >
-        <p>*******</p>
-      img: 'morgue.JPG'
+        <p>Nada destacable, seguro que si había algo ya lo analizaron y figura en el informe.</p>
+      img: 'autopsy.JPG'
       actions:
         - 
-          text: 'Analizar los órganos'
-          href: 'chica-levanta'
-        -
-          text: 'Analizar el sistema circulatorio'
-          href: 'chica-levanta'       
+          text: 'Volver ...'
+          href: 'comienzo-autopsia'       
     
     #PELEA CON LA CHICA. 
+    chica-ojos:
+      text: >
+        <p>Cuando bajas la mirada ves a la chica con los ojos abiertos... De pronto la chica se abalanza encima de ti, intentando morderte.</p>
+      img: 'autopsy.JPG'
+      actions:
+        - 
+          text: '¿Como?...'
+          href: 'chica-levanta'
+
     chica-levanta:
       text: >
-        <p>De pronto la chica se abalanza encima de ti, intentando morderte. Su primer ataque es muy fuerte pero no demasiado inteligente, 
-        intenta agarrar tus hombros con sus manos para poder morderte,pero consigues agarrar sus muñecas, ves un destello que sale del bolsillo del pecho de tu bata, 
-        tu bisturí. Ella también lo ha visto… y cuando miras para arriba ves una sonrisa angelical.</p>
+        <p>Su primer ataque es muy fuerte pero no demasiado inteligente, intenta agarrar tus hombros con sus manos para poder morderte,pero 
+        consigues agarrar sus muñecas, ves un destello que sale del bolsillo del pecho de tu bata, tu bisturí. Ella también lo ha visto… y 
+        cuando miras para arriba ves una sonrisa angelical.</p>
       img: 'morgue.JPG'
       actions:
         - 
