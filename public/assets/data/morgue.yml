@@ -1,4 +1,4 @@
- # LA MORGUE
+- # LA MORGUE
   # INTRODUCCION
   # FALTA DESARROLLARLA MÁS.
   id: '3'
@@ -6,177 +6,242 @@
   scenes:
     start:
       text: >
-        <p>Intentas calmarte pero notas la ira subiendo por el cuello, todo está rojo… 
-        mientras cortabas la piel y la carne de esa joven parece que un chorro de sangre 
-        te ha saltado a la cara. Otra noche rodeado de vísceras, otra de tantas…</p>
-      img: 'tool.jpg'
+        <p>Cuando abres los ojos todo está rojo y sientes la ira subir por tu cuello, como un geiser, imparable, como otras veces...</p>
+      img: 'tools.jpg'
       actions:
         -
-          text: '2 horas antes ...'
+          text: 'Respirar hondo para calmarte...'
+          href: 'sangre'
+    
+    sangre:
+      text: >
+        <p>Mientras cortabas la piel y la carne de esa joven parece que un chorro de sangre 
+        te ha saltado a la cara. Otra noche rodeado de vísceras, otra de tantas… </p>
+      img: 'tools.jpg'
+      actions:
+        -
+          text: 'Dos horas antes ...'
           href: 'antes'
-          
+    
     
     # COMIENZO ESCENA.
     antes:
       text: >
-        <p>Los tubos fluorescentes de la habitación se encienden con su sonido característico. 
-        El joven becario que está de guardia en la morgue acaba de encender la luz 
-        de la habitación del archivo para buscar el expediente:</p>
-        <p>- “A ver… número 17283, cámara  21 ,Julia Erwergh… aquí está” 
-        – El joven te mira con cara alegre y te ofrece la carpeta.</p>
-      img: 'house-forest.jpg'
+        <p>RIIIIIING .... RIIIIIING ... Estabas preparandote para ir a dormir cuando suena tu movil. </p>
+      img: 'morgue-building.jpg'
       actions:
         -
-          text: 'Leer el informe'
-          href: 'leer-informe'
+          text: 'Coger el teléfono'
+          href: 'telefono'
+        
         -
-          text: 'Resúmemelo, no tengo tiempo para esto'
-          href: 'resumen-informe'
+          text: 'Ignorarlo'
+          href: 'telefono'
 
-    leer-informe:
+    telefono:
       text: >
-        <p>Informe de Julia Erwergh :ID: 17283 </p>
-      img: 'house-forest.jpg'
+        <p>Hola Damian, soy Mir, perdona que te moleste a estas horas pero ha aparecido un cadaver de una chica de 17 años en un descampado en extrañas circustacias que 
+        encaja con el patrón de las últimas desaparecidas.</p>
+      img: 'morgue-building.jpg'
       actions:
-        - 
-          text: 'seguir...'
-          href: 'leer-informe2'
-    leer-informe2:
+        -
+          text: 'Voy para allá'
+          href: 'morgue-arrive'
+
+
+    #Al final vas a la morgue
+    morgue-arrive:
       text: >
-        #Formatear para que se vea como un informe en pantalla y pensar cosas para añadir. 
-        <p>
-        Edad = 18
-        Estado Civil = Soltera
-        Familiares Conocidos = Madre Evelynn Coleman y Padre France Erwergh.
-        Testigos = El caver lo encontró un vecino de la zona al que ya se ha tomado declaración. Nº de Documento = 2122334
-        Observaciones = El cadaver de la chica fué encontrado cerca de un edificio en construcción a las afueras de Evergreen.
-        El cuerpo estaba parcialmente enterrado en un descampado envuelto en un plástico. Informe científico Nº = 434351
-        </p>
-      img: 'house-forest.jpg'
+        <p>Cuando llegas a la morgue de Green Shore son sobre las doce de la noche. En la entrada un joven afroamericano 
+        ve un partido en la televisión con cara de aburrimiento</p>
+      img: 'morgue-building.jpg'
       actions:
-        - 
-          text: 'seguir...'
-          href: 'seguir1'
-          #Opcion documento caso
-          #Opcion informe CSI.
+        -
+          text: 'Hola, soy del SCU ...'
+          href: 'morgue-salute'
+
+    morgue-salute:
+      text: >
+        <p>Si, me han avisado de que venías. Pasa por aquí, el joven se levanta de la silla y comienza a caminar por el pasillo. </p>
+      img: 'morgue-entrance.jpg'
+      actions:
+        -
+          text: '¿Que tenemos?'
+          href: 'resumen-informe'
 
     resumen-informe:
       text: >
-        <p>La víctima es una chica joven, de las viviendas pobres al sur de la calle 12. La encontraron 
+        <p>La víctima es una chica de 17 años, de las viviendas pobres al sur de la calle 12. La encontró un vecino 
         tirada en un descampado cerca de donde vivía. No se sabe mucho más.</p>
-      img: 'house-forest.jpg'
+      img: 'morgue-entrance.jpg'
       actions:
         - 
-          text: 'seguir...'
-          href: 'seguir1'  
+          text: '¿Signos de violencia?'
+          href: 'violencia'  
+        -  
+          text: '¿Signos de agresión?'
+          href: 'violencia' 
+        -
+          text: '¿Algún testigo?'
+          href: 'testigo'
+        -
+          text: 'Caminar en silencio...'
+          href: 'llegada-sala' 
 
-    seguir1:
+    violencia:
       text: >
-        <p>Cuando pasa el tren de las 23:15 todo el edificio tiembla y cae polvillo del cemento 
-        de las grietas del edificio… “cualquier día se nos cae encima” … dice el joven mientras 
-        cierra la puerta del archivo y camina detrás de ti hasta la sala de autopsias.</p>
+        <p>Ni signos de violencia ni de agresión sexual. Se ha tomado declaración al vecino que la encontró. 
+        Parece que suele pasear al perro por esa zona</p>
       img: 'morgue-pasillo.jpg'
       actions:
-        - 
-          text: 'Caminar en silencio'
-          href: 'camino-silencio'
-        - 
-          text: '¿Eres nuevo chaval?'
-          href: 'camino-hablar'
-   #CONVERSACIÓN CON CLARENCE. 
-   #La idea es que el lector le coja cariño al personaje de Clarence y mostrar que Damian a pesar de ser un tipo que tiene un lado oscuro es un tipo afable.
-    camino-hablar:
-      text: >
-        <p>Si, me llamo Clarence, empecé hace una semana, la verdad es que creo que esto de la morgue 
-        no es lo mío, desde que estoy aquí me cuesta dormir por las noches...</p>
-      img: 'house-forest.jpg'
-      actions:
-        - 
-          text: 'Con el tiempo te acabas acostumbrando...'
-          href: 'clarence-friendly'
-        - 
-          text: 'Aprovecha ahora que aún puedes y evitate esta mierda'
-          href: 'llegada-sala'
      
-
-    clarence-friendly:
+        - 
+          text: 'Volver atrás'
+          href: 'resumen-informe'
+      
+    testigo:
       text: >
-        <p>Si, eso me dicen todos... pero empiezo a pensar que igual debería dedicarme a otra cosa... (El chico baja la cabeza aflijido)</p>
-      img: 'house-forest.jpg'
+        <p>¿Testigo? ¡Esto es Midway!. Aquí nunca ha visto nadie nada ... El vecino que la encontró simplemente se la encontró allí.</p>
+      img: 'morgue-pasillo.jpg'
       actions:
+     
         - 
-          text: 'Al final aunque ya sea tarde también ayudas a resolver lo que le ocurrió a esta gente'
-          href: 'clarence-friendly-apoyar'
-        - 
-          text: 'Pues la cosa no mejora con el tipi chico... si tienes problemas de estomago mejor que te dediques a otra cosa...'
-          href: 'clarence-friendly-desmoralizar'
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    camino-silencio:
-      text: >
-        <p>Buah tío! no sabes el lío que tienen con este caso, 
-        nadie quiere comerse este marrón. Una chica muerta que no le importa a nadie, otro día en la ciudad de Midway… 
-        eres el primero que viene a inspeccionar el cadaver, es como si todo el mundo quisiera mirar para otra lado...</p>
-      img: 'house-forest.jpg'
-      actions:
-        - 
-          text: 'seguir...'
-          href: 'llegada-sala'
+          text: 'Volver atrás'
+          href: 'resumen-informe'
 
     llegada-sala:
       text: >
         <p>Cuando llegas a la sala de autopsias  en dos paredes opuestas se levantan dos frigoríficos llenos 
-        de cámaras para cadáveres. Buscas la 21 y al abrirla ves a una chica joven, rubia de aspecto angelical 
-        con la tez muy pálida.</p>
+        de cámaras para cadáveres. Colocas tus cosas en una de las mesas al lado de una de las camillas mientras 
+        el chico busca el numero del informe en el ordenador 141232 - Sandra Erwergh</p>
+        
       img: 'morgue.JPG'
       actions:
         - 
-          text: 'fijarse en la chica'
-          href: 'chica-cara'
+          text: '¿Eres nuevo hermano, no me suena tu cara? ...'
+          href: 'clarence-hablar'
         - 
-          text: 'pedir ayuda para colocarla en la camilla...'
-          href: 'chica-camilla'
+          text: 'Preparar tus utensilios'
+          href: 'preparar-utensilios'
 
-    chica-cara:
+    preparar-utensilios:
       text: >
-        <p>Cuando te acercas para ver la cara de la chica ves algo raro... no está tan pálida como debería...</p>
-      img: 'morgue.JPG'
-      actions:
-
-        - 
-          text: 'ey Clarence!, ¿Le habeis hecho algún tratamiento de conservación especial al cadaver? ¿O cuando la encontraron ya estaba así?'
-          href: 'chica-levanta'
-      
-    chica-camilla:
-      text: >
-        <p>Entre los dos poneis a la chica en la camilla para comenzar con la autopsia.
-        Eh tio! ¿puedo quedarme contigo?, me gustaría ver como trabajas, 
-        siempre se puede aprender algo nuevo.</p>
-      img: 'morgue.JPG'
+        <p>Sacas tus herramientas de la maleta y las colocas meticulosamente cada una en su lugar como haces siempre, es tu ritual, 
+        te hace sentir seguro y te ayuda a centrarte...</p>
+      img: 'tools.JPG'
       actions:
         - 
-          text: 'Claro, te enseñaré algunos trucos'
-          href: 'chica-levanta'
+          text: 'Comenzar con la autopsia'
+          href: 'comienzo-autopsia'
          
+   #CONVERSACIÓN CON CLARENCE. 
+   #La idea es que el lector le coja cariño al personaje de Clarence y mostrar que Damian a pesar de ser un tipo que tiene un lado oscuro es un tipo afable.
+    clarence-hablar:
+      text: >
+        <p>Si, me llamo Clarence, empecé hace una semana ...</p>
+      img: 'morgue.jpg'
+      actions:
         - 
-          text: 'Lo siento, pero debo concentrarme...'
-          href: 'chica-levanta'
+          text: '¿Y que tal llevas el curro?'
+          href: 'clarence-friendly'
+        - 
+          text: 'Comenzar con la autopsia'
+          href: 'comienzo-autopsia'
+     
+
+    clarence-friendly:
+      text: >
+        <p>Bueno... ¡Bien!, la verdad es que no hay mucho que hacer por aquí, así que aprovecho y tengo tiempo para ver los partidos de los Pumas de Midway</p>
+      img: 'morgue.jpg'
+      actions:
+        - 
+          text: 'eso es cierto, y la clientela no va a protestar...'
+          href: 'clarence-friendly-apoyar'
+        - 
+          text: 'pues no será porque no aparecen cadaveres en las calles de Midway...'
+          href: 'clarence-friendly-desmoralizar'
+
+
+    ##PENSAR ALGO MEJOR PARA ESTAS 2 OPCIONES.         
+    clarence-friendly-apoyar:
+      text: >
+        <p>Si, la verdad es que ahora ya hasta pasan de hacer muchas autopsias. Como en este caso, que si no llega a ser por ti...</p>
+      img: 'morgue.jpg'
+      actions:
+        - 
+          text: 'Comenzar con la autopsia...'
+          href: 'comienzo-autopsia'
+
+    clarence-friendly-desmoralizar:
+      text: >
+        <p>Los jefes no quieren que malgastemos el poco presupuesto que tenemos en casos inutiles...</p>
+      img: 'morgue.jpg'
+      actions:
+        - 
+          text: 'Comenzar con la autopsia...'
+          href: 'comienzo-autopsia'
+
+    #AUTOPSIA
+    comienzo-autopsia:
+      text: >
+        <p>Con decisión tomas el bisturí y realizas una incisión en forma de Y en el pecho, 
+        partiendo desde los hombros y bajando a través del esternón y, comienzas a analizar los órganos de la cavidad abdominal.</p>
+      img: 'autopsy.JPG'
+      actions:
+        - 
+          text: 'Analizar los órganos'
+          href: 'organos'
+        -
+          text: 'Analizar el sistema circulatorio'
+          href: 'sangre'
+        -
+          text: 'Buscar pistas en uñas y manos'
+          href: 'hands'
+        -
+          text: 'Espera un momento ...'
+          href: 'chica-ojos'
+
+    organos:
+      text: >
+        <p>Los órganos de la chica parecen sufrir algún tipo de necrosis... como si se hubieran podrido...pero más rápido de lo habitual...</p>
+      img: 'autopsy.JPG'
+      actions:
+        - 
+          text: 'Volver ...'
+          href: 'comienzo-autopsia'
+    
+    sangre:
+      text: >
+        <p>Aún tiene restos de sangre... como puede ser... la sangre ya se debería haber coagulado...</p>
+      img: 'autopsy.JPG'
+      actions:
+        - 
+          text: 'Volver ...'
+          href: 'comienzo-autopsia'
+
+    hands:
+      text: >
+        <p>Nada destacable, seguro que si había algo ya lo analizaron y figura en el informe...</p>
+      img: 'autopsy.JPG'
+      actions:
+        - 
+          text: 'Volver ...'
+          href: 'comienzo-autopsia'       
     
     #PELEA CON LA CHICA. 
-    #Si todo ha ido bien y Damian y Clarence se han dado cuenta que la chica tiene demasiado "buen color" los dos sobrevivirán. Si no la chica matará a Clarence o a los 2.
+    chica-ojos:
+      text: >
+        <p>Cuando bajas la mirada ves a la chica con los ojos abiertos... De pronto la chica se abalanza encima de ti, intentando morderte.</p>
+      img: 'autopsy.JPG'
+      actions:
+        - 
+          text: '¿Como?...'
+          href: 'chica-levanta'
+
     chica-levanta:
       text: >
-        <p>De pronto la chica se abalanza encima de ti, intentando morderte. Su primer ataque es muy fuerte pero no demasiado inteligente, 
-        se abalanza sobre ti intentando agarrar tus hombros con sus manos para poder morderte. Consigues agarrar sus muñecas mientras cae para
-        evitar que te agarre y ves un destello que sale del bolsillo del pecho de tu bata, tu bisturí. 
-        Ella también lo ha visto… y cuando miras para arriba vuelves a ver su brillante sonrisa.</p>
+        <p>Su primer ataque es muy fuerte pero no demasiado inteligente, intenta agarrar tus hombros con sus manos para poder morderte,pero 
+        consigues agarrar sus muñecas mientras la agarras encima de ti intentando que no te muerda de su vientre pertamecen colgando sus entrañas</p>
       img: 'morgue.JPG'
       actions:
         - 
@@ -185,7 +250,7 @@
         - 
           text: 'Intentas soltarle un brazo y coger el bisturí.'
           href: 'combate-soltarse'
-          
+        -  
           text: 'Intentas darle un cabezazo en la cara.'
           href: 'combate-cabezazo'
           
@@ -193,13 +258,69 @@
       text: >
         <p>Haciendo fuerza con tus piernas y tus caderas intentas voltear la posición para estar tu encima de ella. 
         Con un giro rápido y poniendo toda tu fuerzas, has conseguido tirarla de lado.Te levantas y coges el bisturí. 
-        Ella se levanta y esta vez te mira con cara extrañada…(Se ha dado cuenta de algo en Damian).</p>
+        Ella se levanta y esta vez te mira con cara extrañada…</p>
       img: 'morgue.JPG'
       actions:
         - 
-          text: 'Intentas girar para conseguir ponerte encima de ella.'
-          href: 'combate-final'
+          text: 'Atacar con el bisturí'
+          href: 'ataque-bisturi'
+        - 
+          text: 'Te mantienes a la espera en actitud defensiva'
+          href: 'esperar'
+
+    ataque-bisturi:
+      text: >
+        <p>Agarras con todas tus fuerzas el pequeño bisturí mientras trazas arcos delante tuya... no parece buen plan</p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'Atacar con el bisturí'
+          href: 'esperar'
+        - 
+          text: 'Mantenerse a la espera'
+          href: 'esperar'
     
+    esperar:
+      text: >
+        <p>La chica te sonríe, y con un rápido movimiento agarra a Clarence(**TODO jaskas poner clarence o "el chico" segun si hablaste con el o no) 
+        que estaba hecho un ovillo en una esquina y lo interpone entre vosotros</p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'Mirar a tu alrededor'
+          href: 'mirar'
+        - 
+          text: 'Mantenerse a la espera'
+          href: 'esperar2'
+    
+    mirar:
+      text: >
+        <p>Miras a tu alrededor intentando buscar algo que pueda ayudarte, pero ya es tarde... </p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: '...'
+          href: 'esperar2'
+    
+    esperar2:
+      text: >
+        <p>De pronto con un movimiento sobrehumano levanta a su presa atravesandola con su brazo por el pecho</p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'Te abalanzas contra ella...'
+          href: 'ataque-bueno'
+    
+    ataque-bueno:
+      text: >
+        <p>Aprovechando que con el cuerpo ensartado tiene la movilidad muy limitada te abalanzas sobre ella como cuando jugabas en la liga universitaria. 
+        Mientras caeis escucha un ruido PUM!! gutural desagradable (El vampiro se ha clavado algo en la cabeza que la ha matado)</p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: 'no ves nada, todo está rojo ...'
+          href: 'combate-final'    
+
     combate-soltarse:
       text: >
         <p>Tienes un plan, le sueltas el brazo, coges el bisturí y trazas un arco a la altura de su garganta. 
@@ -210,35 +331,49 @@
       actions:
         - 
           text: 'Has muerto...'
-          href: 'final'
           end: true
     
     combate-cabezazo:
       text: >
         <p>Le das un cabezazo mientras agarras sus manos. con todas tus fuerzas en un rápido movimiento lanzas tu cabeza contra su cara intentando 
-        hacerle el mayor daño posible. Escuchas crujir los huesos de su nariz y los dientes, pero sus brazos no han parado ni un segundo de hacer fuerza… 
-        Cuando levantas la cabeza y miras para ella te devuelve una sonrisa perturbadora con los dientes que le quedan y se lanza a darte un cabezazo. 
-        Otra vez crujido, pero ahora hay algo nuevo, un dolor impresionante que te recorre todo el cuerpo. Escuchas una risita y sientes otro golpe tan fuerte 
-        como el anterior… “Ahora voy a ver yo lo que tienes dentro…” - Es lo último que escuchas antes de rendirte, antes de dejarte caer en la oscuridad ...
+        hacerle el mayor daño posible. Escuchas crujir los huesos de su nariz y los dientes,mientras notas un pitido en tu cabeza que va aumentando de volumen...
         </p>
       img: 'morgue.JPG'
       actions:
         - 
-          text: 'Has muerto...'
-          href: 'final'
-          end: true
+          text: 'mirar a la chica'
+          href: 'mirar-chica'
+        - 
+          text: 'mantener la tension'
+          href: 'agarrar-manos'
+    
+    mirar-chica:
+      text: >
+        <p>Estas mirando a la cara de la chica como hipnotizado notando como tus fuerzas te abandonan cuando suena un fuerte PUM! y todo se vuelve rojo ...</p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: '¿Que ha pasado?''
+          href: 'combate-final'
+
+    agarrar-manos:
+      text: >
+        <p>Intentas mantener sus brazos atenazados como puedes agarrandola por las muñecas pero tus fuerzas empiezas a flaquear cuando suena un fuerte PUM! y todo se vuelve rojo ...</p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: '¿Que ha pasado?'
+          href: 'combate-final'
     
     combate-final:
       text: >
-        <p>PUM!! recobras el sentido con un fuerte sonido y notas la cara llena de sangre. 
+        <p>Cuando recobras el sentido notas la cara llena de sangre. 
         Damian! estas bien? -  Mir te levanta y te hace salir de la oscuridad…
-        Damian! Damian! Joder!
-        Mir estoy bien. Que cojones ha pasado?
-        </p>
+        Damian! Damian! Joder!</p>
       img: 'morgue.JPG'
       actions:
         - 
-          text: 'Mir estoy bien. Que cojones ha pasado?'
+          text: 'Mir estoy bien. Tenemos a uno'
           href: 'final'
           end: true
     

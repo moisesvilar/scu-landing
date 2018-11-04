@@ -2747,9 +2747,7 @@
     ##PENSAR ALGO MEJOR PARA ESTAS 2 OPCIONES.         
     clarence-friendly-apoyar:
       text: >
-        <p>Buah tío! no sabes el lío que tienen con este caso, 
-        nadie quiere comerse este marrón. Una chica muerta que no le importa a nadie, otro día en la ciudad de Midway… 
-        eres el primero que viene a inspeccionar el cadaver, es como si todo el mundo quisiera mirar para otra lado...</p>
+        <p>Si, la verdad es que ahora ya hasta pasan de hacer muchas autopsias. Como en este caso, que si no llega a ser por ti...</p>
       img: 'morgue.jpg'
       actions:
         - 
@@ -2787,7 +2785,7 @@
 
     organos:
       text: >
-        <p>Los órganos de la chica parecen sufrir algún tipo de necrosis... como si se hubieran podrido...</p>
+        <p>Los órganos de la chica parecen sufrir algún tipo de necrosis... como si se hubieran podrido...pero más rápido de lo habitual...</p>
       img: 'autopsy.JPG'
       actions:
         - 
@@ -2796,7 +2794,7 @@
     
     sangre:
       text: >
-        <p>Aún tiene restos de sangre... como puede ser...</p>
+        <p>Aún tiene restos de sangre... como puede ser... la sangre ya se debería haber coagulado...</p>
       img: 'autopsy.JPG'
       actions:
         - 
@@ -2805,7 +2803,7 @@
 
     hands:
       text: >
-        <p>Nada destacable, seguro que si había algo ya lo analizaron y figura en el informe.</p>
+        <p>Nada destacable, seguro que si había algo ya lo analizaron y figura en el informe...</p>
       img: 'autopsy.JPG'
       actions:
         - 
@@ -2825,8 +2823,7 @@
     chica-levanta:
       text: >
         <p>Su primer ataque es muy fuerte pero no demasiado inteligente, intenta agarrar tus hombros con sus manos para poder morderte,pero 
-        consigues agarrar sus muñecas, ves un destello que sale del bolsillo del pecho de tu bata, tu bisturí. Ella también lo ha visto… y 
-        cuando miras para arriba ves una sonrisa angelical.</p>
+        consigues agarrar sus muñecas mientras la agarras encima de ti intentando que no te muerda de su vientre pertamecen colgando sus entrañas</p>
       img: 'morgue.JPG'
       actions:
         - 
@@ -2860,22 +2857,31 @@
       actions:
         - 
           text: 'Atacar con el bisturí'
-          href: 'ataque-bisturi'
+          href: 'esperar'
         - 
           text: 'Mantenerse a la espera'
           href: 'esperar'
     
     esperar:
       text: >
-        <p>La chica vuelve a sonreir, y con un rápido movimiento agarra a Clarence(**TODO jaskas poner clarence o "el chico" segun si hablaste con el o no) 
+        <p>La chica te sonríe, y con un rápido movimiento agarra a Clarence(**TODO jaskas poner clarence o "el chico" segun si hablaste con el o no) 
         que estaba hecho un ovillo en una esquina y lo interpone entre vosotros</p>
       img: 'morgue.JPG'
       actions:
         - 
-          text: 'opción inutil'
-          href: 'ataque-bisturi'
+          text: 'Mirar a tu alrededor'
+          href: 'mirar'
         - 
           text: 'Mantenerse a la espera'
+          href: 'esperar2'
+    
+    mirar:
+      text: >
+        <p>Miras a tu alrededor intentando buscar algo que pueda ayudarte, pero ya es tarde... </p>
+      img: 'morgue.JPG'
+      actions:
+        - 
+          text: '...'
           href: 'esperar2'
     
     esperar2:
@@ -2907,7 +2913,6 @@
       actions:
         - 
           text: 'Has muerto...'
-          href: 'final'
           end: true
     
     combate-cabezazo:
@@ -2926,20 +2931,20 @@
     
     mirar-chica:
       text: >
-        <p>Estas mirando a la cara de la chica como hipnotizado notando como tus fuerzas te abandonan cuando suena un fuerte PUM!</p>
+        <p>Estas mirando a la cara de la chica como hipnotizado notando como tus fuerzas te abandonan cuando suena un fuerte PUM! y todo se vuelve rojo ...</p>
       img: 'morgue.JPG'
       actions:
         - 
-          text: 'combate-final'
+          text: '¿Que ha pasado?''
           href: 'combate-final'
 
     agarrar-manos:
       text: >
-        <p>Intentas mantener sus brazos atenazados como puedes agarrandola por las muñecas pero tus fuerzas empiezas a flaquear cuando suena un fuerte PUM!</p>
+        <p>Intentas mantener sus brazos atenazados como puedes agarrandola por las muñecas pero tus fuerzas empiezas a flaquear cuando suena un fuerte PUM! y todo se vuelve rojo ...</p>
       img: 'morgue.JPG'
       actions:
         - 
-          text: 'combate-final'
+          text: '¿Que ha pasado?'
           href: 'combate-final'
     
     combate-final:
