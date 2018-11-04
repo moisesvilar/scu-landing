@@ -353,7 +353,7 @@
       img: 'morgue.JPG'
       actions:
         - 
-          text: '¿Que ha pasado?''
+          text: '¿Que ha pasado?'
           href: 'combate-final'
 
     agarrar-manos:

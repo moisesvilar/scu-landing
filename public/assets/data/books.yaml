@@ -2928,14 +2928,14 @@
         - 
           text: 'mantener la tension'
           href: 'agarrar-manos'
-    
+
     mirar-chica:
       text: >
         <p>Estas mirando a la cara de la chica como hipnotizado notando como tus fuerzas te abandonan cuando suena un fuerte PUM! y todo se vuelve rojo ...</p>
       img: 'morgue.JPG'
       actions:
         - 
-          text: '¿Que ha pasado?''
+          text: '¿Que ha pasado?'
           href: 'combate-final'
 
     agarrar-manos:
