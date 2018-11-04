@@ -2589,7 +2589,7 @@
     start:
       text: >
         <p>Cuando abres los ojos todo está rojo y sientes la ira subir por tu cuello, como un geiser, imparable, como otras veces...</p>
-      img: 'tool.jpg'
+      img: 'tools.jpg'
       actions:
         -
           text: 'Respirar hondo para calmarte...'
@@ -2599,7 +2599,7 @@
       text: >
         <p>Mientras cortabas la piel y la carne de esa joven parece que un chorro de sangre 
         te ha saltado a la cara. Otra noche rodeado de vísceras, otra de tantas… </p>
-      img: 'morgue-building.jpg'
+      img: 'tools.jpg'
       actions:
         -
           text: 'Dos horas antes ...'
@@ -2645,7 +2645,7 @@
     morgue-salute:
       text: >
         <p>Si, me han avisado de que venías. Pasa por aquí, el joven se levanta de la silla y comienza a caminar por el pasillo. </p>
-      img: 'morgue-building.jpg'
+      img: 'morgue-entrance.jpg'
       actions:
         -
           text: '¿Que tenemos?'
@@ -2721,7 +2721,7 @@
     clarence-hablar:
       text: >
         <p>Si, me llamo Clarence, empecé hace una semana ...</p>
-      img: 'moruge-with-body.jpg'
+      img: 'morgue.jpg'
       actions:
         - 
           text: '¿Y que tal llevas el curro?'
@@ -2734,7 +2734,7 @@
     clarence-friendly:
       text: >
         <p>Bueno... ¡Bien!, la verdad es que no hay mucho que hacer por aquí, así que aprovecho y tengo tiempo para ver los partidos de los Pumas de Midway</p>
-      img: 'morgue-with-body.jpg'
+      img: 'morgue.jpg'
       actions:
         - 
           text: 'eso es cierto, y la clientela no va a protestar...'
@@ -2750,7 +2750,7 @@
         <p>Buah tío! no sabes el lío que tienen con este caso, 
         nadie quiere comerse este marrón. Una chica muerta que no le importa a nadie, otro día en la ciudad de Midway… 
         eres el primero que viene a inspeccionar el cadaver, es como si todo el mundo quisiera mirar para otra lado...</p>
-      img: 'morgue-with-body.jpg'
+      img: 'morgue.jpg'
       actions:
         - 
           text: 'Comenzar con la autopsia...'
@@ -2759,7 +2759,7 @@
     clarence-friendly-desmoralizar:
       text: >
         <p>Los jefes no quieren que malgastemos el poco presupuesto que tenemos en casos inutiles...</p>
-      img: 'morgue-with-body.jpg'
+      img: 'morgue.jpg'
       actions:
         - 
           text: 'Comenzar con la autopsia...'
