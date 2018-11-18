@@ -2608,7 +2608,7 @@
 
     organos:
       text: >
-        <p>Los órganos de la chica parecen sufrir algún tipo de necrosis... como si se hubieran podrido...</p>
+        <p>Los órganos de la chica parecen sufrir algún tipo de necrosis... como si se hubieran podrido... pero parece que el proceso se haya acelerado...</p>
       img: 'autopsy.JPG'
       actions:
         - 
@@ -2626,12 +2626,12 @@
 
     hands:
       text: >
-        <p>Te acercas cuidadosamente a ver sus manos... Bajo una de sus uñas parece que hay algo...</p>
+        <p>Te acercas cuidadosamente a ver sus manos... Bajo una de sus uñas parece que hay algo... Algo de el tamaño de un grano de arroz ...</p>
       img: 'autopsy.JPG'
       actions:
         - 
           text: 'Tomar una muestra'
-          href: 'start'
+          href: 'luminol'
         - 
           text: 'Volver ...'
           href: 'start'
@@ -2647,7 +2647,7 @@
 
     luminol:
       text: >
-        <p>Te giras una caminas hasta tu maletín para coger un sobre hermético de plástico y unas pinzas pero cuando te das la vuelta el cadaver de la chica no está</p>
+        <p>Te giras una caminas hasta tu maletín para coger un sobre hermético de plástico y unas pinzas pero cuando te das la vuelta el cadaver de la chica no está...</p>
       img: 'morgue3.JPG'
       actions:
         - 
@@ -2666,7 +2666,7 @@
     
     morgue-arrive:
       text: >
-        <p>Cuando llegas a la morgue de Green Shore son sobre las doce de la noche. En la entrada un joven afroamericano de unos 20 años
+        <p>Cuando llegas a la morgue de Green Shore son sobre las doce de la noche. En la entrada un joven afroamericano de unos 23 años
         ve un partido en la televisión con cara de aburrimiento.</p>
       img: 'morgue-building.jpg'
       actions:
@@ -2677,7 +2677,7 @@
 
     morgue-salute:
       text: >
-        <p>Si, me han avisado de que venías, soy Clarence. Pasa por aquí, el joven se levanta de la silla y comienza a caminar por el pasillo. </p>
+        <p>Si, me han avisado de que venías, soy Clárence. Pasa por aquí, el joven se levanta de la silla y comienza a caminar por el pasillo.  </p>
       img: 'morgue-entrance.jpg'
       actions:
         -
@@ -2705,7 +2705,7 @@
 
     violencia:
       text: >
-        <p>Ni signos de violencia ni de agresión sexual. Se ha tomado declaración al vecino que la encontró. 
+        <p>No hay signos de violencia ni de agresión sexual. Se ha tomado declaración al vecino que la encontró. 
         Parece que suele pasear al perro por esa zona</p>
       img: 'morgue-entrance.jpg'
       actions:
@@ -2716,7 +2716,7 @@
       
     testigo:
       text: >
-        <p> ¿Testigo? ¡Esto es Midway! Aquí nunca ha visto nadie nada ... El vecino que la encontró simplemente se la encontró allí. </p>
+        <p> ¿Testigo? ¡Esto es Midway! Aquí nunca ha visto nadie nada ... El vecino que la encontró simplemente se la encontró allí mientras paseaba al chucho.  </p>
       img: 'morgue-entrance.jpg'
       actions:
      
@@ -2728,7 +2728,7 @@
       text: >
         <p>Cuando llegas a la sala de autopsias en dos paredes opuestas se levantan dos frigoríficos llenos 
         de cámaras para cadáveres. Colocas tus cosas en una de las mesas al lado de una de las camillas mientras 
-        el chico busca el número del informe en el ordenador 141232 - Sandra Erwergh</p>
+        el chico busca el número del informe en el ordenador 141232 - Sandra Erwergh ... </p>
         
       img: 'morgue.JPG'
       actions:
@@ -2752,7 +2752,7 @@
    #CONVERSACIÓN CON CLARENCE. 
     clarence-hablar:
       text: >
-        <p>Si, empecé hace una semana, pero es un curro bastante aburrido...</p>
+        <p>Si, empecé hace una semana, no está mal el curro este si sabes lidiar con el aburrimiento y esa es mi especialidad...</p>
       img: 'morgue.jpg'
       actions:
         - 
@@ -2776,7 +2776,7 @@
     
     desmoralizar:
       text: >
-        <p>Bueno, por lo menos tengo tiempo para ver los partidos. Y es un trabajo tranquilo.</p>
+        <p>No soy escrupuloso, tengo tiempo para ver los partidos y no es que requiera mucho esfuerzo. Me parece que no he caido en mal sitio...</p>
       img: 'morgue.jpg'
       actions:
         - 
@@ -2794,7 +2794,7 @@
 
     clarence-recuerda:
       text: >
-        <p>¡Como para no acordarme!, !Eras el puto amo¡. ¿Cuando termines aquí me firmas un autógrafo?...</p>
+        <p>¡Como para no acordarme!, !Eras el puto amo¡. Cuando termines aquí me firmas un autógrafo...</p>
       img: 'morgue.jpg'
       actions:
         - 
@@ -2877,7 +2877,7 @@
       img: 'morgue.jpg'
       actions:
         - 
-          text: 'Esperar tras la cobertura'
+          text: 'Abandonar a Clárence a su suerte'
           href: 'esperar2'
         - 
           text: 'Salir al pasillo'
@@ -2931,7 +2931,7 @@
 
     salida-escoltado:
       text: >
-        <p>Sales de la morgue rodeado por hombres del SCU... cuando pasáis por el pasillo ves el cuerpo destrozado de Clárence en un lado del pasillo... 
+        <p>Sales de la morgue rodeado por hombres del SCU... en el pasillo ves el cuerpo destrozado de Clárence... 
         El no ha tenido mucha suerte, pero tu estas a salvo.</p>
       img: 'morgue-building.jpg'
       end: true
@@ -2960,12 +2960,15 @@
 
     no-disparo2:
       text: >
-        <p>La chica deja caer a Clárence al suelo y se gira hacia ti con la cara llena de sangre y una sonrisa...</p>
+        <p>La chica deja caer a Clárence al suelo y se gira hacia ti con la cara llena de sangre y una sonrisa... Echa a correr hacia ti es muy rápida...</p>
       img: 'gunshot-1.jpg'
       actions:
         - 
-          text: '...'
+          text: 'Disparar'
           href: 'pelea1'
+        - 
+          text: 'Volver corriendo a la sala de autopsias'
+          href: 'volver-sala'
     
     disparo:
       text: >
@@ -2978,7 +2981,7 @@
  
     disparo2:
       text: >
-        <p>La bala recorre el pasillo en milésimas de segundo y atina de pleno en la cabeza de la criatura. Los dos cuerpos caen inertes al suelo...</p>
+        <p>La bala recorre el pasillo en milésimas de segundo y atina de pleno en la cabeza de la criatura... Los dos cuerpos caen inertes al suelo...</p>
       img: 'gunshot-1.jpg'
       actions:
         - 
@@ -2999,24 +3002,201 @@
         <p>Sales corriendo por la puerta de la Morgue y gritas pidiendo ayuda, en la lejanía se escuchan sirenas acercándose... El grupo de asalto del SCU está llegando, estas a salvo. </p>
       img: 'morgue-pasillo.jpg'
       end: true
-  #Continuar esta línea
+
+    volver-sala:
+      text: >
+        <p>Corres con todas tus fuerzas, sabes que tu vida depende de ello, y cuando cierras la puerta de la morgue notas un golpe fuerte contra ella, pero estás dentro y a salvo de momento...</p>
+      img: 'morgue-pasillo.jpg'
+      actions:
+        - 
+          text: 'Bloquear la puerta con una estantería'
+          href: 'estanteria-puerta'
+        - 
+          text: 'Esconderse en una de la cámaras para cadeveres'
+          href: 'esconderse-camara'
+     
+    estanteria-puerta:
+      text: >
+        <p>Intentas colocar una estantería grande delante de la puerta para bloquearla... pero ya no hay golpes... parece que ya no está en la puerta...</p>
+      img: 'morgue.jpg'
+      actions:
+        - 
+          text: 'Esconderse y apuntar a la puerta'
+          href: 'esperar-acojonao'
+
+    esconderse-camara:
+      text: >
+        <p>Te metes en una de las cámaras para cadeveres, mientras lo haces no puedes evitar sentir un escalofrío en la nuca... tal vez te estés metiendo tu solo en tu propia tumba</p>
+      img: 'morgue.jpg'
+      actions:
+        - 
+          text: 'Controlar la respiración para no hacer ruido'
+          href: 'esperar-acojonao'
+
+    esperar-acojonao:
+      text: >
+        <p>Los segundos se hacen eternos, esperas intentando no hacer ruído... ¿Cuanto tiempo llevas aquí?... ¿Donde están los refuerzos?</p>
+      img: 'morgue.jpg'
+      actions:
+        - 
+          text: '...'
+          href: 'llegada-asalto2'
+
     pelea1:
       text: >
-        <p>Pelea con la chica y Damian sobrevive aunque está herido. Lo salva el equipo de asalto del SCU de milagro</p>
-      img: 'gunshot-1.jpg'
+        <p>La criatura se mueve hacia ti a toda velocidad. A la desesperada intentas dispararle pero es demasiado rápida. 
+        Cuando llega a tu lado te empuja y sales despedido como si te hubiera atropellado un tren. Sales despedido unos metros y
+        tu pistola se desliza hacia el fondo del pasillo</p>
+      img: 'morgue-pasillo.jpg'
+      actions:
+        - 
+          text: 'Coger la pistola'
+          href: 'recuperar-pistola'
+        - 
+          text: 'Volver al interior de la sala de la morgue'
+          href: 'volver-morgue2'
+
+    pelea13:
+      text: >
+        <p>La criatura se mueve hacia ti a toda velocidad. A la desesperada intentas dispararle pero es demasiado rápida. 
+        Cuando llega a tu lado te empuja y sales despedido como si te hubiera atropellado un tren. Sales despedido unos metros y
+        tu pistola se desliza hacia el fondo del pasillo</p>
+      img: 'morgue-pasillo.jpg'
+      actions:
+        - 
+          text: 'Coger la pistola'
+          href: 'recuperar-pistola2'
+        - 
+          text: 'Volver al interior de la sala de la morgue'
+          href: 'volver-morgue2'
+
+    recuperar-pistola2:
+      text: >
+        <p>Intentas arrastraste para coger tu pistola, pero la criatura es mucho más rápida que tu. Te agarra por un pie y te lanza hacia el otro lado del pasillo. 
+        Cuando caes te duele todo el cuerpo y notas un pitido en los oidos que no te deja pensar.</p>
+      img: 'morgue-pasillo.jpg'
+      actions:
+        - 
+          text: 'Levantarse y ponerse en posición defensiva'
+          href: 'levantarse2'
+
+    levantarse2:
+      text: >
+        <p>Sin esperanza alguna te levantas y te pones en guardia en un vano intento de plantar cara a la criatura. Una sonrisa se dibuja en la cara del monstruo...</p>
+      img: 'morgue-pasillo.jpg'
+      actions:
+        - 
+          text: 'Darle un puñetazo'
+          href: 'pelea-sin-armas'
+
+    pelea-sin-armas:
+      text: >
+        <p>Sin esperanza alguna te levantas y te pones en guardia en un vano intento de plantar cara a la criatura. Una sonrisa se dibuja en la cara del monstruo... 
+        Intentas darle un puñetazo, pero como si de un niño se tratase para tu ataque con una mano...</p>
+      img: 'morgue-pasillo.jpg'
+      actions:
+        - 
+          text: 'Pegarle con la otra mano'
+          href: 'pelea-sin-armas2'
+
+    pelea-sin-armas2:
+      text: >
+        <p>Intentas golpearle con la otra mano sin exito, parece que ni se entere de tus golpes. Lo siguiente q ves es un chorro de sangre que sale despedido hacia tu cara cuando te muerde el cuello... El dolor se vuelve insoportable,
+        notas cada vez más frío... Has muerto</p>
+      img: 'morgue-pasillo.jpg'
       end: true
 
-  #Sin llamar refuerzos ni nada... #Continuar esta línea
+    recuperar-pistola:
+      text: >
+        <p>Intentas arrastraste para coger tu pistola, pero la criatura es mucho más rápida que tu. Te agarra por un pie y te lanza hacia el otro lado del pasillo. 
+        Cuando caes te duele todo el cuerpo y notas un pitido en los oidos que no te deja pensar.</p>
+      img: 'morgue-pasillo.jpg'
+      actions:
+        - 
+          text: 'Levantarse y ponerse en posición defensiva'
+          href: 'levantarse'
+
+    levantarse:
+      text: >
+        <p>Sin esperanza alguna te levantas y te pones en guardia en un vano intento de plantar cara a la criatura. Una sonrisa se dibuja en la cara del monstruo... de pronto la puerta se abre con un golpe
+        y tres hombres de asalto del scu irrumpen en la estancia y comienzan a disparar sus subfusiles contra la criatura.</p>
+      img: 'morgue-pasillo.jpg'
+      actions:
+        - 
+          text: 'Echarse al suelo'
+          href: 'al-suelo'
+
+    al-suelo:
+      text: >
+        <p>Te tiras al suelo y cubres la cabeza con tus manos... cuando termina el ruido de los subfusiles un hombre del SCU te tiende su mano...</p>
+      img: 'morgue-pasillo.jpg'
+      actions:
+        - 
+          text: 'Echarse al suelo'
+          href: 'salida-escoltado'
+
+    volver-morgue2:
+      text: >
+        <p>Te levantas lo más rápido que puedes intentar coger a la criatura por sopresa y volver a sala de la morgue... Cuando entras por la puerta e intentas cerrar algo la bloquea. La chica agarra la puerta
+        con una de sus manos y a pesar de intentarlo con todas tus fuerzas no consigues cerrar</p>
+      img: 'morgue3.jpg'
+      actions:
+        - 
+          text: 'Correr a tu maletín a por el bisturí'
+          href: 'coger-bisturi'
+        - 
+          text: 'Intentar golpear de la chica'
+          href: 'golpear-desesperado'
+
+    coger-bisturi:
+      text: >
+        <p>Sueltas la puerta y echas a corrar en dirección a tu maletín atravesando la sala. 
+        Cuando estas llegando notas un dolor punzante en la espalda y el frío comienza a recorrer tu cuerpo y vuelves a escuchar esa risa de adolescente. 
+        Al mirar para abajo ves la mano de la chica llena de sangre atravesando tu pecho ... todo se vuelve oscuro y frío... has muerto </p>
+      img: 'morgue3.jpg'
+      end: true
+
+    golpear-desesperado:
+      text: >
+        <p>Intentas golpear su brazo para que suelte la puerta y poder cerrar con un movimiento rápido pero es un intento inutil. La chica comienza a reirse de ti a carcajadas cuando de pronto notas un dolor punzante en el estómago.
+        Una mano de la chica te ha atravesado... ahora solo notas frío ... todo se está poniendo oscuro... de fondo escuchas la carcajada de la joven adolescente que se mete en tus oidos... has muerto.</p>
+      img: 'morgue3.jpg'
+      end: true
+
     salir-pasillo:
       text: >
-        <p>Opción pelea corta... Damian y Clárence mueren Midway no es un sitio para héroes</p>
+        <p>Cuando sales al pasillo ves a la chica a mitad del pasillo, intentando acercarse a Clárence sigilosamente mientras el chico sigue viendo el partido sin enterarse de nada</p>
       img: 'morgue-pasillo.jpg'
-      end: true
+      
+      actions:
+        - 
+          text: 'Aproximarse con sigilo a la chica para asegurar el tiro'
+          href: 'disparar-sorpresa'
+        - 
+          text: 'Disparar a la chica para alertar a Clárence'
+          href: 'alertar-clarence'
 
-  #Llamando refuerzos, aguantar peleando hasta q llegue el SCU ("4 turnos") #Continuar esta línea
+    disparar-sorpresa:
+      text: >
+        <p>Disparas a la chica mientras no ha advertido tu presencia... Te concentras más de lo que has echo nunca, aguantas tu respiración y aprietas el gatillo. La bala impacta a la chica en el cuello.
+        Clarence da un salto en la silla y se esconde debajo de la mesa. Ahora la chica se gira hacia ti mirandote con furia.</p>
+      img: 'gunshot.jpg'
+      
+      actions:
+        - 
+          text: 'Volver a disparar'
+          href: 'pelea1'
+
     salir-pasillo2:
       text: >
-        <p>Opción de pelea larga. Clárence y Damian pueden sobrevivir...</p>
+        <p>Sales al pasillo con la pistola en la mano preparado para lo peor. Cuando ves a  la chica está a punto 
+        de coger a Clárence por la espalda que continúa viendo el partido como si nada.</p>
       img: 'morgue-pasillo.jpg'
-      end: true
+      actions:
+        - 
+          text: 'Disparar de nuevo'
+          href: 'pelea1'
+        - 
+          text: 'Correr hacia la chica y hacerle un placaje'
+          href: 'golear-desesperado'
 
